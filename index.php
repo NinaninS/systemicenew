@@ -50,7 +50,9 @@
 					
 					<h2 class="h2">МЕРОПРИЯТИЕ НАЧИНАЕТСЯ С НАС</h2>
 
-					<div class="video-container"></div>
+					<div class="video-container">
+						<div class="bg-btn"></div>
+					</div>
 					<p class="p-title">Видеопрезентация компании Systemice</p>
 				</div>
 
@@ -70,10 +72,11 @@
 
 			<div class="bl-preview">
 				
-
 				<div class="preview-container">
 					
-					<div class="sl-preview"></div>
+					<div class="sl-preview video-preview">
+						<div class="bg-btn"></div>
+					</div>
 					<svg 
 					 xmlns="http://www.w3.org/2000/svg"
 					 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -105,7 +108,7 @@
 			</div>
 
 			<ul class="menu-list">
-				<li class="menu-item">О компании</li>
+				<li class="menu-item menu-active">О компании</li>
 				<li class="menu-item">Услуги</li>
 				<li class="menu-item">Портфолио</li>
 				<li class="menu-item">Команда</li>

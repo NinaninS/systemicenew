@@ -158,14 +158,14 @@ a {
 
 .menu-item {
 
-    margin-top: 25px;
-    line-height: 0.9;
+    margin-top: 17px;
+    line-height: 1.8;
 }
 
-.menu-item:first-child {
+/*.menu-item:first-child {
 
     margin-top: 0;
-}
+}*/
 
 .h1 {
     
@@ -205,16 +205,33 @@ a {
 }
 
 .video-container {
-
+    
+    position: relative;
     width: 100%;
     background-color: rgb(255, 255, 255);
     height: 56%;
     max-height: 410px;
-    background-image: url('../images/youtube.png');
+    overflow: hidden;
+    background-image: url('../images/plash.png');
     background-repeat: no-repeat;
     background-position: center center;
     box-shadow: 0 0 21px rgba(53,185,249,0.15);
 }
+
+.bg-btn {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/youtube.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 25%;
+    z-index: 1;
+}
+
 
 .p-title {
     
@@ -324,6 +341,7 @@ a {
 
 .sl-preview {
     
+    position: relative;
     width: 45%;
     height: 100%;
     min-height: 50px;
@@ -334,9 +352,9 @@ a {
 
     position: absolute;
     left: 0;
-    top: 45%;
-    width: 14px;
-    height: 28px;
+    top: 30%;
+    width: 46px;
+    height: 58px;
     background-image: url('../images/arrow-left.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -346,10 +364,27 @@ a {
 
     position: absolute;
     right: 0;
-    top: 45%;
-    width: 14px;
-    height: 28px;
+    top: 30%;
+    width: 46px;
+    height: 58px;
     background-image: url('../images/arrow-right.png');
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+
+.menu-active {
+
+  border-bottom: 2px solid #e90000;
+
+}
+
+.video-preview {
+
+    overflow: hidden;
+    background-image: url('../images/plash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-position: center center;
 }
