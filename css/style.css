@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=latin,cyrillic);
+
+@font-face {
+        font-family: "ImpactRegular";
+        src: url("../css/fonts/ImpactRegular/ImpactRegular.eot");
+        src: url("../css/fonts/ImpactRegular/ImpactRegular.eot?#iefix")format("embedded-opentype"),
+        url("../css/fonts/ImpactRegular/ImpactRegular.woff") format("woff"),
+        url("../css/fonts/ImpactRegular/ImpactRegular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+}
+
+@font-face {
+        font-family: "Raleway";
+        src: url("../css/fonts/Raleway/Raleway-Regular.ttf") format("truetype"), 
+             url("../css/fonts/Raleway/Raleway-Light.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+}
+
+body {
+
+    margin: 0;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.header {
+    
+    display: flex;
+    flex-direction: row;
+    min-height: 75px;
+    height: 4%;
+    padding: 0 4%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main {
+    
+    width: 77%;
+}
+
+.footer {
+
+    min-height: 85px;
+    height: 5%;
+    width: 100%;
+}
+
+.bl-l {
+
+    width: 11.5%;
+    border-right: 1px solid rgb(111, 111, 111);
+}
+
+.bl-r {
+
+    width: 11.5%;
+    border-left: 1px solid rgb(111, 111, 111);
+}
+
+.bl-m {
+
+    width: 77%;
+}
+
+.content-box {
+    
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    padding: 7.5% 6.25% 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.video-box {
+
+    width: 55%;
+}
+
+.main-description {
+
+    width: 40%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.content-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5% 0 2%;
+}
+
+.bl-copyright {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.menu-list {
+    
+    font-size: 18px;
+    font-family: 'Raleway light', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.bl-social {
+
+    padding: 35px 33px;
+    max-width: 94px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+.social-link:first-child {
+    
+    display: inline-block;
+    padding-bottom: 36px;
+}
+
+.menu-item {
+
+    margin-top: 25px;
+    line-height: 0.9;
+}
+
+.menu-item:first-child {
+
+    margin-top: 0;
+}
+
+.h1 {
+    
+    margin: 40px 0 15px;
+    font-size: 4em;
+    line-height: 1;
+    font-family: 'Impact', sans-serif;
+}
+
+.line {
+
+  background-color: #e90000;
+  width: 90px;
+  height: 6px;
+  border-radius: 5px;
+  box-shadow: 0 0 12px rgba(233,0,0,1);
+  background-image: -moz-linear-gradient( 45deg, rgba(237,59,75,0.4) 0%, rgba(76,59,146,0.4) 100%);
+  background-image: -webkit-linear-gradient( 45deg, rgba(237,59,75,0.4) 0%, rgba(76,59,146,0.4) 100%);
+  background-image: -ms-linear-gradient( 45deg, rgba(237,59,75,0.4) 0%, rgba(76,59,146,0.4) 100%);
+}
+
+.bl-desc {
+
+    margin: 35px 0 0 0;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+.h2 {
+    
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-size: 2em;
+    line-height: 0.8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.video-container {
+
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 56%;
+    max-height: 410px;
+    background-image: url('../images/youtube.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0 0 21px rgba(53,185,249,0.15);
+}
+
+.p-title {
+    
+    margin: 5px 0 0 0;
+    font-size: 0.8em;
+    line-height: 0.8;
+    font-weight: 300;
+}
+
+
+.bl-preview {
+    
+    position: relative;
+    width: 30%;
+    height: 14%;
+    margin: 0 auto;
+    padding: 0 54px;
+}
+
+.company-name {
+    
+    font-family: "Raleway light", sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.bl-pagination {
+
+    display: block;
+    transform: rotate(-90deg);
+}
+
+.bl-menu-title {
+
+    display: block;
+    transform: rotate(-90deg);
+}
+
+.active-page {
+
+    font-size: 2em;
+    font-family: "Impact", sans-serif;
+    font-weight: 600;
+}
+
+.bl-page {
+    
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #525252;
+    font-family: "Impact", sans-serif;
+}
+
+.fl-column {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.btn { 
+    
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    font-size: 1.2em;
+    line-height: 0.8;
+    color: #fff;
+    padding: 8px 18px;
+    box-shadow: 0 0 5px rgba(233,0,0,0.8);
+
+}
+
+.tel-btn {
+
+    font-size: 28px;
+    font-family: 'Raleway light', sans-serif;
+}
+
+.bl-search {
+    
+    padding: 15px 18px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.btn-search {
+
+    margin-right: 40px;
+}
+
+.preview-container {
+
+    border: 1px solid #fff;
+    padding: 20px 15px;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sl-preview {
+    
+    width: 45%;
+    height: 100%;
+    min-height: 50px;
+    background: #f0f0f0;
+}
+
+.arrow-left {
+
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 14px;
+    height: 28px;
+    background-image: url('../images/arrow-left.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.arrow-right {
+
+    position: absolute;
+    right: 0;
+    top: 45%;
+    width: 14px;
+    height: 28px;
+    background-image: url('../images/arrow-right.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
