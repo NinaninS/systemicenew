@@ -150,6 +150,9 @@
 					</div>
 				</div>
 
+				<div class="tr-bottom tr-active"></div>
+				<div class="tr-bottom"></div>
+
 				<div class="arrow-left"></div>
 				<div class="arrow-right"></div>
 				
@@ -177,12 +180,12 @@
 
 			<ul class="menu-list">
 				<li class="menu-item menu-active">О компании</li>
-				<li class="menu-item">Услуги</li>
-				<li class="menu-item">Портфолио</li>
-				<li class="menu-item">Команда</li>
-				<li class="menu-item">Партнеры</li>
-				<li class="menu-item">Новости</li>
-				<li class="menu-item">Контакты</li>
+				<li class="menu-item"><a href="service/">Услуги</a></li>
+				<li class="menu-item"><a href="portfolio/">Портфолио</a></li>
+				<li class="menu-item"><a href="team/">Команда</a></li>
+				<li class="menu-item"><a href="partner/">Партнеры</a></li>
+				<li class="menu-item"><a href="news/">Новости</a></li>
+				<li class="menu-item"><a href="contact/">Контакты</a></li>
 			</ul>
 
 			<div class="bl-social">
