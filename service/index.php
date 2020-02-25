@@ -24,7 +24,7 @@
 		<div class="bl-l fl-column">
 
 			<div>
-				<img src="../images/logo.png">
+				<a href="../"><img src="../images/logo.png"></a>
 			</div>
 
 			<div class="bl-menu-title">

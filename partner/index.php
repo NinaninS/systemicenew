@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Systemice Service</title>
+	<title>Systemice Partner</title>
 	<meta content="systemice" name="keywords">
 	<meta content="" name="description">
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
@@ -19,7 +19,7 @@
 
 <body>
 
-	<div class="wrapper contact">
+	<div class="wrapper partner">
 		
 		<div class="bl-l fl-column">
 
@@ -28,11 +28,11 @@
 			</div>
 
 			<div class="bl-menu-title">
-				<span class="company-name">КОНТАКТЫ</span>
+				<span class="company-name">ПАРТНЕРЫ</span>
 			</div>
 
 			<div class="bl-pagination">
-				<span class="active-page">07 </span>
+				<span class="active-page">05 </span>
 				<span class="bl-page"> / 07</span>
 			</div>
 		</div>
@@ -47,7 +47,6 @@
 			</div>
 			 
 			<div class="content-box">
-
 
 			</div>
 
@@ -91,9 +90,9 @@
 				<li class="menu-item"><a href="../service/">Услуги</a></li>
 				<li class="menu-item"><a href="../portfolio/">Портфолио</a></li>
 				<li class="menu-item"><a href="../team/">Команда</a></li>
-				<li class="menu-item"><a href="../partner/">Партнеры</a></li>
+				<li class="menu-item menu-active"><a href="../partner/">Партнеры</a></li>
 				<li class="menu-item"><a href="../news/">Новости</a></li>
-				<li class="menu-item menu-active"><a href="../contact/">Контакты</a></li>
+				<li class="menu-item"><a href="../contact/">Контакты</a></li>
 			</ul>
 
 			<div class="bl-social">

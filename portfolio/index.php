@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Systemice Service</title>
+	<title>Systemice Portfolio</title>
 	<meta content="systemice" name="keywords">
 	<meta content="" name="description">
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
@@ -24,7 +24,7 @@
 		<div class="bl-l fl-column">
 
 			<div>
-				<img src="../images/logo.png">
+				<a href="../"><img src="../images/logo.png"></a>
 			</div>
 
 			<div class="bl-menu-title">
@@ -46,12 +46,6 @@
 				<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
 			</div>
 			 
-			<div class="content-box">
-
-				
-
-			</div>
-
 
 			<div class="bl-preview">
 				
@@ -65,6 +59,19 @@
 				<div class="arrow-left"></div>
 				<div class="arrow-right"></div>
 				
+			</div>
+
+			<div class="content-main">
+
+				<div class="slider">
+					
+					<div class="sl-card sl-box-1"></div>
+					<div class="sl-card sl-box-2"></div>
+					<div class="sl-card sl-box-2"></div>
+					<div class="sl-card sl-box-2"></div>
+					<div class="sl-card sl-box-2 active-slide"></div>
+				</div>
+
 			</div>
 
 		</div>
