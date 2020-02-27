@@ -89,8 +89,8 @@ a {
     
     display: flex;
     flex-direction: row;
-    height: 75%;
-    padding: 7.5% 8% 0;
+    height: auto;
+    padding: 7.5% 4% 0;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -231,12 +231,17 @@ a {
 }
 
 .bl-preview {
-     
+
+    position: relative;
     width: 30%;
-    height: 14%;
     margin: 0 auto;
     padding: 0 54px 20px;
     text-align: center;
+}
+
+.h-page .bl-preview {
+
+    height: 14%;
 }
 
 .company-name {
@@ -335,7 +340,6 @@ a {
     width: 45%;
     height: 100%;
     min-height: 50px;
-    background: #f0f0f0;
     cursor: pointer;
 }
 
@@ -370,6 +374,12 @@ a {
 
   border-bottom: 2px solid #e90000;
 
+}
+
+.video {
+
+    padding: 7.5% 4% 0;
+    height: 75%;
 }
 
 .video-preview {
@@ -599,7 +609,6 @@ a {
 .service .content-box {
 
     flex-wrap: wrap;
-    padding: 7.5% 4% 0;
     height: auto;
 }
 
@@ -653,6 +662,11 @@ a {
 .news {
 
     background-image: url('../images/bg-news.jpg');
+}
+
+.team {
+
+    background-image: url('../images/bg-team.jpg');
 }
 
 .partner {
@@ -779,4 +793,111 @@ a {
     width: 45px;
     height: 60px;
     background-size: cover;
+}
+
+.portfolio .bl-preview {
+
+    position: initial;
+}
+
+.h1-more {
+
+    font-size: 96px;
+    font-family: "Impact", sans-serif;
+    line-height: 0.9;
+}
+
+.h3 {
+
+    font-size: 1.5em;
+    line-height: 1;
+    font-family: "RalewayMedium", sans-serif;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.sotrud-contact {
+    
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 25px;
+}
+
+.sotrud-img {
+
+    height: 70%;
+}
+
+.right-wth {
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team .content-box {
+
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.link-svg {
+
+    transform: rotate(180deg);
+}
+
+.slide-user {
+    
+    min-height: 90px;
+    background: linear-gradient(to top, rgba(0, 0, 0, .9) 5%, rgba(36, 50, 74, 0) 40%), url('../images/sotrud1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.team .preview-container {
+    
+    padding: 0;
+    min-height: 100px;
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .h1-more {
+
+        font-size: 78px;
+        margin-bottom: 18px;
+    }
+
+    .h3 {
+
+        font-size: 1.3em;
+    }
+
+    .sotrud-contact {
+
+        margin-top: 5px;
+    }
+
+    .h1 {
+
+        font-size: 3em;
+    }
+
+    .h2 {
+
+        font-size: 1.6em;
+    }
+
+    .bl-desc {
+
+        font-size: 1.2em;
+    }
+
+    .service .h1 {
+
+        font-size: 30px;
+    }
 }

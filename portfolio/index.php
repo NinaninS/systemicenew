@@ -55,7 +55,7 @@
 				<div class="tr-bottom"></div>
 				<div class="tr-bottom"></div>
 				<div class="tr-bottom"></div>
-
+				
 				<div class="arrow-left"></div>
 				<div class="arrow-right"></div>
 				
@@ -121,6 +121,7 @@
                             </div>
                         </div>
 					</div>
+
 					<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
 						<div class="bg-hover">
                             <div class="event-info">
@@ -135,6 +136,7 @@
                             </div>
                         </div>
 					</div>
+
 				</div>
 
 			</div>
@@ -189,7 +191,6 @@
 		</div>
 
 	</div>
-	
 
 </body>
 </html>

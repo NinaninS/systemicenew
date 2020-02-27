@@ -37,7 +37,7 @@
 			</div>
 		</div>
 
-		<div class="main">
+		<div class="main h-page">
 			
 			<div class="header">
 
@@ -139,12 +139,7 @@
 					<div class="sl-preview video-preview">
 						<div class="bg-btn"></div>
 					</div>
-					<svg 
-					 xmlns="http://www.w3.org/2000/svg"
-					 xmlns:xlink="http://www.w3.org/1999/xlink"
-					 width="23px" height="14px">
-					<image  x="0px" y="0px" width="23px" height="14px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAOCAMAAADzLXfBAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABm1BMVEXpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAADpAAD////wVj9zAAAAh3RSTlMAAQUIBgsHCgQ8kJl9JjWNnYAvAkqXn3EhN8DsliczsvGiLEnR6YceFFXT65MtTcbwKBVm3eeCGhFW0OqJTsVn23hb/YUlUMTukR8Sa9jjdTKp/P69mvvIMD63pxx/7VwkcubcI/IJ2nDgG47zzlgNIHcubeR29NJdA0b3bEDHe1neYRdIQQxM/VkvAAAAAWJLR0SIa2YWWgAAAAd0SU1FB+QCEhEvG0RMB4YAAAEpSURBVBjTY2AEAQYICaNAgImZhZWNhYkNSDIxsjCzsbNxgMVZOLm4eXhZ+fgFBIWE2UVExcQlwDqYJKXapWVk5eTbFRSVmJVV2lXV1EESjBqaWu3aOrp6+u0GAoZGxibtpmbmIA2MFpZW7dY2vLZ27QYyEhr2Du2mjkYQHU5WzqYurm7u7R6eXt4+vu1+/t5gqwMCg4JDeGVDw9rDIxgio9rbo2OAwhxesXFhWvEJiUntycYWKZ6p7eG2aQyMaV482s7p9koZSe2ZiVm82TntuXn5QHcWFHo4m/gUFZe0+5V68dqUtZdXgEyvrFKpTq7xqq0LyqyPYW1obLdqaq4EmS4hklcVwxrTkqcswcIk65bXas4ECSD2NuZKRo60tjQOBkYWViAHJAoAxg1AuE3Q/MYAAAAASUVORK5CYII=" />
-					</svg>
+					<img class="link-arrow" src="../images/arrow-right.png">
 					<div class="sl-preview map-pass">
 						<div class="map-mini"></div>
 					</div>

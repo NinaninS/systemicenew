@@ -47,22 +47,48 @@
 			</div>
 			 
 			<div class="content-box">
+				
+				<img class="sotrud-img" src="../images/sotrud1.png">
 
+				<div class="right-wth">
+					<h1 class="h1-more">ЗАМКОВА ЛАРИСА</h1>
+
+					<div class="line"></div>
+
+					<h3 class="h3">РУКОВОДИТЕЛЬ ОТДЕЛА РАЗВИТИЯ</h3>
+
+					<div class="sotrud-contact">
+						<b>Телефон:</b> <a href="tel:74995883939">+7 (499) 588-39-39</a> (доб. 887) <br>
+						<b>Email:</b> zamkova@mailbox.ru
+					</div>
+				</div>
 			</div>
 
 
 			<div class="bl-preview">
 				
+				<div class="preview-container">
 
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+
+					<div class="sl-preview"></div>
+					<img class="link-arrow" src="../images/arrow-left.png">
+					<div class="sl-preview slide-user"></div>
+					
+					<img class="link-arrow" src="../images/arrow-right.png">
+					<div class="sl-preview"></div>
+
+				</div>
+
+				<div class="tr-bottom"></div>
 				<div class="tr-bottom tr-active"></div>
 				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-
+				
 				<div class="arrow-left"></div>
 				<div class="arrow-right"></div>
-				
 			</div>
 
 		</div>
