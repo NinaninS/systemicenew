@@ -50,7 +50,9 @@
 
 				<div class="service-block clearfix">
 					
-					<div class="service-img" style="background-image: url('../images/kt.jpg');"></div>
+					<div class="img-wrapper">
+						<div class="service-img" style="background-image: url('../images/kt.jpg');"></div>
+					</div>
 
 					<div class="service-desc">
 						<h1 class="h1">КЕЙТЕРИНГ</h1>
@@ -70,7 +72,9 @@
 
 				<div class="service-block clearfix">
 
-					<div class="service-img" style="background-image: url('../images/bgame.jpg');"></div>
+					<div class="img-wrapper">
+						<div class="service-img" style="background-image: url('../images/bgame.jpg');"></div>
+					</div>
 
 					<div class="service-desc">
 						<h1 class="h1">БИЗНЕС-ИГРЫ</h1>
@@ -90,7 +94,9 @@
 
 				<div class="service-block clearfix">
 
-					<div class="service-img" style="background-image: url('../images/bt.jpg');"></div>
+					<div class="img-wrapper">
+						<div class="service-img" style="background-image: url('../images/bt.jpg');"></div>
+					</div>
 
 					<div class="service-desc">
 						<h1 class="h1">BUSINESS TRAVEL</h1>
@@ -110,7 +116,9 @@
 
 				<div class="service-block clearfix">
 					
-					<div class="service-img" style="background-image: url('../images/ved.jpg');"></div>
+					<div class="img-wrapper">
+						<div class="service-img" style="background-image: url('../images/ved.jpg');"></div>
+					</div>
 
 					<div class="service-desc">
 						<h1 class="h1">ВЕДУЩИЕ</h1>

@@ -48,6 +48,141 @@
 			 
 			<div class="content-box">
 				
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+			
+				
+			</div>
+			<div class="content-box">
+				
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
 				
 			</div>
 
@@ -55,17 +190,49 @@
 			<div class="bl-preview">
 				
 
-				<div class="tr-bottom tr-active"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
+				<span class="tr-bottom" onclick="currentSlide(1)"></span>
+				<span class="tr-bottom" onclick="currentSlide(2)"></span>
+				<a class="arrow-left" onclick="minusSlide()"></a>
+				<a class="arrow-right" onclick="plusSlide()"></a>
 
-				<div class="arrow-left"></div>
-				<div class="arrow-right"></div>
-				
 			</div>
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlide() {
+    showSlides(slideIndex += 1);
+}
+
+function minusSlide() {
+    showSlides(slideIndex -= 1);  
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("content-box");
+    var dots = document.getElementsByClassName("tr-bottom");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" tr-active", "");
+    }
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].className += " tr-active";
+
+}
+</script>
 		</div>
 
 		<div class="bl-r content-container">

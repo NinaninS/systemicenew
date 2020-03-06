@@ -4,16 +4,17 @@
 	<meta charset="utf-8">
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Systemice Service</title>
+	<title>Systemice Contact</title>
 	<meta content="systemice" name="keywords">
 	<meta content="" name="description">
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
-	<script type="text/javascript" src="../js/vue.js"></script>
-	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" defer></script>
+	<script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/fontstyle.css">
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script type="text/javascript" src="../js/script.js"></script>
+	<script src="../js/map.js" defer></script>
+	<script src="../js/script.js"></script>
 
 </head>
 
@@ -48,22 +49,74 @@
 			 
 			<div class="content-box">
 
+				<div class="contact-info">
+					
+					<h1 class="h1">КОНТАКТЫ</h1>
+					<div class="line"></div>
 
-			</div>
+					<p class="p-contact"><b>Наш адрес:</b><br>г. Москва, ул. Бауманская д. 6.</p>
+					<p class="p-contact"><b>Телефон:</b><br> +7 (495) 215-24-80</p>
+					<p class="p-contact"><b>Электропочта:</b><br> info@systemice.ru</p>
 
+					<form class="contact-form">
+						<p>Заявка на обратный звонок</p>
 
-			<div class="bl-preview">
-				
+						<div class="line"></div>
 
-				<div class="tr-bottom tr-active"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
+						<div class="form-line">
+							<div class="input-box">
+								<input type="text" name="name" placeholder="Ваше имя">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
 
-				<div class="arrow-left"></div>
-				<div class="arrow-right"></div>
-				
+							<div class="input-box">
+								<input type="text" name="phone" placeholder="Телефон">
+								<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+							</div>
+						</div>
+
+						<label class="checkbox-block">
+			                <input type="checkbox" name="" class="input-check" checked>
+			                <span class="checkbox-style">
+			                	<div class="spy-left"></div>
+								<div class="spy-top"></div>
+								<div class="spy-right"></div>
+								<div class="spy-bottom"></div>
+			                </span>
+							<span class = "i-agree">Я согласен на обработку персональных данных</span>
+						</label>
+
+						<div class="button-box">
+							<input class="send-button" type="button" value="Отправить">
+							<div class="spy-left"></div>
+							<div class="spy-top"></div>
+							<div class="spy-right"></div>
+							<div class="spy-bottom"></div>
+						</div>
+
+					</form>
+
+				</div>
+
+				<div class="contact-map">
+					
+					<div id="map-block"></div>
+
+					<div class="copy-coordinat">
+						<img src="../images/sheet.png"><span>Скопировать координаты для навигатора копия</span>
+					</div>
+
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
 			</div>
 
 		</div>
