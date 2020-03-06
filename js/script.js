@@ -16,4 +16,5 @@ $(document).ready(function(){
 		$('.map-mini').removeClass('gray-bg');
 	});
 
+
 });

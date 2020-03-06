@@ -45,6 +45,11 @@
 
 				<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
 			</div>
+
+			<div class="header-mob">
+				<a class="btn" href="">Собрать мероприятие</a>
+				<a class="mob-menu"></a>
+			</div>
 			 
 			<div class="content-box video">
 				
@@ -86,7 +91,7 @@
 							<span> >15</span> лет
 							<p>работаем в сфере<br>делового туризма</p>
 						</div>
-						<div class="info-data">
+						<div class="info-data info-active">
 							<span>4</span> 
 							<p>представительства<br> в городах России</p>
 						</div>
