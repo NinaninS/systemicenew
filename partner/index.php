@@ -39,12 +39,7 @@
 
 		<div class="main">
 			
-			<div class="header">
-
-				<a class="btn" href="">Собрать собственное мероприятие</a>
-
-				<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
-			</div>
+			<?php require_once('../files/header.php');?>
 			 
 			<div class="content-box">
 				
@@ -195,6 +190,19 @@
 				<a class="arrow-left" onclick="minusSlide()"></a>
 				<a class="arrow-right" onclick="plusSlide()"></a>
 
+			</div>
+
+			
+			<div class="footer-mob">
+				
+				<div class="bl-pagination">
+					<span class="active-page">05 </span>
+					<span class="bl-page"> / 07</span>
+				</div>
+
+				<div class="bl-copyright">
+					Ⓒ2014 - 2020
+				</div>
 			</div>
 <script>
 	var slideIndex = 1;

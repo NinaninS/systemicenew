@@ -39,17 +39,7 @@
 
 		<div class="main h-page">
 			
-			<div class="header">
-
-				<a class="btn" href="">Собрать собственное мероприятие</a>
-
-				<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
-			</div>
-
-			<div class="header-mob">
-				<a class="btn" href="">Собрать мероприятие</a>
-				<a class="mob-menu"></a>
-			</div>
+			<?php require_once('files/header.php');?>
 			 
 			<div class="content-box video">
 				
@@ -156,6 +146,18 @@
 				<div class="arrow-left"></div>
 				<div class="arrow-right"></div>
 				
+			</div>
+
+			<div class="footer-mob">
+				
+				<div class="bl-pagination">
+					<span class="active-page">01 </span>
+					<span class="bl-page"> / 07</span>
+				</div>
+
+				<div class="bl-copyright">
+					Ⓒ2014 - 2020
+				</div>
 			</div>
 
 		</div>
