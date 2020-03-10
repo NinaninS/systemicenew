@@ -16,5 +16,12 @@ $(document).ready(function(){
 		$('.map-mini').removeClass('gray-bg');
 	});
 
+	$('.mob-menu').on('click', function(){
+
+		$('.mob-menu').toggleClass('open');
+		$('.menu-wrapper').toggleClass('open-active');
+		$('body').toggleClass('overlay');
+	});
+
 
 });
