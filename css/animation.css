@@ -1,0 +1,14 @@
+.tr-active-animate {
+    left: 50px;
+    transition: left 1s;
+}
+
+
+@keyframes redLine {
+
+    from {left: 50px;}
+    to {left: 50px;}
+}
+
+
+
