@@ -14,7 +14,7 @@
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/script.js"></script>
-
+	<script type="text/javascript" src="js/main-carousel.js"></script>
 </head>
 
 <body>
@@ -184,7 +184,7 @@
 				<li class="menu-item menu-active">О компании</li>
 				<li class="menu-item"><a href="service/">Услуги</a></li>
 				<li class="menu-item"><a href="portfolio/">Портфолио</a></li>
-				<li class="menu-item"><a href="team/">Команда</a></li>
+				<li class="menu-item"><a href="team.php">Команда</a></li>
 				<li class="menu-item"><a href="partner/">Партнеры</a></li>
 				<li class="menu-item"><a href="news/">Новости</a></li>
 				<li class="menu-item"><a href="contact/">Контакты</a></li>
