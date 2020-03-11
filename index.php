@@ -67,7 +67,7 @@
 
 			</div>
 
-			<div class="content-box map">
+			<div class="content-box map hidden-screen">
 				
 				<div class="agency-map">
 					
@@ -123,29 +123,27 @@
 
 
 			<div class="bl-preview">
-				
 				<div class="preview-container">
-
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
-
-					<div class="sl-preview video-preview">
-						<div class="bg-btn"></div>
-					</div>
-					<img class="link-arrow" src="../images/arrow-right.png">
-					<div class="sl-preview map-pass">
-						<div class="map-mini"></div>
+					<img class="link-arrow dop-arrow-right" src="images/arrow-right.png">
+					<div class = "sl-wrapper-shadow">
+						<div class = "sl-wrapper">
+							<img src = "images/m1.png" class="sl-teammate preview-item preview-item-first prev-page-show slide-user-active">
+							<img src = "images/m2.png" class="sl-teammate preview-item preview-item-last next-page-show">
+						</div>
 					</div>
 				</div>
-
-				<div class="tr-bottom tr-active"></div>
-				<div class="tr-bottom"></div>
-
-				<div class="arrow-left"></div>
-				<div class="arrow-right"></div>
-				
+				<div class = "item-dots">
+					<div class = "dots-container clearfix">
+						<div class="tr-bottom prev-page-show tr-active"></div>
+						<div class="tr-bottom next-page-show"></div>
+					</div>
+				</div>
+				<div class="arrow-left prev-page-show"></div>
+				<div class="arrow-right next-page-show"></div>
 			</div>
 
 			<div class="footer-mob">
