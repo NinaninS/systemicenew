@@ -41,7 +41,12 @@
 
 		<div class="main">
 			
-			<?php require_once('files/header.php');?>
+			<div class="header">
+
+				<a class="btn" href="">Собрать собственное мероприятие</a>
+
+				<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
+			</div>
 			 
 			<div class="content-box">
 				
@@ -61,19 +66,14 @@
 				</div>
 			</div>
 
-
 			<div class="bl-preview">
-				
 				<div class="preview-container">
-
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
-
 					<img class="link-arrow dop-arrow-left" src="images/arrow-left.png">
 					<img class="link-arrow dop-arrow-right" src="images/arrow-right.png">
-
 					<div class = "sl-wrapper-shadow">
 						<div class = "sl-wrapper">
 							<img src = "images/1.png" class="sl-teammate preview-item first">

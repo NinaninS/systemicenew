@@ -182,7 +182,7 @@
 				<li class="menu-item"><a href="../">О компании</a></li>
 				<li class="menu-item menu-active"><a href="../service/">Услуги</a></li>
 				<li class="menu-item"><a href="../portfolio/">Портфолио</a></li>
-				<li class="menu-item"><a href="/team.php">Команда</a></li>
+				<li class="menu-item"><a href="../team.php">Команда</a></li>
 				<li class="menu-item"><a href="../partner/">Партнеры</a></li>
 				<li class="menu-item"><a href="../news/">Новости</a></li>
 				<li class="menu-item"><a href="../contact/">Контакты</a></li>

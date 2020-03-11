@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
 
-
     // Предыдущий менеджер в карусели
 
     if (getPrev[0]) {
@@ -150,5 +149,4 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementsByClassName('main-sotrud-img')[0].src = '../images/sotrud' + slides[index].src.slice(slides[index].src.lastIndexOf('/') + 1);
         dots[index].classList.add('tr-active');
     }
-
 });
