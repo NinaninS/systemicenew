@@ -140,8 +140,6 @@
 				<div class="tr-bottom tr-active"></div>
 				<div class="tr-bottom"></div>
 				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
 
 				<div class="arrow-left"></div>
 				<div class="arrow-right"></div>

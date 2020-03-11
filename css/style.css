@@ -1696,12 +1696,15 @@ a {
 
     .service .tr-bottom {
         margin-top: 0;
+        display: inline-block;
+        float: none;
     }
 
     .footer-mob {
 
         display: flex;
         margin: 3% 0;
+        width: 100%;
         align-items: center;
     }
 
@@ -1728,8 +1731,8 @@ a {
         width: 9px;
         height: 9px;
         background-color: #fff;
-      -webkit-animation-delay: 0.5s;
-      animation-delay: 0.5s;
+          -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
         z-index: 10;
     }
 
@@ -1804,34 +1807,46 @@ a {
     .mob-menu.open span:nth-child(1) {
       animation: span-1 0.5s ease-in-out;
       animation-fill-mode:forwards;
+      background-color: #ff0000;
+
     }
     .mob-menu.open  span:nth-child(2) {
       animation: span-2 0.5s ease-in-out;
       animation-fill-mode:forwards;
+      background-color: #ff0000;
     }
     .mob-menu.open  span:nth-child(3) {
       animation: span-3 0.5s ease-in-out;
       animation-fill-mode:forwards;
+      background-color: #ff0000;
     }
     .mob-menu.open  span:nth-child(4) {
       animation: span-4 0.5s ease-in-out;
       animation-fill-mode:forwards;
+      background-color: #ff0000;
     }
     .mob-menu.open  span:nth-child(6) {
       animation: span-6 0.5s ease-in-out;
       animation-fill-mode:forwards;
+      background-color: #ff0000;
     }
     .mob-menu.open  span:nth-child(7) {
       animation: span-7 0.5s ease-in-out;      
       animation-fill-mode:forwards;
+      background-color: #ff0000;
     }
     .mob-menu.open  span:nth-child(8) {
       animation: span-8 0.5s ease-in-out;
       animation-fill-mode:forwards;
+      background-color: #ff0000;
     }
     .mob-menu.open  span:nth-child(9) {
       animation: span-9 0.5s ease-in-out;
       animation-fill-mode:forwards;
+      background-color: #ff0000;
+    }
+    .mob-menu.open  span:nth-child(5) {
+      background-color: #ff0000;
     }
 
     .open-active {
@@ -1936,4 +1951,43 @@ a {
 
         margin-top: 35px;
     }
+
+    .sotrud-img {
+
+        max-width: 290px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .h1-more {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .right-wth {
+
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .h3 { font-size: 18px;}
+
+    .team .content-box { position: relative; padding: 32px 0 10px; }
+
+    .wrapper {
+        background-position: center right;
+    }
+
+    .team .bl-preview {
+        box-sizing: content-box;
+        max-width: 360px;
+        width: 100%;
+        padding: 0 40px 20px;
+    }
+
+    .team .preview-container {
+        padding: 20px 25px;
+    }
+
 }
