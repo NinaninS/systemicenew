@@ -37,7 +37,7 @@
 			</div>
 		</div>
 
-		<div class="main">
+		<div class="main bg-bg">
 			
 			<?php require_once('../files/header.php');?>
 			 
@@ -46,7 +46,7 @@
 					<div class="bl-article">
 						<h1>ВВП России за 2019 год вырос на 1,3%</h1>
 						<div class="line"></div>
-						<p class="p-article">Подзаголовок: <b>Может быть тут указывать автора</b></p>
+						<p class="p-subtitle">Подзаголовок: <b>Может быть тут указывать автора</b></p>
 
 						<div class="news-slider">
 							<img class="sl-search" src="../images/search.png">
@@ -77,6 +77,40 @@
 						Aenean libero ex, imperdiet non tellus at, ultrices lacinia eros. Donec eu euismod velit. Curabitur id facilisis nibh. Nunc sem nisi, mattis eget dui id, tristique imperdiet urna. Ut venenatis ante et egestas feugiat. In hac habitasse platea dictumst. Morbi scelerisque leo vitae nisi consectetur, non eleifend massa varius. Vestibulum ornare tellus mi, ut egestas nunc porta sed. Morbi volutpat condimentum sapien, id sagittis enim lacinia vitae. Cras suscipit lorem nisi, eu accumsan sapien porttitor nec. Aenean lacinia lorem sem, quis scelerisque sapien tincidunt et. Aenean non elit ut eros tempor ullamcorper. Sed at lorem nisi. Suspendisse sed mauris magna. In ultrices lacus et vestibulum tempus. Integer volutpat interdum ligula ultrices bibendum. Curabitur luctus turpis eget posuere egestas. Pellentesque.</p>
 					</div>
 				</div>
+
+				<div class="line-mob"></div>
+
+				<div class="article-box">
+					<div class="bl-article">
+						<h1>ВВП России за 2019 год</h1>
+						<div class="line"></div>
+						<p class="p-subtitle">Подзаголовок: <b>Может быть тут указывать автора</b></p>
+
+						<div class="news-slider">
+							<img class="sl-search" src="../images/search.png">
+							<div class="news-sldr-box">
+								<img src="../images/nws.png">
+							</div>
+
+							<div class="bl-preview">
+							
+								<span class="tr-bottom tr-active"></span>
+								<span class="tr-bottom"></span>
+								<span class="tr-bottom"></span>
+								<a class="arrow-left"></a>
+								<a class="arrow-right"></a>
+
+							</div>
+						</div>
+
+						<p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, enim a ultrices eleifend, diam eros mattis nibh, a tristique purus felis in risus. Quisque aliquet felis ante, ut gravida odio cursus vitae. Ut laoreet nulla nisi, vel malesuada dolor consequat vel. Quisque ultrices molestie nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ut dolor id nisl maximus varius. Duis consequat condimentum lectus, ornare tempus justo auctor at.<br><br>
+						Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies. Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget. Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.<br>
+						Vivamus sodales, augue et lacinia efficitur, massa neque sollicitudin tortor, id viverra diam metus vitae sapien. Sed hendrerit ipsum odio. Nunc molestie feugiat nulla, at lobortis turpis rutrum in. Quisque elementum sapien eget lobortis iaculis. Fusce dignissim in felis sit amet laoreet. Etiam pretium felis nec elit fermentum, sit amet vulputate erat iaculis. Donec odio nulla, fringilla eu dignissim in, ultricies et arcu. Duis bibendum convallis erat, eu fermentum tellus malesuada ut. Sed scelerisque risus libero, non faucibus nulla suscipit sed.<br>
+						Morbi massa dolor, iaculis vitae mi vel, cursus placerat sapien. Nam elementum ligula eu vestibulum elementum. Mauris volutpat ultricies mauris, nec feugiat felis pretium eget. Praesent aliquet sed est vel ullamcorper. In eget quam et urna luctus faucibus id sit amet sapien. Fusce tellus orci, mollis ac ultrices id, facilisis convallis nisl. Aliquam tincidunt odio odio, et pharetra orci eleifend mollis. Donec at sodales leo. Donec maximus dolor vitae suscipit hendrerit. Nam et ultricies quam, eu viverra mauris.<br>
+						Praesent viverra est ac orci faucibus finibus. Nullam dictum justo ac diam faucibus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut mi non dui ornare pretium sed vitae eros. Nam metus tortor, lacinia quis congue sed, tempus cursus justo. Etiam eu aliquet velit. Nullam nec nisi nec dui egestas vulputate id in felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque eleifend, odio ac convallis feugiat, ligula dolor gravida risus, eu mattis mauris lectus malesuada neque. Maecenas vel dui ac turpis fringilla vehicula in eu erat. Praesent faucibus odio in massa vestibulum, in congue est iaculis. Vivamus quis nulla</p>
+					</div>
+				</div>
+
 				<div class="bl-list">
 						<a class="arrow-top"></a>
 						<a class="arrow-bottom"></a>
@@ -138,6 +172,7 @@
 				<div class="bl-copyright">
 					Ⓒ2014 - 2020
 				</div>
+
 			</div>
 
 		</div>
@@ -164,7 +199,7 @@
 				<li class="menu-item"><a href="../">О компании</a></li>
 				<li class="menu-item"><a href="../service/">Услуги</a></li>
 				<li class="menu-item"><a href="../portfolio/">Портфолио</a></li>
-				<li class="menu-item"><a href="../team/">Команда</a></li>
+				<li class="menu-item"><a href="/team.php">Команда</a></li>
 				<li class="menu-item"><a href="../partner/">Партнеры</a></li>
 				<li class="menu-item menu-active"><a href="../news/">Новости</a></li>
 				<li class="menu-item"><a href="../contact/">Контакты</a></li>
@@ -188,6 +223,7 @@
 				Ⓒ2014 - 2020
 			</div>
 		</div>
+		<div class="bottom-bg"></div>
 
 	</div>
 	
