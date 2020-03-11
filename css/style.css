@@ -118,6 +118,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 1.5% 0 2%;
+    z-index: 2;
 }
 
 .bl-copyright {
@@ -496,7 +497,6 @@ a {
 
 .map {
 
-    display: none;
     padding-left: 4%;
     padding-right: 4%;
 }
@@ -930,6 +930,8 @@ a {
     background-position: top;
 }
 
+/* Команда */
+
 .team .preview-container {
 
     position: relative;
@@ -942,7 +944,7 @@ a {
     height: 120px;
 }
 
-.sl-teammate {
+.team .sl-teammate {
 
     display: block;
     margin: 0 15px 0 0;
@@ -952,20 +954,109 @@ a {
     cursor: pointer;
 }
 
-.slide-user-active {
+.team .slide-user-active {
     opacity: 1;
 }
 
-.sl-teammate:last-child {
-    /*margin-right: 0;*/
-}
-
-.sl-wrapper-shadow {
+.team .sl-wrapper-shadow {
 
     position: relative;
 
     height: 130px;
     display: block;
+}
+
+/* Команда, конец */
+
+/* Главная карусель */
+
+.h-page .item-dots {
+    position: relative;
+    margin: 20px auto;
+    width: 78px;
+    height: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.h-page .preview-container {
+
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    height: 120px;
+}
+
+.h-page .sl-teammate {
+
+    display: block;
+    margin: 0 40px 0 0;
+    width: 135px;
+    opacity: .5;
+    user-select: none;
+    cursor: pointer;
+}
+
+.h-page .slide-user-active {
+    opacity: 1;
+}
+
+.h-page .sl-wrapper-shadow {
+
+    position: relative;
+    height: 130px;
+    display: block;
+}
+
+.h-page .arrow-left {
+    top: 40%;
+}
+
+.h-page .arrow-right {
+    top: 40%;
+}
+
+.h-page .dop-arrow-right {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.content-box {
+
+    display: flex;
+    opacity: 1;
+}
+
+/* Главная карусель, конец */
+
+@keyframes show {
+
+    0% {
+        display: flex!important;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hidden-screen {
+
+    display: none!important;
+}
+
+.visible-screen {
+
+    opacity: 0;
+    animation: show .3s 1;
+    animation-fill-mode: forwards;
 }
 
 .sl-wrapper {
@@ -1671,6 +1762,7 @@ a {
         background-image: url(../images/arrow-right.png);
         background-repeat: no-repeat;
     }
+<<<<<<< Updated upstream
 
     .service-block {
 
@@ -1990,4 +2082,6 @@ a {
         padding: 20px 25px;
     }
 
+=======
+>>>>>>> Stashed changes
 }
