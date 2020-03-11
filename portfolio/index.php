@@ -39,17 +39,11 @@
 
 		<div class="main">
 			
-			<div class="header">
-
-				<a class="btn" href="">Собрать собственное мероприятие</a>
-
-				<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
-			</div>
+			<?php require_once('../files/header.php');?>
 			 
 
 			<div class="bl-preview">
 				
-
 				<div class="tr-bottom tr-active"></div>
 				<div class="tr-bottom"></div>
 				<div class="tr-bottom"></div>
@@ -139,6 +133,18 @@
 
 				</div>
 
+			</div>
+
+			<div class="footer-mob">
+				
+				<div class="bl-pagination">
+					<span class="active-page">03 </span>
+					<span class="bl-page"> / 07</span>
+				</div>
+
+				<div class="bl-copyright">
+					Ⓒ2014 - 2020
+				</div>
 			</div>
 
 		</div>
