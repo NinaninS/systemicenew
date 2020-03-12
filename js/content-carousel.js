@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
         dots = '',                                                            // Точки
         dotsContainer = document.querySelector('.item-dots');            // Контейнер с нижними полосками
 
+        if (getPrev.length == 0 || getNext.length == 0) return false;
 
         for (let i = 0; i < slides.length; i++) {
             // Добавление точек
@@ -17,49 +18,39 @@ document.addEventListener("DOMContentLoaded", function(){
 
         if (dotsContainer) dotsContainer.innerHTML = dots;
 
-
     let itemDots = document.getElementsByClassName('tr-bottom');
 
-    getPrev[0].addEventListener('click', function(e){
+    if (getPrev[0]) {
+        getPrev[0].addEventListener('click', function(e){
+            activeItemIndex--;
+            activeItemIndex < 0 ? activeItemIndex = slides.length - 1 : ''
+            defineActiveSlide(slides, itemDots);
+            for (let i = 0; i < itemDots.length; i++) {
+                itemDots[i].classList.remove('tr-active');
+            }
+            itemDots[activeItemIndex].classList.add('tr-active');
+        });
+    }
 
-        activeItemIndex--;
-
-        activeItemIndex < 0 ? activeItemIndex = slides.length - 1 : ''
-
-        defineActiveSlide(slides, itemDots);
-
-        for (let i = 0; i < itemDots.length; i++) {
-            itemDots[i].classList.remove('tr-active');
-        }
-        itemDots[activeItemIndex].classList.add('tr-active');
-    })
-
-    getNext[0].addEventListener('click', function(e){
-
-        activeItemIndex++;
-
-        activeItemIndex >= slides.length ? activeItemIndex = 0 : ''
-
-        defineActiveSlide(slides, itemDots);
-
-        for (let i = 0; i < itemDots.length; i++) {
-            itemDots[i].classList.remove('tr-active');
-        }
-        itemDots[activeItemIndex].classList.add('tr-active');
-    })
-
+    if (getNext[0]) {
+        getNext[0].addEventListener('click', function(e){
+            activeItemIndex++;
+            activeItemIndex >= slides.length ? activeItemIndex = 0 : ''
+            defineActiveSlide(slides, itemDots);
+            for (let i = 0; i < itemDots.length; i++) {
+                itemDots[i].classList.remove('tr-active');
+            }
+            itemDots[activeItemIndex].classList.add('tr-active');
+        });
+    }
 
     // Нажатие на клавиатуре
 
     document.addEventListener('keydown', function(event) {
         if (event.code == 'ArrowLeft') {
-
             activeItemIndex--;
-
             activeItemIndex < 0 ? activeItemIndex = slides.length - 1 : ''
-
             defineActiveSlide(slides, itemDots);
-
             for (let i = 0; i < itemDots.length; i++) {
                 itemDots[i].classList.remove('tr-active');
             }
@@ -67,13 +58,9 @@ document.addEventListener("DOMContentLoaded", function(){
         }
 
         if (event.code == 'ArrowRight') {
-
             activeItemIndex++;
-
             activeItemIndex >= slides.length ? activeItemIndex = 0 : ''
-
             defineActiveSlide(slides, itemDots);
-
             for (let i = 0; i < itemDots.length; i++) {
                 itemDots[i].classList.remove('tr-active');
             }
@@ -81,14 +68,13 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 
-
         // Нажатие на красную точку
         for (let i = 0; i < itemDots.length; i++) {
             itemDots[i].addEventListener('click', function(e){
                 let index = getArrayIndex(itemDots, e);
                 activeItemIndex = index;
-                    defineActiveItem(itemDots, index);
-                    defineActiveSlide(slides, itemDots);
+                defineActiveItem(itemDots, index);
+                defineActiveSlide(slides, itemDots);
             });
         }
 
@@ -101,21 +87,17 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Функция, которая делает активным красную точку
     function defineActiveItem(arr, index) {
-
         for (let i = 0; i < arr.length; i++) {
             arr[i].classList.remove('tr-active');
         }
-        console.log(index + ' ** ');
         arr[index].classList.add('tr-active');
     }
 
     function defineActiveSlide (arr1) {
-
         for (let i = 0; i < arr1.length; i++) {
             arr1[i].classList.remove('hidden-screen');
             arr1[i].classList.remove('visible-screen');
             i == activeItemIndex ? arr1[i].classList.add('visible-screen') :  arr1[i].classList.add('hidden-screen');
         }
     }
-
 });

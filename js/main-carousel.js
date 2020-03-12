@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let nextPageLink = document.getElementsByClassName('next-page-show'),
         prevPageLink = document.getElementsByClassName('prev-page-show');
 
-    if (!nextPageLink || !prevPageLink) return false;
+    if (nextPageLink.length == 0 || prevPageLink.length == 0) return false;
 
     let carouselImg = document.getElementsByClassName('sl-teammate'),
         content = document.getElementsByClassName('content-box'),

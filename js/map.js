@@ -10,6 +10,8 @@ function init () {
         searchControlProvider: 0
     });
 
+    document.getElementById('copy-text').setAttribute("data-clipboard-text", "55.76, 37.64");
+
     myGeoObject = new ymaps.GeoObject();
 
     myMap.geoObjects.add(myGeoObject).add(new ymaps.Placemark([55.76, 37.64], {

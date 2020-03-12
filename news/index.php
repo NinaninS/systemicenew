@@ -14,57 +14,52 @@
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script type="text/javascript" src="../js/script.js"></script>
-
+	<script type="text/javascript" src="../js/content-carousel.js"></script>
 </head>
-
 <body>
-
 	<div class="wrapper news">
-		
 		<div class="bl-l fl-column">
-
 			<div>
 				<a href="../"><img src="../images/logo.png"></a>
 			</div>
-
 			<div class="bl-menu-title">
 				<span class="company-name">НОВОСТИ</span>
 			</div>
-
 			<div class="bl-pagination">
 				<span class="active-page">06 </span>
 				<span class="bl-page"> / 07</span>
 			</div>
 		</div>
-
 		<div class="main bg-bg">
-			
 			<?php require_once('../files/header.php');?>
-			 
 			<div class="news-box">
 				<div class="article-box">
 					<div class="bl-article">
 						<h1>ВВП России за 2019 год вырос на 1,3%</h1>
 						<div class="line"></div>
 						<p class="p-subtitle">Подзаголовок: <b>Может быть тут указывать автора</b></p>
-
 						<div class="news-slider">
-							<img class="sl-search" src="../images/search.png">
-							<div class="news-sldr-box">
-								<img src="../images/nws.png">
+							<a class="arrow-left"></a>
+							<a class="arrow-right"></a>
+							<!--<img class="sl-search" src="../images/search.png">-->
+							<div class="news-slides">
+								<div class="news-sldr-box content-slide">
+									<img src="../images/nws.png">
+								</div>
+								<div class="news-sldr-box content-slide">
+									<img src="../images/nws.png">
+								</div>
+								<div class="news-sldr-box content-slide">
+									<img src="../images/nws.png">
+								</div>
+								<div class="news-sldr-box content-slide">
+									<img src="../images/nws.png">
+								</div>
 							</div>
-
 							<div class="bl-preview">
-							
-								<span class="tr-bottom tr-active"></span>
-								<span class="tr-bottom"></span>
-								<span class="tr-bottom"></span>
-								<a class="arrow-left"></a>
-								<a class="arrow-right"></a>
-
+							<div class="item-dots item-service-dots"></div>
 							</div>
 						</div>
-
 						<p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, enim a ultrices eleifend, diam eros mattis nibh, a tristique purus felis in risus. Quisque aliquet felis ante, ut gravida odio cursus vitae. Ut laoreet nulla nisi, vel malesuada dolor consequat vel. Quisque ultrices molestie nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ut dolor id nisl maximus varius. Duis consequat condimentum lectus, ornare tempus justo auctor at.<br><br>
 						Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies. Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget. Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.<br>
 						Vivamus sodales, augue et lacinia efficitur, massa neque sollicitudin tortor, id viverra diam metus vitae sapien. Sed hendrerit ipsum odio. Nunc molestie feugiat nulla, at lobortis turpis rutrum in. Quisque elementum sapien eget lobortis iaculis. Fusce dignissim in felis sit amet laoreet. Etiam pretium felis nec elit fermentum, sit amet vulputate erat iaculis. Donec odio nulla, fringilla eu dignissim in, ultricies et arcu. Duis bibendum convallis erat, eu fermentum tellus malesuada ut. Sed scelerisque risus libero, non faucibus nulla suscipit sed.<br>
@@ -77,32 +72,25 @@
 						Aenean libero ex, imperdiet non tellus at, ultrices lacinia eros. Donec eu euismod velit. Curabitur id facilisis nibh. Nunc sem nisi, mattis eget dui id, tristique imperdiet urna. Ut venenatis ante et egestas feugiat. In hac habitasse platea dictumst. Morbi scelerisque leo vitae nisi consectetur, non eleifend massa varius. Vestibulum ornare tellus mi, ut egestas nunc porta sed. Morbi volutpat condimentum sapien, id sagittis enim lacinia vitae. Cras suscipit lorem nisi, eu accumsan sapien porttitor nec. Aenean lacinia lorem sem, quis scelerisque sapien tincidunt et. Aenean non elit ut eros tempor ullamcorper. Sed at lorem nisi. Suspendisse sed mauris magna. In ultrices lacus et vestibulum tempus. Integer volutpat interdum ligula ultrices bibendum. Curabitur luctus turpis eget posuere egestas. Pellentesque.</p>
 					</div>
 				</div>
-
 				<div class="line-mob"></div>
-
 				<div class="article-box">
 					<div class="bl-article">
 						<h1>ВВП России за 2019 год</h1>
 						<div class="line"></div>
 						<p class="p-subtitle">Подзаголовок: <b>Может быть тут указывать автора</b></p>
-
 						<div class="news-slider">
 							<img class="sl-search" src="../images/search.png">
 							<div class="news-sldr-box">
 								<img src="../images/nws.png">
 							</div>
-
 							<div class="bl-preview">
-							
 								<span class="tr-bottom tr-active"></span>
 								<span class="tr-bottom"></span>
 								<span class="tr-bottom"></span>
 								<a class="arrow-left"></a>
 								<a class="arrow-right"></a>
-
 							</div>
 						</div>
-
 						<p class="p-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum, enim a ultrices eleifend, diam eros mattis nibh, a tristique purus felis in risus. Quisque aliquet felis ante, ut gravida odio cursus vitae. Ut laoreet nulla nisi, vel malesuada dolor consequat vel. Quisque ultrices molestie nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ut dolor id nisl maximus varius. Duis consequat condimentum lectus, ornare tempus justo auctor at.<br><br>
 						Phasellus sit amet odio quis neque lobortis facilisis. Curabitur pretium ac lacus at ultricies. Quisque tincidunt nibh ut nulla venenatis dignissim. Curabitur iaculis erat ac est ultricies posuere. Duis tincidunt suscipit ex pretium fermentum. Mauris urna odio, sagittis ac aliquam sed, pharetra quis ex. Donec convallis tellus nunc, vitae finibus nunc feugiat eget. Sed pharetra faucibus odio non maximus. Donec id lectus elementum, facilisis massa vitae, fermentum tellus. Nulla erat turpis, tristique non mauris et, egestas tempus orci.<br>
 						Vivamus sodales, augue et lacinia efficitur, massa neque sollicitudin tortor, id viverra diam metus vitae sapien. Sed hendrerit ipsum odio. Nunc molestie feugiat nulla, at lobortis turpis rutrum in. Quisque elementum sapien eget lobortis iaculis. Fusce dignissim in felis sit amet laoreet. Etiam pretium felis nec elit fermentum, sit amet vulputate erat iaculis. Donec odio nulla, fringilla eu dignissim in, ultricies et arcu. Duis bibendum convallis erat, eu fermentum tellus malesuada ut. Sed scelerisque risus libero, non faucibus nulla suscipit sed.<br>
@@ -110,12 +98,10 @@
 						Praesent viverra est ac orci faucibus finibus. Nullam dictum justo ac diam faucibus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut mi non dui ornare pretium sed vitae eros. Nam metus tortor, lacinia quis congue sed, tempus cursus justo. Etiam eu aliquet velit. Nullam nec nisi nec dui egestas vulputate id in felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque eleifend, odio ac convallis feugiat, ligula dolor gravida risus, eu mattis mauris lectus malesuada neque. Maecenas vel dui ac turpis fringilla vehicula in eu erat. Praesent faucibus odio in massa vestibulum, in congue est iaculis. Vivamus quis nulla</p>
 					</div>
 				</div>
-
 				<div class="bl-list">
 						<a class="arrow-top"></a>
 						<a class="arrow-bottom"></a>
 					<div class="news-min">
-
 						<div class="slider-min">
 							<div class="sl-box">
 								<div class="sl-img slide-active" style="background-image: url('../images/nws.png');"></div>
@@ -126,7 +112,6 @@
 							</div>
 							<p class="sl-text">"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
 						</div>
-
 						<div class="slider-min">
 							<div class="sl-box">
 								<div class="sl-img" style="background-image: url('../images/nws.png');"></div>
@@ -137,7 +122,6 @@
 							</div>
 							<p class="sl-text">"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
 						</div>
-
 						<div class="slider-min">
 							<div class="sl-box">
 								<div class="sl-img" style="background-image: url('../images/nws.png');"></div>
@@ -148,7 +132,6 @@
 							</div>
 							<p class="sl-text">"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
 						</div>
-
 						<div class="slider-min">
 							<div class="sl-box">
 								<div class="sl-img" style="background-image: url('../images/nws.png');"></div>
@@ -163,38 +146,28 @@
 				</div>
 			</div>
 			<div class="footer-mob">
-				
 				<div class="bl-pagination">
 					<span class="active-page">07 </span>
 					<span class="bl-page"> / 07</span>
 				</div>
-
 				<div class="bl-copyright">
 					Ⓒ2014 - 2020
 				</div>
-
 			</div>
-
 		</div>
-
 		<div class="bl-r content-container">
-
 			<div class="bl-search">
-
 				<div class="btn-search">
 					<img src="../images/search.png">
 				</div>
-
 				<div class="btn-exit">
 					<img src="../images/user.png">
 				</div>
-
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 			</div>
-
 			<ul class="menu-list">
 				<li class="menu-item"><a href="../">О компании</a></li>
 				<li class="menu-item"><a href="../service/">Услуги</a></li>
@@ -204,7 +177,6 @@
 				<li class="menu-item menu-active"><a href="../news/">Новости</a></li>
 				<li class="menu-item"><a href="../contact/">Контакты</a></li>
 			</ul>
-
 			<div class="bl-social">
 				<a href="" class="social-link">
 					<img src="../images/instagram.png">
@@ -212,21 +184,16 @@
 				<a href="" class="social-link">
 					<img src="../images/facebook.png">
 				</a>
-
 					<div class="spy-left"></div>
 					<div class="spy-top"></div>
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 			</div>
-
 			<div class="bl-copyright">
 				Ⓒ2014 - 2020
 			</div>
 		</div>
 		<div class="bottom-bg"></div>
-
 	</div>
-	
-
 </body>
 </html>
