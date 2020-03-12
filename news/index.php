@@ -102,45 +102,87 @@
 						<a class="arrow-top"></a>
 						<a class="arrow-bottom"></a>
 					<div class="news-min">
-						<div class="slider-min">
-							<div class="sl-box">
-								<div class="sl-img slide-active" style="background-image: url('../images/nws.png');"></div>
-								<div class="sl-img">
-									<p class="sl-text">13.09.2019</p>
-									<div class="news-line slide-active"></div>
+						<div class = "news-slider-wrapper">
+							<div class="slider-min slide-active">
+								<div class="sl-box">
+									<div class="sl-img sl-img-backgound" style="background-image: url('../images/nws.png');"></div>
+									<div class="sl-img">
+										<p class="sl-text">13.09.2019</p>
+										<div class="news-line"></div>
+									</div>
 								</div>
+								<p class="sl-text">1"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
 							</div>
-							<p class="sl-text">"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-						</div>
-						<div class="slider-min">
-							<div class="sl-box">
-								<div class="sl-img" style="background-image: url('../images/nws.png');"></div>
-								<div class="sl-img">
-									<p class="sl-text">13.09.2019</p>
-									<div class="news-line"></div>
+							<div class="slider-min">
+								<div class="sl-box">
+									<div class="sl-img sl-img-backgound" style="background-image: url('../images/nws.png');"></div>
+									<div class="sl-img">
+										<p class="sl-text">13.09.2019</p>
+										<div class="news-line"></div>
+									</div>
 								</div>
+								<p class="sl-text">2"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
 							</div>
-							<p class="sl-text">"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-						</div>
-						<div class="slider-min">
-							<div class="sl-box">
-								<div class="sl-img" style="background-image: url('../images/nws.png');"></div>
-								<div class="sl-img">
-									<p class="sl-text">13.09.2019</p>
-									<div class="news-line"></div>
+							<div class="slider-min">
+								<div class="sl-box">
+									<div class="sl-img sl-img-backgound" style="background-image: url('../images/nws.png');"></div>
+									<div class="sl-img">
+										<p class="sl-text">13.09.2019</p>
+										<div class="news-line"></div>
+									</div>
 								</div>
+								<p class="sl-text">3"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
 							</div>
-							<p class="sl-text">"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
-						</div>
-						<div class="slider-min">
-							<div class="sl-box">
-								<div class="sl-img" style="background-image: url('../images/nws.png');"></div>
-								<div class="sl-img">
-									<p class="sl-text">13.09.2019</p>
-									<div class="news-line"></div>
+							<div class="slider-min">
+								<div class="sl-box">
+									<div class="sl-img sl-img-backgound" style="background-image: url('../images/nws.png');"></div>
+									<div class="sl-img">
+										<p class="sl-text">13.09.2019</p>
+										<div class="news-line"></div>
+									</div>
 								</div>
+								<p class="sl-text">4"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
 							</div>
-							<p class="sl-text">"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
+							<div class="slider-min">
+								<div class="sl-box">
+									<div class="sl-img sl-img-backgound" style="background-image: url('../images/nws.png');"></div>
+									<div class="sl-img">
+										<p class="sl-text">13.09.2019</p>
+										<div class="news-line"></div>
+									</div>
+								</div>
+								<p class="sl-text">5"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
+							</div>
+							<div class="slider-min">
+								<div class="sl-box">
+									<div class="sl-img sl-img-backgound" style="background-image: url('../images/nws.png');"></div>
+									<div class="sl-img">
+										<p class="sl-text">13.09.2019</p>
+										<div class="news-line"></div>
+									</div>
+								</div>
+								<p class="sl-text">6"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
+							</div>
+							<div class="slider-min">
+								<div class="sl-box">
+									<div class="sl-img sl-img-backgound" style="background-image: url('../images/nws.png');"></div>
+									<div class="sl-img">
+										<p class="sl-text">13.09.2019</p>
+										<div class="news-line"></div>
+									</div>
+								</div>
+								<p class="sl-text">7"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
+							</div>
+							<div class="slider-min">
+								<div class="sl-box">
+									<div class="sl-img sl-img-backgound" style="background-image: url('../images/nws.png');"></div>
+									<div class="sl-img">
+										<p class="sl-text">13.09.2019</p>
+										<div class="news-line"></div>
+									</div>
+								</div>
+								<p class="sl-text">8"РУСАЛ" приостановил работу своего предприятия в Гайане в связи</p>
+							</div>
 						</div>
 					</div>
 				</div>

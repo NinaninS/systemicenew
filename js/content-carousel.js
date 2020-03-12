@@ -100,4 +100,75 @@ document.addEventListener("DOMContentLoaded", function(){
             i == activeItemIndex ? arr1[i].classList.add('visible-screen') :  arr1[i].classList.add('hidden-screen');
         }
     }
+
+
+    // Вертикальная карусель
+
+    let getTop = document.getElementsByClassName('arrow-top'),                  // Влево
+        getBottom = document.getElementsByClassName('arrow-bottom'),            // Вправо
+        verticalSlides = document.getElementsByClassName('slider-min'),         // Слайды
+        verticalSlider = document.querySelector('.news-min'),                   // Слайдер
+        verticalSliderWrapper = document.querySelector('.news-slider-wrapper'), // Прокручиваемая часть Слайдера
+        activeItemIndexVertical = 0;                                            // Номер активного элемента
+
+
+        if (getTop[0]) {
+            getTop[0].addEventListener('click', function(e){
+
+                if (activeItemIndexVertical >= verticalSlides.length - 1) {
+                    return false
+                }
+
+                activeItemIndexVertical++;
+                verticalSliderAction()
+            });
+        }
+    
+        if (getBottom[0]) {
+            getBottom[0].addEventListener('click', function(e){
+
+                if (activeItemIndexVertical <= 0) {
+                    return false
+                }
+                activeItemIndexVertical--;
+                verticalSliderAction()
+            });
+        }
+
+        function verticalSliderAction() {
+
+            for (let i = 0; i < verticalSlides.length; i++) {
+                document.getElementsByClassName('slider-min')[i].classList.remove('slide-active');
+            }
+
+            let height = 0;
+
+            for (let i = 0; i < activeItemIndexVertical; i++) {
+                height += verticalSlides[i].clientHeight;
+            }
+
+            document.getElementsByClassName('slider-min')[activeItemIndexVertical].classList.add('slide-active')
+            verticalSliderWrapper.style.marginTop = -height + 'px'
+        }
+
+    // Нажатие на клавиатуре
+
+    /*document.addEventListener('keydown', function(event) {
+        if (event.code == 'ArrowUp') {
+
+            console.log('ArrowTop');
+
+            activeItemIndexVertical++;
+            verticalSliderAction()
+        }
+
+        if (event.code == 'ArrowDown') {
+
+            console.log('ArrowBottom');
+
+            activeItemIndexVertical--;
+            verticalSliderAction()
+        }
+    });*/
+
 });
