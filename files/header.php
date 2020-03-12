@@ -64,5 +64,36 @@
 			</div>
 		</div>
 
+		<div class="login-block">
+			<form>
+				<div class="login-item">
+					<input type="text" name="login" placeholder="Логин">
+
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="login-item">
+					<input type="text" name="password" placeholder="Пароль">
+
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+
+				<div class="login-item">
+					<input class="entry-btn" type="button" value="Войти">
+
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<a class="reg-btn">Зарегистрироваться</a>
+			</form>
+		</div>
+
 
 	</header>

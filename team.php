@@ -41,12 +41,7 @@
 
 		<div class="main">
 			
-			<div class="header">
-
-				<a class="btn" href="">Собрать собственное мероприятие</a>
-
-				<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
-			</div>
+			<?php require_once('files/header.php');?>
 			 
 			<div class="content-box">
 				
@@ -109,10 +104,6 @@
 		<div class="bl-r content-container">
 
 			<div class="bl-search">
-
-				<div class="btn-search">
-					<img src="images/search.png">
-				</div>
 
 				<div class="btn-exit">
 					<img src="images/user.png">
