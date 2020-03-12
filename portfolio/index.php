@@ -14,7 +14,7 @@
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script type="text/javascript" src="../js/script.js"></script>
-
+	<script type="text/javascript" src="../js/content-carousel.js"></script>
 </head>
 
 <body>
@@ -44,11 +44,7 @@
 
 			<div class="bl-preview">
 				
-				<div class="tr-bottom tr-active"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
-				<div class="tr-bottom"></div>
+				<div class="item-dots item-service-dots"></div>
 				
 				<div class="arrow-left"></div>
 				<div class="arrow-right"></div>
@@ -57,81 +53,84 @@
 
 			<div class="content-main">
 
-				<div class="slider">
-					
-					<div class="sl-card sl-box-1"style="background-image: url('../images/conf1.jpg')">
-						<div class="bg-hover">
-                            <div class="event-info">
-                                <span class="event-name">EVENT 1</span>
-                                <div class="line"></div>
-                                <div class="event-desc">
-                                	<p>География проекта: <b>г.Ногинск, МО</b></p>
-                                	<p>Год проведения: <b>2018 - 2019</b></p>
-                                	<p>Более <b>1000</b> гостей</p>
-                                	<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
-						<div class="bg-hover">
-                            <div class="event-info">
-                                <span class="event-name">EVENT 2</span>
-                                <div class="line"></div>
-                                <div class="event-desc">
-                                	<p>География проекта: <b>г.Ногинск, МО</b></p>
-                                	<p>Год проведения: <b>2018 - 2019</b></p>
-                                	<p>Более <b>1000</b> гостей</p>
-                                	<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
-						<div class="bg-hover">
-                            <div class="event-info">
-                                <span class="event-name">EVENT 3</span>
-                                <div class="line"></div>
-                                <div class="event-desc">
-                                	<p>География проекта: <b>г.Ногинск, МО</b></p>
-                                	<p>Год проведения: <b>2018 - 2019</b></p>
-                                	<p>Более <b>1000</b> гостей</p>
-                                	<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-					<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
-						<div class="bg-hover">
-                            <div class="event-info">
-                                <span class="event-name">EVENT 4</span>
-                                <div class="line"></div>
-                                <div class="event-desc">
-                                	<p>География проекта: <b>г.Ногинск, МО</b></p>
-                                	<p>Год проведения: <b>2018 - 2019</b></p>
-                                	<p>Более <b>1000</b> гостей</p>
-                                	<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-
-					<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
-						<div class="bg-hover">
-                            <div class="event-info">
-                                <span class="event-name">PECO 2019</span>
-                                <div class="line"></div>
-                                <div class="event-desc">
-                                	<p>География проекта: <b>г.Ногинск, МО</b></p>
-                                	<p>Год проведения: <b>2018 - 2019</b></p>
-                                	<p>Более <b>1000</b> гостей</p>
-                                	<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
-                                </div>
-                            </div>
-                        </div>
-					</div>
-
+				<div class="slider content-slide">
+						<div class="sl-card sl-box-1"style="background-image: url('../images/conf1.jpg')">
+							<div class="bg-hover">
+								<div class="event-info">
+									<span class="event-name">EVENT 1</span>
+									<div class="line"></div>
+									<div class="event-desc">
+										<p>География проекта: <b>г.Ногинск, МО</b></p>
+										<p>Год проведения: <b>2018 - 2019</b></p>
+										<p>Более <b>1000</b> гостей</p>
+										<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
+							<div class="bg-hover">
+								<div class="event-info">
+									<span class="event-name">EVENT 2</span>
+									<div class="line"></div>
+									<div class="event-desc">
+										<p>География проекта: <b>г.Ногинск, МО</b></p>
+										<p>Год проведения: <b>2018 - 2019</b></p>
+										<p>Более <b>1000</b> гостей</p>
+										<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
+							<div class="bg-hover">
+								<div class="event-info">
+									<span class="event-name">EVENT 3</span>
+									<div class="line"></div>
+									<div class="event-desc">
+										<p>География проекта: <b>г.Ногинск, МО</b></p>
+										<p>Год проведения: <b>2018 - 2019</b></p>
+										<p>Более <b>1000</b> гостей</p>
+										<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
+							<div class="bg-hover">
+								<div class="event-info">
+									<span class="event-name">EVENT 4</span>
+									<div class="line"></div>
+									<div class="event-desc">
+										<p>География проекта: <b>г.Ногинск, МО</b></p>
+										<p>Год проведения: <b>2018 - 2019</b></p>
+										<p>Более <b>1000</b> гостей</p>
+										<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
+							<div class="bg-hover">
+								<div class="event-info">
+									<span class="event-name">PECO 2019</span>
+									<div class="line"></div>
+									<div class="event-desc">
+										<p>География проекта: <b>г.Ногинск, МО</b></p>
+										<p>Год проведения: <b>2018 - 2019</b></p>
+										<p>Более <b>1000</b> гостей</p>
+										<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
+									</div>
+								</div>
+							</div>
+						</div>
 				</div>
+				<?php 
+					require('../files/slide.php');
+					require('../files/slide.php');
+					require('../files/slide.php');
+					require('../files/slide.php');
+				?>
 
 			</div>
 

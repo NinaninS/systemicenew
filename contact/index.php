@@ -10,12 +10,14 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" defer></script>
 	<script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="../js/plugins/jquery.inputmask.bundle.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/fontstyle.css">
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script src="../js/map.js" defer></script>
+	<script src="../js/plugins/clipboard.js-master/dist/clipboard.js"></script>
 	<script src="../js/script.js"></script>
-
+	<script type="text/javascript" src="../js/content-carousel.js"></script>
 </head>
 
 <body>
@@ -53,14 +55,14 @@
 					<p class="p-contact"><b>Телефон:</b><br> +7 (495) 215-24-80</p>
 					<p class="p-contact"><b>Электропочта:</b><br> info@systemice.ru</p>
 
-					<form class="contact-form">
+					<form class="contact-form" id = "contact-form">
 						<p>Заявка на обратный звонок</p>
 
 						<div class="line"></div>
 
 						<div class="form-line">
 							<div class="input-box">
-								<input type="text" name="name" placeholder="Ваше имя">
+								<input type="text" name="name" id = "contact-name" placeholder="Ваше имя">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
@@ -68,7 +70,7 @@
 							</div>
 
 							<div class="input-box">
-								<input type="text" name="phone" placeholder="Телефон">
+								<input type="text" name="phone" id = "contact-phone" placeholder="Телефон">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
@@ -88,7 +90,7 @@
 						</label>
 
 						<div class="button-box">
-							<input class="send-button" type="button" value="Отправить">
+							<input class="send-button" id = "send-button" type="button" value="Отправить">
 							<div class="spy-left"></div>
 							<div class="spy-top"></div>
 							<div class="spy-right"></div>
@@ -104,7 +106,7 @@
 					<div id="map-block"></div>
 
 					<div class="copy-coordinat">
-						<img src="../images/sheet.png"><span>Скопировать координаты для навигатора копия</span>
+						<img src="../images/sheet.png"><span id = "copy-text" data-clipboard-text="Скопировать координаты для навигатора копия">Скопировать координаты для навигатора копия</span>
 					</div>
 
 					<div class="spy-left"></div>

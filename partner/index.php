@@ -14,7 +14,7 @@
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script type="text/javascript" src="../js/script.js"></script>
-
+	<script type="text/javascript" src="../js/content-carousel.js"></script>
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 			
 			<?php require_once('../files/header.php');?>
 			 
-			<div class="content-box">
+			<div class="content-box content-slide">
 				
 				<div class="bl-partner">
 					
@@ -108,93 +108,74 @@
 					<div class="spy-right"></div>
 					<div class="spy-bottom"></div>
 				</div>
-			
-				
-			</div>
-			<div class="content-box">
-				
-				<div class="bl-partner">
-					
-					<img class="img-partner" src="../images/company2.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-
-				<div class="bl-partner">
-					
-					<img class="img-partner" src="../images/company2.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-				<div class="bl-partner">
-					
-					<img class="img-partner" src="../images/company2.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-				<div class="bl-partner">
-					
-					<img class="img-partner" src="../images/company.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-				<div class="bl-partner">
-					
-					<img class="img-partner" src="../images/company2.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-				<div class="bl-partner">
-					
-					<img class="img-partner" src="../images/company2.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-				<div class="bl-partner">
-					
-					<img class="img-partner" src="../images/company2.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-				<div class="bl-partner">
-					
-					<img class="img-partner" src="../images/company2.png">
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-				</div>
-				
 			</div>
 
+			<div class="content-box content-slide hidden-screen">
+				<div class="bl-partner">
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="../images/company.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+				<div class="bl-partner">
+					<img class="img-partner" src="../images/company2.png">
+					<div class="spy-left"></div>
+					<div class="spy-top"></div>
+					<div class="spy-right"></div>
+					<div class="spy-bottom"></div>
+				</div>
+			</div>
 
 			<div class="bl-preview">
-				
-
-				<span class="tr-bottom" onclick="currentSlide(1)"></span>
-				<span class="tr-bottom" onclick="currentSlide(2)"></span>
-				<a class="arrow-left" onclick="minusSlide()"></a>
-				<a class="arrow-right" onclick="plusSlide()"></a>
-
+				<div class="item-dots item-service-dots"></div>
+				<a class="arrow-left"></a>
+				<a class="arrow-right"></a>
 			</div>
 
-			
 			<div class="footer-mob">
-				
 				<div class="bl-pagination">
 					<span class="active-page">05 </span>
 					<span class="bl-page"> / 07</span>
@@ -204,43 +185,6 @@
 					Ⓒ2014 - 2020
 				</div>
 			</div>
-<script>
-	var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlide() {
-    showSlides(slideIndex += 1);
-}
-
-function minusSlide() {
-    showSlides(slideIndex -= 1);  
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("content-box");
-    var dots = document.getElementsByClassName("tr-bottom");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" tr-active", "");
-    }
-    slides[slideIndex - 1].style.display = "flex";
-    dots[slideIndex - 1].className += " tr-active";
-
-}
-</script>
 		</div>
 
 		<div class="bl-r content-container">
