@@ -193,6 +193,8 @@
 
 				<a href="" class="get-order">Хочу просто оставить заявку</a>
 
+			</div>
+
 				<div class="footer-mob">
 					
 					<div class="bl-pagination">
@@ -204,17 +206,11 @@
 						Ⓒ2014 - 2020
 					</div>
 				</div>
-			</div>
-
 		</div>
 
 		<div class="bl-r content-container">
 
 			<div class="bl-search">
-
-				<div class="btn-search">
-					<img src="images/search.png">
-				</div>
 
 				<div class="btn-exit">
 					<img src="images/user.png">

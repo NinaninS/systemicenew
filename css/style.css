@@ -2004,6 +2004,35 @@ a {
     .input-box {
         margin-right: 0;
     }
+
+    .event-box .h1 {
+        font-size: 3.5em;
+    }
+
+    .progress-box {
+
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .event-checked {
+        margin-top: 40px;
+    }
+
+    .checkbox-label {
+        margin-bottom: 30px;
+    }
+
+    #star-hall label, .checkbox-span {
+        transform: scale(0.8);
+    }
+
+    .step-btn {
+
+        width: 40%;
+        padding: 16px 0;
+    }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -2016,6 +2045,58 @@ a {
 
         max-height: 25vh;
     }
+
+    .tel-btn { font-size: 22px; }
+
+    .menu-list {font-size: 14px;}
+
+    .bl-pagination {
+
+        width: max-content;
+        margin-bottom:30px;
+    }
+
+    .bl-l img {width: 80%; margin: 0 auto;display: block;}
+
+    .event-footer {
+        margin-top: 5%;
+    }
+
+    .bl-social {
+        padding: 15px 12px;
+        max-width: 70%;
+        text-align: center;
+    }
+
+    .progress-box {
+
+        transform: scale(0.7);
+    }
+
+    .event-checked {max-height: initial;}
+
+    .event .btn {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    .tel-btn {
+        font-size: 18px;
+    }
+
+    .event-arrow-left, .event-arrow-right {display: none;}
+
+    .progress-box {
+        width: max-content;
+    }
+
+    .menu-list { font-size: 12px; }
+
+    .bl-l, .bl-r {display: none;}
+
+    .main { margin: 0 auto; width: 90%; }
 }
 
 @media screen and (max-width: 480px) {
@@ -2626,5 +2707,42 @@ a {
       z-index: 0;
     }
 
+    .progress-box {
+
+        transform: scale(1);
+        height: auto;
+        width: auto;
+    }
+
+    .event-box .h1 {
+        font-size: 2em;
+    }
+
+    .event-check {
+        max-height: 400px;
+    }
+
+    .event-box {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .event-preview {
+        position: relative;
+        padding-bottom: 15px;
+    }
+    
+    .get-order {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        margin: 50px 0 20px 0;
+    }
+
+    .event-check {
+        flex-direction: row;
+    }
+
+    .event-check .checkbox-label{width: 50%;}
 
 }

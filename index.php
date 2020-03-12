@@ -164,10 +164,6 @@
 
 			<div class="bl-search">
 
-				<div class="btn-search">
-					<img src="images/search.png">
-				</div>
-
 				<div class="btn-exit">
 					<img src="images/user.png">
 				</div>
