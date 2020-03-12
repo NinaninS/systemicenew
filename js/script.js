@@ -29,11 +29,10 @@ $(document).ready(function(){
 		$('.btn').append('<span class="bta-hover"></span>');
 	}
 
-	$('.step-btn').on('click', function(){
+	$('.bl-search').on('click', function(){
 
-		$('.step-1').css('display','none');
-		$('.step-2').css('display','flex');
-		$('.active-loader').css('width','50%');
+		$('.login-block').toggle();
+		$('.btn-exit').toggleClass('active');
 	})
 });
 
