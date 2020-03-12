@@ -3,13 +3,13 @@
 		
 		<div class="header">
 
-			<a class="btn" href="">Собрать собственное мероприятие</a>
+			<a class="btn" href=""><span>Собрать собственное мероприятие</span></a>
 
 			<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
 		</div>
 
 		<div class="header-mob">
-			<a class="btn" href="">Собрать мероприятие</a>
+			<a class="btn" href=""><span>Собрать мероприятие</span></a>
 
 			<div class="mob-menu">
 				<span></span>

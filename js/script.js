@@ -23,5 +23,22 @@ $(document).ready(function(){
 		$('body').toggleClass('overlay');
 	});
 
+	if ($("#EventPage").val() == 1) {
+
+		$('.btn').text('Общий прогресс сборки мероприятия');
+		$('.btn').append('<span class="bta-hover"></span>');
+	}
+
+	$('.step-btn').on('click', function(){
+
+		$('.step-1').css('display','none');
+		$('.step-2').css('display','flex');
+
+		$('.active-loader').css('width','50%');
+		
+
+
+	})
+
 
 });
