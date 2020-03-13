@@ -57,21 +57,26 @@
 
 		<div class="other-event">
 
-			<div class="bl-small-event current">
-				<a href="/portfolio1.php"><img src="images/conf1.jpg">
-				<span>EVENT 1</span></a>
+			<a href="/portfolio1.php">
+				<div class="bl-small-event current">
+						<img src="images/conf1.jpg">
+						<span>EVENT 1</span>
+					</div>
+				</a>
 
-			</div>
+			<a href="/portfolio2.php">
+				<div class="bl-small-event">
+					<img src="images/conf1.jpg">
+					<span>EVENT 2</span>
+				</div>
+			</a>
 
-			<div class="bl-small-event">
-				<a href="/portfolio2.php"><img src="images/conf1.jpg">
-				<span>EVENT 2</span></a>
-			</div>
-
-			<div class="bl-small-event">
-				<a href="/portfolio3.php"><img src="images/conf1.jpg">
-				<span>EVENT 3</span></a>
-			</div>
+			<a href="/portfolio3.php">
+				<div class="bl-small-event">
+					<img src="images/conf1.jpg">
+					<span>EVENT 3</span>
+				</div>
+			</a>
 
 		</div>
 		<div class="login-block">
