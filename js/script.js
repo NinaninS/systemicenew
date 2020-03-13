@@ -42,9 +42,16 @@ $(document).ready(function(){
         var link = $(this).find('a').attr('href');
  
         if (cur_url == link) {
-            $(this).addClass('menu-active');
+            $(this).find('a').addClass('menu-active');
         }
     });
+
+	$('.bl-other').on('click', function(){
+
+		$('.other-event').toggle();
+		$('.more-portfolio').toggleClass('active');
+	});
+	
 });
 
 $(function(){
