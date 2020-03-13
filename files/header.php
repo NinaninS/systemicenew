@@ -1,4 +1,4 @@
-	
+
 	<header>
 		
 		<div class="header">
@@ -28,9 +28,9 @@
 			
 			<div class="bl-search">
 
-
 				<div class="btn-exit">
-					<img src="../images/user.png">
+					<div class="img"></div>
+					Войти
 				</div>
 
 					<div class="spy-left"></div>
@@ -64,6 +64,10 @@
 			</div>
 		</div>
 
+
+
+	</header>
+	
 		<div class="login-block">
 			<form>
 				<div class="login-item">
@@ -94,6 +98,3 @@
 				<a class="reg-btn">Зарегистрироваться</a>
 			</form>
 		</div>
-
-
-	</header>

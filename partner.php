@@ -39,7 +39,7 @@
 
 		<div class="main">
 			
-			<?php require_once('../files/header.php');?>
+			<?php require_once('files/header.php');?>
 			 
 			<div class="content-box content-slide">
 				
@@ -187,52 +187,8 @@
 			</div>
 		</div>
 
-		<div class="bl-r content-container">
-
-			<div class="bl-search">
-
-				<div class="btn-search">
-					<img src="../images/search.png">
-				</div>
-
-				<div class="btn-exit">
-					<img src="../images/user.png">
-				</div>
-
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-			</div>
-
-			<ul class="menu-list">
-				<li class="menu-item"><a href="../">О компании</a></li>
-				<li class="menu-item"><a href="../service/">Услуги</a></li>
-				<li class="menu-item"><a href="../portfolio/">Портфолио</a></li>
-				<li class="menu-item"><a href="/team.php">Команда</a></li>
-				<li class="menu-item menu-active"><a href="../partner/">Партнеры</a></li>
-				<li class="menu-item"><a href="../news/">Новости</a></li>
-				<li class="menu-item"><a href="../contact/">Контакты</a></li>
-			</ul>
-
-			<div class="bl-social">
-				<a href="" class="social-link">
-					<img src="../images/instagram.png">
-				</a>
-				<a href="" class="social-link">
-					<img src="../images/facebook.png">
-				</a>
-
-					<div class="spy-left"></div>
-					<div class="spy-top"></div>
-					<div class="spy-right"></div>
-					<div class="spy-bottom"></div>
-			</div>
-
-			<div class="bl-copyright">
-				Ⓒ2014 - 2020
-			</div>
-		</div>
+		
+		<?php require_once('files/bl-right.php');?>
 
 	</div>
 	

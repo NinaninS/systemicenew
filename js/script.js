@@ -34,6 +34,17 @@ $(document).ready(function(){
 		$('.login-block').toggle();
 		$('.btn-exit').toggleClass('active');
 	})
+
+    var location = window.location.href;
+    var cur_url = '/' + location.split('/').pop();
+ 
+    $('.bl-r li').each(function () {
+        var link = $(this).find('a').attr('href');
+ 
+        if (cur_url == link) {
+            $(this).addClass('menu-active');
+        }
+    });
 });
 
 $(function(){
