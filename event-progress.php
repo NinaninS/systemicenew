@@ -15,7 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/team-carousel.js"></script>
+	<script type="text/javascript" src="js/content-carousel.js"></script>
 
 </head>
 
@@ -51,6 +51,7 @@
 					<div class="event-line"></div>
 					<div class="event-line"></div>
 					<div class="event-line"></div>
+					<div class="item-dots item-service-dots"></div>
 					<div class="prev-title">
 						<span class="event-title active">Площадки</span>
 						<span class="event-title">Ивент</span>
@@ -59,42 +60,32 @@
 					</div>
 				</div>
 
-				<div class="event-arrow-right"></div>
-				<div class="event-arrow-left"></div>
+				<div class="event-arrow-right arrow-right"></div>
+				<div class="event-arrow-left arrow-left"></div>
 
-				<div class="progress-box">
-
+				<div class="progress-box content-slide">
 					<div class="event-header">
-						
 						<div class="step step-1">
 							<h1 class="h1">Площадки</h1>
-
 							<span class="event-step">Шаг №1</span>
 						</div>
 						<div class="step step-2">
 							<h1 class="h1">Ивент</h1>
-
 							<span class="event-step">Шаг №2</span>
 						</div>
 						<div class="step step-3">
 							<h1 class="h1">Кейтеринг</h1>
-
 							<span class="event-step">Шаг №3</span>
 						</div>
 						<div class="step step-4">
 							<h1 class="h1">Доп.услуги</h1>
-
 							<span class="event-step">Шаг №4</span>
 						</div>
-
 					</div>
-
 					<div class="loader-line">
 						<div class="active-loader"></div>
 					</div>
-
 					<div class="event-checked step-1">
-						
 							<label class="checkbox-label">
 								<input class="input-checkbox" type="checkbox" name="hotel" checked>
 								<span class="checkbox-span"></span>
@@ -173,23 +164,24 @@
 							</label>
 						</div>
 					</div>
-
 					<div class="event-checked step-2">
-						
 					</div>
 					<div class="event-checked step-3">
-						
 					</div>
 					<div class="event-checked step-4">
-						
 					</div>
-
 					<div class="event-footer">
 						<span class="status-text active-save">Сохранено</span>
 						<a class="step-btn">К следующему шагу</a>
 					</div>
-
 				</div>
+
+				<?php
+
+					include('/files/event-dop.php');
+					include('/files/event-dop.php');
+					include('/files/event-dop.php');
+				?>
 
 				<a href="" class="get-order">Хочу просто оставить заявку</a>
 

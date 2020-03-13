@@ -151,6 +151,58 @@ document.addEventListener("DOMContentLoaded", function(){
             verticalSliderWrapper.style.marginTop = -height + 'px'
         }
 
+        // Нажатие на отдельный элемент
+
+        for (let i = 0; i < verticalSlides.length; i++) {
+            verticalSlides[i].addEventListener('click', function(e){
+    
+                for (let k = 0; k < verticalSlides.length; k++) {
+                    document.getElementsByClassName('slider-min')[k].classList.remove('slide-active');
+                }
+
+                let index = 0;
+                if (this == event.target) {
+                    index = i;console.log('**');
+                }
+                //for (let a = 0; a < verticalSlides[i].childNodes.length; a++) {
+                    //if (verticalSlides[i].childNodes[a] == event.target) {
+                //        console.log(verticalSlides[i].childNodes[a]);
+                    //}
+                //}
+                //console.log(verticalSlides[i].childNodes.length);
+                //else {
+                //    for (let k = 0; k < verticalSlides[i].childNodes.length; k++) {
+                //        if (verticalSlides[k].childNodes == event.target) {
+                //            index = k;
+                //        }
+                //    }
+                //}
+                //console.log(index);
+
+               // for (let i = 0; i < verticalSlides.length; i++) {
+                //    console.log(e.target);
+                //   if (verticalSlides[i] == event.target) {
+                //        index = i;
+                //        break;
+                //    }
+                //    else {
+                        //for (let k = 0; verticalSlides[i].childNodes; k++) {
+                        //    console.log(k);
+                        //}
+                 //   }
+                //}
+
+            });
+        }
+
+        // Функция, которая получает индекс элемента
+        function getArrayIndex(arr, event){
+            for (let i = 0; i < arr.length; i++) {
+                console.log(event.target);
+                if (arr[i] == event.target) return i;
+            }
+        }
+
     // Нажатие на клавиатуре
 
     /*document.addEventListener('keydown', function(event) {

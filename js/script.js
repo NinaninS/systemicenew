@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 
 	$('.video-preview').on('click', function(){
 
@@ -23,12 +23,6 @@ $(document).ready(function(){
 		$('body').toggleClass('overlay');
 	});
 
-	if ($("#EventPage").val() == 1) {
-
-		$('.btn').text('Общий прогресс сборки мероприятия');
-		$('.btn').append('<span class="bta-hover"></span>');
-	}
-
 	$('.bl-search').on('click', function(){
 
 		$('.login-block').toggle();
@@ -44,6 +38,7 @@ $(document).ready(function(){
         if (cur_url == link) {
             $(this).find('a').addClass('menu-active');
         }
+
     });
 
 	$('.bl-other').on('click', function(){
@@ -52,6 +47,35 @@ $(document).ready(function(){
 		$('.more-portfolio').toggleClass('active');
 	});
 	
+
+	// JS страницы Собрать свое мероприятие
+
+
+	if ($("#EventPage").val() == 1) {
+
+		document.getElementsByClassName('btn')[0].style.display = "none";
+		document.getElementsByClassName('event-progress-stripe')[0].style.display = "block";
+
+
+		let slides = document.getElementsByClassName('progress-box'),
+			progressWidth = parseInt(document.getElementsByClassName('event-progress-stripe')[0].clientWidth),
+			slideWidth = Math.ceil(progressWidth / slides.length);
+
+		let stopProgress = 0;
+
+		document.getElementsByClassName('arrow-right')[0].addEventListener('click', function(){
+			if (stopProgress != 0) return false;
+
+			let widthBefore = parseInt(document.getElementsByClassName('event-progress')[0].clientWidth);
+
+				document.getElementsByClassName('event-progress')[0].style.width = widthBefore + slideWidth + 'px';
+				stopProgress = 500;
+				setTimeout(function() {stopProgress = 0}, 500);
+		});
+
+	}
+
+
 });
 
 $(function(){

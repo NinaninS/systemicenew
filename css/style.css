@@ -294,17 +294,16 @@ a {
     padding: 2% 0;
 }
 
-.btn { 
-    
+.btn {
+
     display: inline-block;
     background-color: rgb(255, 0, 0);
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 0.9;
     font-family: 'RalewaySemiBold', sans-serif;
     color: #fff;
     padding: 10px 19px;
     box-shadow: 0 0 22px 5px rgba(233,0,0,0.5);
-
 }
 
 .tel-btn {
@@ -1359,9 +1358,22 @@ position: absolute;
 
 
     .slider-min {
+        position: relative;
 
         width: 95%;
         padding-bottom: 15px;
+
+        cursor: pointer;
+    }
+
+    .slider-min-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 2;
     }
 
     .news-line {
@@ -1770,6 +1782,56 @@ position: absolute;
 
     .event {
         background-image: url('../images/bg-event.jpg');
+    }
+
+    .event-progress-stripe {
+
+        width: 315px;
+        height: 15px;
+
+        position: relative;
+        display: none;
+    }
+
+    .common-progress-text {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        padding: 10px 0;
+        text-align: center;
+
+        margin: auto;
+    }
+
+    .event-progress {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: red;
+        width: 0;
+
+        box-sizing: border-box;
+
+        transition: width .5s;
+    }
+    
+    .event-text {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background-color: transparent;
+        z-index: 2;
     }
 
     .checkbox-label {
