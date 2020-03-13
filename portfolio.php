@@ -54,7 +54,7 @@
 			<div class="content-main">
 
 				<div class="slider content-slide">
-						<div class="sl-card sl-box-1"style="background-image: url('../images/conf1.jpg')">
+						<div class="sl-card sl-box-1"style="background-image: url('../images/conf1.jpg')"><a href="portfolio1.php">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">EVENT 1</span>
@@ -66,7 +66,7 @@
 										<p>Заказчик: <b>СПАО Ресо-Гарантия</b></p>
 									</div>
 								</div>
-							</div>
+							</div></a>
 						</div>
 						<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
 							<div class="bg-hover">
@@ -150,6 +150,7 @@
 
 		<?php require_once('files/bl-right.php');?>
 
+		<div class="bottom-bg"></div>
 	</div>
 
 </body>
