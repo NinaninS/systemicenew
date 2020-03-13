@@ -14,6 +14,7 @@
 	<link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/content-carousel.js"></script>
 </head>
 
 <body>
