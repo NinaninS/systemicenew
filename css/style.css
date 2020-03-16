@@ -100,6 +100,7 @@ a {
 .video-box {
 
     width: 55%;
+    animation: opacity 0.5s ease-in-out;
 }
 
 .main-description {
@@ -187,6 +188,7 @@ a {
     margin: 35px 0 0 0;
     font-size: 1.3em;
     line-height: 1.2em;
+    
 }
 
 .h2 {
@@ -526,7 +528,6 @@ position: absolute;
 
     right: 60%;
     left: 0;
-    left: -1px;
 }
 
 .bl-social .spy-right {
@@ -2335,6 +2336,227 @@ position: absolute;
         font-family: 'RalewayMedium',sans-serif;
         box-shadow: 0 0 20px 2px rgba(255,0,0,0.75);
     }
+
+    .line {
+        animation: opacity 3.2s ease-in-out;
+    }
+
+    .h-page .bl-desc {
+        position: relative;
+        animation: rights 1.6s ease-in-out;
+    }
+
+    .video .h1{
+       position: relative;
+       animation: rights 1.8s ease-in-out;
+    }
+
+    .tel-btn {
+       animation: mig 2.2s ease-in-out;
+    }
+
+    .btn {
+
+       animation: mig 2.6s ease-in-out;
+    }
+
+    .bl-l, .bl-r {
+
+       animation: opacity 2.2s ease-in-out;
+    }
+
+    .map .h1{
+       position: relative;
+       animation: rights 1s ease-in-out;
+    }
+    .map .bl-info {
+
+       animation: opacity 2s ease-in-out;
+    }
+
+    .sity .spb {
+
+       animation: right-s 1s linear;
+    }
+    .sity .sochi {
+        
+       animation: right-s 1.6s linear;
+    }
+    .sity .tula {
+        
+       animation: right-s 1.4s linear;
+    }
+    .sity .msk {
+        
+       animation: right-s 1.2s linear;
+    }
+
+    .bl-partner {
+
+       animation: opacity 1.2s linear;
+    }
+
+    .news-slider {
+
+       animation: opacity 1.4s linear;
+    }
+
+    .p-article {
+        position: relative;
+       animation: opacity 1.6s linear;
+    }
+
+    .news-box h1 {
+        position: relative;
+       animation: rights 1s linear;
+    }
+    .p-subtitle{
+
+        position: relative;
+       animation: rights 1.3s linear;
+    }
+
+    .bl-list {
+
+       animation: opacity 1.8s linear;
+    }
+
+    .service-block {
+        position: relative;
+        animation: rights 0.6s linear;
+    }
+
+    .sl-box-1 {
+
+        animation: rights 0.8s linear;
+    }
+
+    .sl-box-2 {
+        
+        animation: rights 1.2s linear;
+    }
+
+    .map-bg, .contact-map {
+
+        animation: rights 1.2s linear;
+    }
+    
+    .preview-container {
+        animation: opacity 1.6s ease-in-out;
+    }
+
+    .item-dots {
+
+        animation: lefts 1.8s linear;
+    }
+
+    .arrow-left {
+
+        animation: lefts-mig 2s linear;
+    }
+
+    .arrow-right {
+        
+        animation: rights-mig 2.2s linear;
+    }
+
+    .contact-info .h1 {
+        position: relative;
+        animation: lefts 1s ease-in-out;
+    }
+
+    .p-contact {
+        position: relative;
+        animation: lefts 1.2s ease-in-out;
+    }
+    
+    .contact-form {
+        position: relative;
+        animation: lefts 1.4s ease-in-out;
+    }
+
+    .team .h1-more {
+        position: relative;
+        animation: rights 0.8s linear;
+    }
+
+    .h3 {
+        position: relative;
+        animation: rights 1s linear;
+    }
+    .sotrud-contact {
+        position: relative;
+        animation: rights 1.2s linear;
+    }
+
+    .sotrud-img {
+        position: relative;
+        animation: opacity 1s linear;
+    }
+
+    .slides-block {
+        animation: lefts 0.7s ease-in-out;
+    }
+
+    .event-info {
+        position: relative;
+        animation: lefts 0.5s ease-in-out;
+    }
+
+    .event-description {
+        animation: opacity 1s ease-in-out;
+    }
+
+@keyframes opacity {
+
+      0%{opacity:0;}
+      100%{opacity:1;}
+}
+
+@keyframes rights {
+
+      0%{opacity:0;}
+      80%{opacity:0; right: -20px;}
+      100%{opacity:1; right: 0;}
+}
+
+@keyframes lefts {
+
+      0%{opacity:0;}
+      80%{opacity:0; left: -20px;}
+      100%{opacity:1; left: 0;}
+}
+
+@keyframes lefts-mig {
+
+      0%{opacity:0;}
+      90%{opacity:0; left: 0;}
+      95%{opacity:1; left: -25px;}
+      100%{opacity:1; left: 0;}
+}
+
+@keyframes rights-mig {
+
+      0%{opacity:0;}
+      90%{opacity:0; right: 0;}
+      95%{opacity:1; right: -25px;}
+      100%{opacity:1; right: 0;}
+}
+
+@keyframes right-s {
+
+      0%{opacity:0;}
+      80%{opacity:0;}
+      100%{opacity:1; left: 35%;}
+}
+
+@keyframes mig {
+
+      0%{opacity:0;transform: scale(1);}
+      85%{opacity:0;transform: scale(1);}
+      92%{opacity:1;transform: scale(1.1);}
+      100%{transform: scale(1);}
+}
 
 @media screen and (max-width: 1300px) {
     
