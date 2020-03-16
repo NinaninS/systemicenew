@@ -453,6 +453,7 @@ position: absolute;
 
     padding: 7.5% 4% 0;
     height: 75%;
+    overflow-y: scroll;
 }
 
 .video-preview {
@@ -547,6 +548,7 @@ position: absolute;
     padding-left: 4%;
     padding-right: 4%;
     height: 75%;
+    overflow: scroll;
 }
 
 .agency-map {
@@ -604,9 +606,11 @@ position: absolute;
 
 .sity {
 
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .bl-info {
@@ -2573,7 +2577,11 @@ position: absolute;
         width: 30%;
     }
 }
-
+@media screen and (max-width: 1480px) {
+    .h1 {
+        font-size: 3.4em;
+    }
+}
 @media screen and (max-width: 1300px) {
     
     .h1-more {
@@ -2693,6 +2701,14 @@ position: absolute;
     }
 }
 
+@media screen and (max-width: 1100px) {
+    
+    .h1 {
+        font-size: 2.4em;
+        letter-spacing: 1px;
+    }
+}
+
 @media screen and (max-width: 980px) {
 
     .bl-article h1 {
@@ -2754,6 +2770,21 @@ position: absolute;
     .contact-form p {
         font-size: 22px;
     }
+
+    .h1-more {
+        font-size: 60px;
+    }
+    .sotrud-img{
+        width: 50%;
+    }
+
+    .contact-info .h1 {
+        font-size: 48px;
+    }
+
+    .contact-form {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -2773,98 +2804,6 @@ position: absolute;
     .bl-l, .bl-r {display: none;}
 
     .main { margin: 0 auto; width: 90%; }
-}
-
-@media screen and (max-width: 480px) {
-
-    .wrapper {
-        
-        height: inherit;
-        background-position: right;
-        min-height: 100vh;
-    }
-
-    .bl-l, .bl-r { display: none; }
-
-    .main { width: 100%; padding: 0 3%; box-sizing: border-box;}
-
-    .content-box {
-
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-    }
-
-    .contact-info .h1 {
-
-        font-size: 30px;
-    }
-
-    .contact-info, .contact-map {
-
-        width: 100%;
-    }
-
-    .header {
-
-        padding: 0;
-    }
-
-    .header .tel-btn {
-        display: none;
-    }
-
-    .contact-form {
-
-        margin-top: 20px;
-    }
-
-    .p-contact {
-
-        display: inline-block;
-        margin: 10px 0 0 0;
-    }
-
-    .contact-map {
-
-        margin-top: 30px;
-    }
-
-    #map-block {
-        padding: 14px;
-        min-height: 240px;
-    }
-
-    .video-box, .main-description, .agency-map {
-
-        width: 100%;
-    }
-
-    .video-box .h2, .video-box .p-title { display: none; }
-
-    .h1 { 
-        font-size: 32px; 
-        margin:32px 0 15px 0;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
-
-    .bl-desc {
-        margin-top: 15px;
-        font-size: 16px;
-        line-height: 1.2;
-    }
-
-    .video-container {
-        
-        max-height: 252px;
-        height: 30vh;
-    }
-
-    .video {
-        margin-top: 60px;
-        height: auto;
-    }
 
     .header { display: none; }
 
@@ -2882,162 +2821,15 @@ position: absolute;
         cursor: pointer;
     }
 
-    .bl-preview {
+    .header {
 
-        width: 80%;
-        margin-top: 25px;
-        box-sizing: border-box;
+        padding: 0;
     }
 
-    .tr-bottom {
-        margin-top: 30px;
-        border-radius: 1.5px;
+    .header .tel-btn {
+        display: none;
     }
 
-    .map-pass {
-        background-size: contain;
-    }
-
-    .bl-info {
-
-        flex-wrap: nowrap;
-        overflow: hidden;
-    }
-
-    .map-bg {
-        
-        left: 0;
-        background-position: left;
-        background-image: url('../images/map-mob.png');
-    }
-
-    .sity {
-
-        height: 160%;
-        width: 150%;
-    }
-
-    .map {
-        min-height: 80vh;
-    }
-    
-    .spb, .sochi, .tula, .msk { font-size: 19px; }
-
-    .spb { left: 27%; }
-    .msk { left: 34%; }
-    .tula { left: 34%; }
-    .sochi { left: 37%; }
-
-    .fa-map-marker { font-size: 26px; }
-
-    .map .h1 { font-size: 40px; letter-spacing: 0; margin: 50px 0 10px 0;}
-
-    .info-data span {
-
-        color: #9b0101;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-
-    .info-data, .info-data p {
-
-        color: #717171;
-    }
-
-    .info-active span {
-
-        font-size: 72px;
-        color: #ff0000;
-    }
-    .info-active p, .info-active { color: #fff; }
-
-    .info-data { position:relative;margin: 0 4%; }
-
-    .info-active:after {
-        position: absolute;
-        content: '';
-        display: block;
-        width: 22px;
-        height: 14px;
-        top: 40%;
-        left: -28px;
-        background-image: url(../images/arrow-left.png);
-        background-repeat: no-repeat;
-    }
-
-    .info-active:before {
-
-        position: absolute;
-        content: '';
-        display: block;
-        width: 22px;
-        height: 14px;
-        top: 40%;
-        right: -28px;
-        background-image: url(../images/arrow-right.png);
-        background-repeat: no-repeat;
-    }
-
-    .service-block {
-
-        width: 100%;
-        padding: 15px;
-        margin-top: 30px;
-        margin-bottom: 0;
-        flex-direction: row;
-    }
-
-    .img-wrapper {
-        width: 42%;
-        padding-bottom: 25%;
-    }
-
-    .service-desc {
-        width: 50%;
-    }
-
-    .service {
-
-        background-position: center;
-    }
-
-    .service .line {
-        width: 56px;
-    }
-
-    .service .h1 {
-
-        margin: 0 0 12px;
-    }
-
-    .service .tr-bottom {
-        margin-top: 0;
-        display: inline-block;
-        float: none;
-    }
-
-    .footer-mob {
-
-        display: flex;
-        position: relative;
-        margin: 3% 0;
-        width: 100%;
-        align-items: center;
-        z-index: 1;
-    }
-
-    .bl-pagination {
-
-        transform: none;
-        margin-bottom: 0;
-    }
-
-    .bl-copyright {
-
-        position: absolute;
-        left: 42%;
-    }
-    
     .mob-menu {
 
         position: relative;
@@ -3248,6 +3040,339 @@ position: absolute;
         left: 0;
         bottom: 0;
     }
+    .portfolio, .service, .partner, .contact {
+
+        min-height: 100vh;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .portfolio .slider {
+        flex-direction: column;
+    }
+    .portfolio .sl-card {
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 6%;
+    }
+    .partner .bl-partner{
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 6%;
+        transform: scale(0.8);
+    }
+
+    .portfolio .content-main {
+        height: auto;
+        padding: 0;
+    }
+    .portfolio .footer-mob, .service .footer-mob, .partner .footer-mob, .contact .footer-mob {
+        display: flex;
+        align-items: center;
+    }
+    .bl-pagination {
+        transform: none;
+        margin-bottom: 0;
+    }
+    .bl-copyright {
+        position: absolute;
+        left: 42%;
+    }
+
+    .h2 {
+
+        font-size: 1.4em;
+        padding: 20px 0;
+    }
+
+    .btn {
+
+       animation: none;
+    }
+
+    .video-box, .main-description {
+        width: 100%;
+    }
+
+    .video-container {
+        max-height: 252px;
+        height: 30vh;
+    }
+
+    .contact .content-box {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+
+    .content-box {
+
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .contact-info .h1 {
+
+        font-size: 30px;
+    }
+
+    .contact-info, .contact-map {
+
+        width: 100%;
+    }
+
+
+    .contact-form {
+
+        margin-top: 20px;
+    }
+
+    .p-contact {
+
+        display: inline-block;
+        margin: 10px 15px 0 0;
+    }
+
+    .contact-map {
+
+        margin-top: 30px;
+    }
+
+    #map-block {
+        padding: 14px;
+        min-height: 240px;
+    }
+
+    .contact-info {
+        margin-top: 35px;
+    }
+
+    .copy-coordinat {display: none;}
+
+    .service-block {
+        width: 100%;
+    }
+
+    .service .content-box, .video {
+        margin: 20px 0;
+    }
+    
+    .video, .map {
+        overflow: visible;
+        height: auto;
+    }
+    .h-page .footer-mob {
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper {
+        background-position: center right;
+        min-height: 100vh;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    
+
+    .bl-l, .bl-r { display: none; }
+
+    .main { width: 100%; padding: 0 3%; box-sizing: border-box;}
+
+    .video-box, .main-description, .agency-map {
+
+        width: 100%;
+    }
+
+    .video-box .h2, .video-box .p-title { display: none; }
+
+    .h1 { 
+        font-size: 32px; 
+        margin:32px 0 15px 0;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .bl-desc {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .video-container {
+        
+        max-height: 252px;
+        height: 30vh;
+    }
+
+    .video {
+        margin-top: 60px;
+        height: auto;
+        overflow: visible;
+    }
+
+    .bl-preview {
+
+        width: 80%;
+        margin-top: 25px;
+        box-sizing: border-box;
+    }
+
+    .tr-bottom {
+        margin-top: 30px;
+        border-radius: 1.5px;
+    }
+
+    .map-pass {
+        background-size: contain;
+    }
+
+    .bl-info {
+
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .map-bg {
+        
+        left: 0;
+        background-position: left;
+        background-image: url('../images/map-mob.png');
+    }
+
+    .sity {
+
+        height: 160%;
+        width: 150%;
+    }
+
+    .map {
+        min-height: 80vh;
+        overflow: visible;
+    }
+    
+    .spb, .sochi, .tula, .msk { font-size: 19px; }
+
+    .spb { left: 27%; }
+    .msk { left: 34%; }
+    .tula { left: 34%; }
+    .sochi { left: 37%; }
+
+    .fa-map-marker { font-size: 26px; }
+
+    .map .h1 { font-size: 40px; letter-spacing: 0; margin: 50px 0 10px 0;}
+
+    .info-data span {
+
+        color: #9b0101;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .info-data, .info-data p {
+
+        color: #717171;
+    }
+
+    .info-active span {
+
+        font-size: 72px;
+        color: #ff0000;
+    }
+    .info-active p, .info-active { color: #fff; }
+
+    .info-data { position:relative;margin: 0 4%; }
+
+    .info-active:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 22px;
+        height: 14px;
+        top: 40%;
+        left: -28px;
+        background-image: url(../images/arrow-left.png);
+        background-repeat: no-repeat;
+    }
+
+    .info-active:before {
+
+        position: absolute;
+        content: '';
+        display: block;
+        width: 22px;
+        height: 14px;
+        top: 40%;
+        right: -28px;
+        background-image: url(../images/arrow-right.png);
+        background-repeat: no-repeat;
+    }
+
+    .service-block {
+
+        width: 100%;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        flex-direction: row;
+    }
+
+    .img-wrapper {
+        width: 42%;
+        padding-bottom: 25%;
+    }
+
+    .service-desc {
+        width: 50%;
+    }
+
+    .service {
+
+        background-position: center;
+    }
+
+    .service .line {
+        width: 56px;
+    }
+
+    .service .h1 {
+
+        margin: 0 0 12px;
+    }
+
+    .service .tr-bottom {
+        margin-top: 0;
+        display: inline-block;
+        float: none;
+    }
+
+    .footer-mob {
+
+        display: flex;
+        position: relative;
+        margin: 3% 0;
+        width: 100%;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .bl-pagination {
+
+        transform: none;
+        margin-bottom: 0;
+    }
+
+    .bl-copyright {
+
+        position: absolute;
+        left: 42%;
+    }
+
 
     .h-page .bl-preview {
 
@@ -3301,9 +3426,6 @@ position: absolute;
 
     .team .content-box { position: relative; padding: 32px 0 10px; }
 
-    .wrapper {
-        background-position: center right;
-    }
 
     .team .bl-preview {
         box-sizing: content-box;
