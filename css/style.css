@@ -3574,7 +3574,7 @@ position: absolute;
     }
 
     .tr-bottom {
-        margin-top: 30px;
+        margin-top: 0;
         border-radius: 1.5px;
     }
 
