@@ -2756,6 +2756,39 @@ position: absolute;
     }
 }
 
+@media screen and (max-width: 750px) {
+
+    .bl-preview {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0 54px 20px;
+        text-align: center;
+    }
+    .sl-wrapper {
+        left: 0;
+        right: 0;
+    }
+    .h-page .preview-container {
+        padding: 10px 20px;
+    }
+    .h-page .sl-teammate {
+        width: 45%;
+    }
+    .h-page .sl-teammate:last-child {
+        margin-right: 0;
+    }
+    .h-page .preview-container {
+        height: auto;
+    }
+    .h-page .sl-wrapper-shadow {
+        height: auto;
+    }
+    .sl-wrapper {
+        position: relative;
+    }
+}
+
 @media screen and (max-width: 630px) {
 
     .tel-btn {
@@ -2890,7 +2923,6 @@ position: absolute;
     }
 
     .tr-bottom {
-        margin-top: 30px;
         border-radius: 1.5px;
     }
 
@@ -3519,14 +3551,12 @@ position: absolute;
     }
     .h-page .sl-teammate {
 
-        width: 55%;
-        max-width: 105px;
-        margin: 0 30px 0 0;
+        margin: 0 10% 0 0;
+    }
+    .bl-preview {
+        padding: 0 40px 20px;
     }
 
-    .h-page .sl-wrapper-shadow {
-        height: 60px;
-    }
     .h-page .bl-preview {
         width: auto;
     }
@@ -3545,7 +3575,6 @@ position: absolute;
 
     .sl-wrapper {
         width: 100%;
-        justify-content: space-between;
     }
 
     .map .h1 {
@@ -3575,7 +3604,24 @@ position: absolute;
      .partner .content-box {
         height: auto;
      }
-
+     /* Нижний переключатель слайдов */
+     .h-page .preview-container {
+        height: auto;
+    }
+    .h-page .dop-arrow-right {
+        width: 15px;
+    }
+    .arrow-left {
+        left: 3%;
+        width: 20px;
+        height: 20px;
+    }
+    .arrow-right {
+        right: 3%;
+        width: 20px;
+        height: 20px;
+    }
+    /* Нижний переключатель слайдов, конец */
 }
 
 @media screen and (max-width: 400px) {
