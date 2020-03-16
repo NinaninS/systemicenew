@@ -794,23 +794,25 @@ position: absolute;
 
 .slider {
 
-    width: 100%;
+    width: 88%;
     height: 100%;
-        display: flex;
+    margin: 0 auto;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 .sl-box-1 {
 
-    width: 60%;
-    max-width: 830px;
+    width: 66%;
+    /*max-width: 830px;*/
 }
 
 .sl-box-2 {
 
-    width: 29%;
-    max-width: 400px;
+    width: 32%;
+    /*max-width: 400px;*/
 }
 
 .sl-card {
@@ -827,6 +829,7 @@ position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
     transition: linear 0.5s;
+    box-shadow: 0 0 10px 1px rgba(255,255,255,0.3);
 }
 
 .portfolio .bl-preview {
@@ -900,7 +903,7 @@ position: absolute;
 
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: 4%;
     width: 45px;
     height: 60px;
     background-size: cover;
@@ -910,7 +913,7 @@ position: absolute;
 
     position: absolute;
     top: 50%;
-    right: 2%;
+    right: 4%;
     width: 45px;
     height: 60px;
     background-size: cover;
@@ -1288,6 +1291,7 @@ position: absolute;
     transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
 }
 
     ::-webkit-scrollbar {
@@ -2499,7 +2503,6 @@ position: absolute;
     }
 
     .event-info {
-        position: relative;
         animation: lefts 0.5s ease-in-out;
     }
 
@@ -2556,6 +2559,19 @@ position: absolute;
       85%{opacity:0;transform: scale(1);}
       92%{opacity:1;transform: scale(1.1);}
       100%{transform: scale(1);}
+}
+
+
+
+@media screen and (min-width: 2100px) {
+
+    .contact .content-box {
+        justify-content: space-evenly;
+    }
+
+    .contact .contact-info {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 1300px) {
