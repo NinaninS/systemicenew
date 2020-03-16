@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
 	<script type="text/javascript" src="../js/vue.js"></script>
 	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/fontstyle.css">
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -86,7 +87,7 @@
 
 							<div class="form-line">
 								<div class="input-box">
-									<input type="text" name="name" id = "portfolio-name" placeholder="Ваше имя">
+									<input type="text" name="name" class = "contact-name" placeholder="Ваше имя">
 									<div class="spy-left"></div>
 									<div class="spy-top"></div>
 									<div class="spy-right"></div>
@@ -94,7 +95,7 @@
 								</div>
 
 								<div class="input-box">
-									<input type="text" name="phone" id = "portfolio-phone" placeholder="Телефон">
+									<input type="text" name="phone" class = "contact-phone" placeholder="Телефон">
 									<div class="spy-left"></div>
 									<div class="spy-top"></div>
 									<div class="spy-right"></div>
@@ -114,7 +115,7 @@
 							</label>
 
 							<div class="button-box">
-								<input class="send-button" id = "send-order" type="button" value="Отправить">
+								<input class="send-button" type="button" value="Отправить">
 								<div class="spy-left"></div>
 								<div class="spy-top"></div>
 								<div class="spy-right"></div>
