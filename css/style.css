@@ -2787,6 +2787,39 @@ position: absolute;
     }
 }
 
+@media screen and (max-width: 750px) {
+
+    .bl-preview {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0 54px 20px;
+        text-align: center;
+    }
+    .sl-wrapper {
+        left: 0;
+        right: 0;
+    }
+    .h-page .preview-container {
+        padding: 10px 20px;
+    }
+    .h-page .sl-teammate {
+        width: 45%;
+    }
+    .h-page .sl-teammate:last-child {
+        margin-right: 0;
+    }
+    .h-page .preview-container {
+        height: auto;
+    }
+    .h-page .sl-wrapper-shadow {
+        height: auto;
+    }
+    .sl-wrapper {
+        position: relative;
+    }
+}
+
 @media screen and (max-width: 630px) {
 
     .tel-btn {
@@ -2821,13 +2854,159 @@ position: absolute;
         cursor: pointer;
     }
 
-    .header {
+    .bl-preview {
 
-        padding: 0;
+        width: 80%;
+        margin-top: 25px;
+        box-sizing: border-box;
     }
 
-    .header .tel-btn {
-        display: none;
+    .tr-bottom {
+        border-radius: 1.5px;
+    }
+
+    .map-pass {
+        background-size: contain;
+    }
+
+    .bl-info {
+
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+
+    .map-bg {
+        
+        left: 0;
+        background-position: left;
+        background-image: url('../images/map-mob.png');
+    }
+
+    .sity {
+
+        height: 160%;
+        width: 150%;
+    }
+
+    .map {
+        min-height: 80vh;
+    }
+    
+    .spb, .sochi, .tula, .msk { font-size: 19px; }
+
+    .spb { left: 27%; }
+    .msk { left: 34%; }
+    .tula { left: 34%; }
+    .sochi { left: 37%; }
+
+    .fa-map-marker { font-size: 26px; }
+
+    .map .h1 { font-size: 40px; letter-spacing: 0; margin: 50px 0 10px 0;}
+
+    .info-data span {
+
+        color: #9b0101;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .info-data, .info-data p {
+
+        color: #717171;
+    }
+
+    .info-active span {
+
+        font-size: 72px;
+        color: #ff0000;
+    }
+    .info-active p, .info-active { color: #fff; }
+
+    .info-data { position:relative;margin: 0 4%; }
+
+    .info-active:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 22px;
+        height: 14px;
+        top: 40%;
+        left: -28px;
+        background-image: url(../images/arrow-left.png);
+        background-repeat: no-repeat;
+    }
+
+    .info-active:before {
+
+        position: absolute;
+        content: '';
+        display: block;
+        width: 22px;
+        height: 14px;
+        top: 40%;
+        right: -28px;
+        background-image: url(../images/arrow-right.png);
+        background-repeat: no-repeat;
+    }
+
+    .service-block {
+
+        width: 100%;
+        padding: 15px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        flex-direction: row;
+    }
+
+    .img-wrapper {
+        width: 42%;
+        padding-bottom: 25%;
+    }
+
+    .service-desc {
+        width: 50%;
+    }
+
+    .service {
+
+        background-position: center;
+    }
+
+    .service .line {
+        width: 56px;
+    }
+
+    .service .h1 {
+
+        margin: 0 0 12px;
+    }
+
+    .service .tr-bottom {
+        margin-top: 0;
+        display: inline-block;
+        float: none;
+    }
+
+    .footer-mob {
+
+        display: flex;
+        position: relative;
+        margin: 3% 0;
+        width: 100%;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .bl-pagination {
+
+        transform: none;
+        margin-bottom: 0;
+    }
+
+    .bl-copyright {
+
+        position: absolute;
+        left: 42%;
     }
 
     .mob-menu {
@@ -3641,14 +3820,12 @@ position: absolute;
     }
     .h-page .sl-teammate {
 
-        width: 55%;
-        max-width: 105px;
-        margin: 0 30px 0 0;
+        margin: 0 10% 0 0;
+    }
+    .bl-preview {
+        padding: 0 40px 20px;
     }
 
-    .h-page .sl-wrapper-shadow {
-        height: 60px;
-    }
     .h-page .bl-preview {
         width: auto;
     }
@@ -3697,7 +3874,24 @@ position: absolute;
      .partner .content-box {
         height: auto;
      }
-
+     /* Нижний переключатель слайдов */
+     .h-page .preview-container {
+        height: auto;
+    }
+    .h-page .dop-arrow-right {
+        width: 15px;
+    }
+    .arrow-left {
+        left: 3%;
+        width: 20px;
+        height: 20px;
+    }
+    .arrow-right {
+        right: 3%;
+        width: 20px;
+        height: 20px;
+    }
+    /* Нижний переключатель слайдов, конец */
 }
 
 @media screen and (max-width: 400px) {
