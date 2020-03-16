@@ -10,6 +10,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 	<script type="text/javascript" src="js/vue.js"></script>
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/fontstyle.css">
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">

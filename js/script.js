@@ -93,37 +93,49 @@ $(function(){
 
 	// Форма на странице Контакты
 
-	if (!document.getElementById("contact-phone")) return false
+	let im = new Inputmask("+7 (999) 999-99-99");
+	let phones = document.getElementsByClassName("contact-phone");
 
-	let  im = new Inputmask("+7 (999) 999-99-99");
-	let y = im.mask(document.getElementById("contact-phone"));
+	for (let i = 0; i < phones.length; i++) {
+		im.mask(phones[i]);
+	}
 
-	document.getElementById('send-button').addEventListener('click', function(){
+	for (let i = 0; i < document.getElementsByClassName('send-button').length; i++) {
 
-		let form = document.getElementById('contact-form'),
-			name = document.getElementById('contact-name'),
-			phone = document.getElementById('contact-phone'),
-			agreeChecked = form.querySelector('.input-check').checked,
-			validPhone = $('#contact-phone').inputmask("isComplete");
+		document.getElementsByClassName('send-button')[i].addEventListener('click', function(e){
 
-			if (!agreeChecked || !validPhone) {
+			e.preventDefault();
 
-				if (!agreeChecked) {
-					form.querySelector('.i-agree').style = "color: red;"
+			let form = this.parentNode.parentNode,
+				name = form.querySelector('.contact-name'),
+				phone = form.querySelector('.contact-phone'),
+				agreeChecked = form.querySelector('.input-check').checked,
+				validPhone = phone.inputmask.isComplete();
+
+				if (!agreeChecked || !validPhone) {
+
+					if (!agreeChecked) {
+						form.querySelector('.i-agree').style = "color: red;"
+					}
+					if (!validPhone) {
+						phone.parentNode.classList.add('input-box-wrong');
+					}
+					return false;
 				}
-				if (!validPhone) {
-					phone.parentNode.classList.add('input-box-wrong');
-				}
-				return false;
-			}
-	});
+		});
+	}
 
-	document.getElementById('contact-phone').addEventListener('keyup', function(){
-		this.parentNode.classList.remove('input-box-wrong');
-	});
-	document.getElementById('contact-phone').addEventListener('focus', function(){
-		this.parentNode.classList.remove('input-box-wrong');
-	})
+
+
+	for (let i = 0; i < phones.length; i++) {
+		phones[i].addEventListener('keyup', function(){
+			this.parentNode.classList.remove('input-box-wrong');
+		});
+		phones[i].addEventListener('focus', function(){
+			this.parentNode.classList.remove('input-box-wrong');
+		})
+	}
+
 
 	let label = document.getElementsByClassName('checkbox-block');
 	for (let i = 0; i < label.length; i++) {
