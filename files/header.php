@@ -1,9 +1,14 @@
-
 	<header>
 		
 		<div class="header">
 
 			<a class="btn" href="event-progress.php"><span>Собрать собственное мероприятие</span></a>
+
+			<a class="btn event-progress-stripe" href="">
+				
+				<div class = "event-progress"></div>
+				<div class = "common-progress-text">Общий прогресс сборки мероприятия</div>
+			</a>
 
 			<a class="tel-btn" href="tel:74997777777">+7(499)777-77-77</a>
 		</div>
