@@ -2495,6 +2495,24 @@ position: absolute;
     .event .btn {
         font-size: 0.8em;
     }
+
+    .button-box {
+        width: 100%;
+        max-width: 180px;
+    }
+
+    .form-line {
+        flex-direction: column;
+    }
+
+    .form-line .input-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-form p {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -3215,6 +3233,8 @@ position: absolute;
         padding: 20px 0;
         font-size: 18px;
         font-family: 'RalewayLight', sans-serif;
+        overflow-y: scroll;
+        height: 40vh;
     }
 
     .send-button {
@@ -3252,6 +3272,69 @@ position: absolute;
         margin-top: 0px;
     }
 
+    .h-page .preview-container {
+
+        height: 100px;
+    }
+    .h-page .sl-teammate {
+
+        width: 55%;
+        max-width: 105px;
+        margin: 0 30px 0 0;
+    }
+
+    .h-page .sl-wrapper-shadow {
+        height: 60px;
+    }
+    .h-page .bl-preview {
+        width: auto;
+    }
+
+    .h-page .arrow-left, .h-page .arrow-right {
+        top:25%;
+    }
+
+    .sl-wrapper .sl-teammate:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .h-page {
+        height: 100%;
+    }
+
+    .sl-wrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .map .h1 {
+        font-size: 38px;
+    }
+
+    .service .bl-preview {
+        height: auto;
+    }
+
+    .event-page {
+        overflow-y: visible;
+    }
+
+    .slider-block {
+        height: 40vh;
+    }
+
+     .form-line {
+        flex-direction: row;
+     }
+
+    .form-line .input-box {
+        width: 48%;
+     }
+
+     .partner .content-box {
+        height: auto;
+     }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -3271,4 +3354,5 @@ position: absolute;
     .service-desc {
         width: 100%;
     }
+
 }
