@@ -47,10 +47,6 @@
 			<div class="event-box">
 				
 				<div class="event-preview">
-					<div class="event-line step-active"></div>
-					<div class="event-line"></div>
-					<div class="event-line"></div>
-					<div class="event-line"></div>
 					<div class="item-dots item-service-dots"></div>
 					<div class="prev-title">
 						<span class="event-title active">Площадки</span>

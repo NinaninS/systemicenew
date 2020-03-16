@@ -1200,8 +1200,10 @@ position: absolute;
 .bl-list {
     
     width: 16%;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow: hidden;
     position: relative;
-    height: max-content;
 }
 
 .p-article {
@@ -1344,10 +1346,11 @@ position: absolute;
 
         position: relative;
         display: flex;
-        max-height: 75vh;
-        overflow: hidden;
+        margin: 45px auto;
+        box-sizing: border-box;
+        height: calc(100% - 90px);
+        overflow: auto;
         flex-direction: column;
-        margin: 45px 0 0 0;
     }
 
     .news-slider-wrapper {
@@ -1437,7 +1440,7 @@ position: absolute;
 
         position: absolute;
         left: 40%;
-        bottom: -28px;
+        bottom: 0;
         width: 28px;
         height: 28px;
         background-image: url(../images/right.svg);
