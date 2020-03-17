@@ -72,9 +72,9 @@
 					<img class="link-arrow dop-arrow-right" src="images/arrow-right.png">
 					<div class = "sl-wrapper-shadow">
 						<div class = "sl-wrapper">
-							<img src = "images/1.png" class="sl-teammate preview-item first">
+							<img src = "images/2.png" class="sl-teammate preview-item first">
 							<img src = "images/1.png" class="sl-teammate preview-item slide-user-active second">
-							<img src = "images/1.png" class="sl-teammate preview-item third">
+							<img src = "images/3.png" class="sl-teammate preview-item third">
 							<img src = "images/1.png" class="sl-teammate preview-item">
 							<img src = "images/1.png" class="sl-teammate preview-item">
 							<img src = "images/1.png" class="sl-teammate preview-item">
