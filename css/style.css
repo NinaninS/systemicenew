@@ -625,8 +625,8 @@ position: absolute;
 
 .info-data {
 
-    margin-right: 6%;
-    margin-bottom: 6%;
+    margin-right: 7%;
+    margin-bottom: 7%;
     color: #ff0000;
     text-align: center;
     font-size: 18px;
@@ -3320,8 +3320,12 @@ position: absolute;
     }
     .team .sl-wrapper {
         justify-content: start;
+        position: absolute;
+        height: 55px;
+        width: auto;
     }
-
+}
+    @media screen and (max-width: 480px) {
     .content-box {
 
         flex-direction: column;
@@ -3911,11 +3915,6 @@ position: absolute;
         align-items: center;
     }
 
-    .wrapper {
-        background-position: center right;
-        min-height: 100vh;
-        height: 100%;
-    }
 
     .agency-map {
         width: 90%;
@@ -3929,9 +3928,11 @@ position: absolute;
         z-index: 0;
     }
 
-}
-
-@media screen and (max-width: 480px) {
+    .team .sl-wrapper {
+        position: absolute;
+        height: 55px;
+        width: auto;
+    }
 
     .wrapper {
         
@@ -4236,7 +4237,6 @@ position: absolute;
 
         font-size: 28px;
         order: 2;
-
     }
 
     .bl-article .line { display: none;}
@@ -4368,6 +4368,7 @@ position: absolute;
 
     .contact-info input {
         height: 40px;
+        font-size: 12px;
     }
 
     .sl-card {
@@ -4414,7 +4415,7 @@ position: absolute;
     }
 
     .h-page .arrow-left, .h-page .arrow-right {
-        top:25%;
+        top:15%;
     }
 
     .sl-wrapper .sl-teammate:nth-child(2) {
@@ -4423,6 +4424,10 @@ position: absolute;
 
     .h-page {
         height: 100%;
+    }
+
+    .h-page .item-dots {
+        padding: 0;
     }
 
     .sl-wrapper {
@@ -4509,6 +4514,10 @@ position: absolute;
     }
     .team .tr-bottom:last-child {
         margin-right: 10px;
+    }
+    .sl-wrapper {
+        width: 100%;
+        justify-content: start;
     }
 }
 
