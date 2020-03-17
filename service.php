@@ -50,7 +50,7 @@
 						<h1 class="h1">КЕЙТЕРИНГ</h1>
 						<div class="line"></div>
 						<p class="bl-desc">
-							Мероприятия любого масштаба со вкусом, стилем и атмосферой. Лучшие event события Москвы и других городов.
+							Мероприятия любого масштаба со вкусом, стилем и атмосферой. Лучшие event события.
 						</p>
 						<div class="spy-left"></div>
 						<div class="spy-top"></div>
@@ -88,7 +88,7 @@
 						<h1 class="h1">BUSINESS TRAVEL</h1>
 						<div class="line"></div>
 						<p class="bl-desc">
-							Сервисы бронирования Systemice Group работают с отелями и авиак
+							Сервисы бронирования Systemice Group по всему миру.
 						</p>
 					</div>
 					<div class="spy-left"></div>

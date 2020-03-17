@@ -724,7 +724,7 @@ position: absolute;
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 45%;
+    width: 48%;
     max-width: 800px;
     height: max-content;
     padding: 3%;
@@ -2604,7 +2604,18 @@ position: absolute;
     .h1 {
         font-size: 3.4em;
     }
+
+
+    .service .h1 {
+
+        font-size: 30px;
+    }
+
+    .service-desc {
+        width: 54%;
+    }
 }
+
 @media screen and (max-width: 1300px) {
     
     .h1-more {
@@ -2708,20 +2719,9 @@ position: absolute;
     }
 
     .service-block {
-        flex-direction: column;
-        max-height: 100%;
+        padding: 2%;
     }
 
-    .img-wrapper {
-        width: 70%;
-        margin: 0 auto;
-        padding-bottom: 40%;
-        margin-bottom: 15px;
-    }
-
-    .service-desc {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -2729,6 +2729,25 @@ position: absolute;
     .h1 {
         font-size: 2.4em;
         letter-spacing: 1px;
+    }
+
+    .img-wrapper {
+        width: 48%;
+        margin: 0;
+        padding-bottom: 32%;
+    }
+
+    .service-desc {
+        width: 48%;
+    }
+
+    .service .h1 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    .service .bl-desc {
+        margin-top: 5px;
+        font-size: 0.9em;
     }
 }
 
@@ -3261,12 +3280,23 @@ position: absolute;
 
     .service-block {
         width: 100%;
+        padding: 3%;
     }
-
+    .service-desc {
+        width: 45%;
+    }
     .service .content-box, .video {
         margin: 20px 0;
     }
+    .service .h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
     
+    .service .bl-desc {
+        margin-top: 15px;
+        font-size: 1.1em;
+    }
     .video, .map {
         overflow: visible;
         height: auto;
