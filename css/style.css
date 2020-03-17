@@ -936,6 +936,7 @@ position: absolute;
     font-size: 96px;
     font-family: "Impact", sans-serif;
     line-height: 0.9;
+    font-weight: 400;
 }
 
 .h3 {
@@ -3276,7 +3277,7 @@ position: absolute;
     }
 
     .wrapper {
-        background-position: center right;
+        background-position: center;
         min-height: 100vh;
         height: 100%;
     }
@@ -3937,7 +3938,6 @@ position: absolute;
     .wrapper {
         
         height: inherit;
-        background-position: right;
         min-height: 100vh;
     }
     
@@ -4167,10 +4167,11 @@ position: absolute;
     }
 
     .sotrud-img {
-
+        display: block;
         max-width: 290px;
         margin: 0 auto;
         height: auto;
+        width: 80%;
     }
 
     .h1-more {
@@ -4539,4 +4540,29 @@ position: absolute;
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 320px) {
+
+    .h1, .map .h1 {
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+
+    .h1-more {
+        font-size: 28px;
+    }
+
+    .h3 {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .sotrud-contact {
+        font-size: 13px;
+    }
+
+    .menu-wrapper .bl-social, .menu-wrapper .bl-search {
+        padding: 10px 20px;
+    }
 }
