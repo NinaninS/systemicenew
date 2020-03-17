@@ -127,12 +127,14 @@
 				require('files/section.php');
 				require('files/section.php');
 			?>
-			<div class="centered-block">
-				<div class="bl-preview">
-					<div class="item-dots item-service-dots"></div>
-					<div class="arrow-left"></div>
-					<div class="arrow-right"></div>
-				</div>
+
+			<div class="bl-preview">
+				
+				<div class="item-dots item-service-dots"></div>
+
+				<div class="arrow-left"></div>
+				<div class="arrow-right"></div>
+				
 			</div>
 
 			<div class="footer-mob">
