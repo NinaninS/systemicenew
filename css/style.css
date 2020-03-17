@@ -100,7 +100,7 @@ a {
 .video-box {
 
     width: 55%;
-    animation: opacity 0.5s ease-in-out;
+    animation: opacity 0.7s ease-in-out;
 }
 
 .main-description {
@@ -242,11 +242,7 @@ a {
     position: relative;
     width: 370px;
     margin: 0 auto;
-    padding: 0 65px 20px;
-    text-align: center;
-}
-
-.centered-block {
+    padding: 0 54px 20px;
     text-align: center;
 }
 
@@ -663,7 +659,7 @@ position: absolute;
 
 .item-dots {
     position: relative;
-    padding: 13px 0;
+    margin: 20px auto;
     width: 122px;
     height: 3px;
     overflow: hidden;
@@ -696,10 +692,6 @@ position: absolute;
     box-sizing: border-box;
 
     color: pointer;
-}
-
-.tr-bottom:last-child{
-    margin-right: 0;
 }
 
 .tr-active {
@@ -735,8 +727,6 @@ position: absolute;
 
 .service .bl-preview {
     height: 8%;
-    width: auto;
-    display: inline-block;
 }
 
 .service .h1 {
@@ -1193,17 +1183,7 @@ position: absolute;
 .partner .bl-preview {
     width: auto;
     display: inline-block;
-    padding: 12px 65px;
-}
-.partner .arrow-left {
-    top: 0;
-}
-
-.partner .arrow-right {
-    top: 0;
-}
-.partner .item-dots {
-    padding: 0;
+    padding: 0 65px;
 }
 
 .news-box {
@@ -2842,38 +2822,6 @@ position: absolute;
     .sl-wrapper {
         position: relative;
     }
-    .portfolio .bl-preview {
-        position: relative;
-        margin: 30px auto;
-        padding: 0;
-    }
-    .portfolio .arrow-left {
-        top: 0;
-        width: 24px;
-        height: 24px;
-    }
-    .portfolio .arrow-right {
-        top: 0;
-        width: 24px;
-        height: 24px;
-    }
-
-    .portfolio .item-dots {
-        padding: 11px 0;
-        margin: 30px auto;
-    }
-    .portfolio .tr-bottom {
-        width: 20px;
-    }
-
-    .team .preview-container {
-        width: 370px;
-        margin: 0 auto;
-    }
-    .team .item-dots {
-        padding: 0;
-        margin: 20px auto;
-    }
 }
 
 @media screen and (max-width: 630px) {
@@ -2893,131 +2841,6 @@ position: absolute;
     .bl-l, .bl-r {display: none;}
 
     .main { margin: 0 auto; width: 90%; }
-
-
-    .team .bl-preview {
-        width: 270px;
-    }
-    .team .preview-container {
-        width: 270px;
-    }
-
-    .team .sl-teammate {
-        width: 63px;
-    }
-    .team .sl-teammate {
-        margin: 0 10px 0 0;
-    }
-
-    .team .sl-wrapper-shadow {
-        overflow: hidden;
-        height: auto;
-    }
-    .team .dop-arrow-left {
-        width: 16px;
-        left: 85px;
-    }
-    .team .dop-arrow-right {
-        width: 16px;
-        right: 85px;
-    }
-
-    .team .preview-container {
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .wrapper {
-        
-        height: inherit;
-        background-position: right;
-        min-height: 100vh;
-    }
-
-    .bl-l, .bl-r { display: none; }
-
-    .main { width: 100%; padding: 0 3%; box-sizing: border-box;}
-
-    .content-box {
-
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-    }
-
-    .contact-info .h1 {
-
-        font-size: 30px;
-    }
-
-    .contact-info, .contact-map {
-
-        width: 100%;
-    }
-
-    .header {
-
-        padding: 0;
-    }
-
-    .header .tel-btn {
-        display: none;
-    }
-
-    .contact-form {
-
-        margin-top: 20px;
-    }
-
-    .p-contact {
-
-        display: inline-block;
-        margin: 10px 0 0 0;
-    }
-
-    .contact-map {
-
-        margin-top: 30px;
-    }
-
-    #map-block {
-        padding: 14px;
-        min-height: 240px;
-    }
-
-    .video-box, .main-description, .agency-map {
-
-        width: 100%;
-    }
-
-    .video-box .h2, .video-box .p-title { display: none; }
-
-    .h1 { 
-        font-size: 32px; 
-        margin:32px 0 15px 0;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
-
-    .bl-desc {
-        margin-top: 15px;
-        font-size: 16px;
-        line-height: 1.2;
-    }
-
-    .video-container {
-        
-        max-height: 252px;
-        height: 30vh;
-    }
-
-    .video {
-        margin-top: 60px;
-        height: auto;
-    }
-
 
     .header { display: none; }
 
@@ -3189,7 +3012,7 @@ position: absolute;
         position: absolute;
         left: 42%;
     }
-    
+
     .mob-menu {
 
         position: relative;
@@ -3596,8 +3419,7 @@ position: absolute;
     }
 
     .tr-bottom {
-        width: 25px;
-        margin-top: 0;
+        margin-top: 30px;
         border-radius: 1.5px;
     }
 
@@ -3847,6 +3669,7 @@ position: absolute;
 
         font-size: 28px;
         order: 2;
+
     }
 
     .bl-article .line { display: none;}
@@ -3978,7 +3801,6 @@ position: absolute;
 
     .contact-info input {
         height: 40px;
-        font-size: 12px;
     }
 
     .sl-card {
@@ -4025,7 +3847,7 @@ position: absolute;
     }
 
     .h-page .arrow-left, .h-page .arrow-right {
-        top:15%;
+        top:25%;
     }
 
     .sl-wrapper .sl-teammate:nth-child(2) {
@@ -4034,10 +3856,6 @@ position: absolute;
 
     .h-page {
         height: 100%;
-    }
-
-    .h-page .item-dots {
-        padding: 0;
     }
 
     .sl-wrapper {
@@ -4052,9 +3870,7 @@ position: absolute;
     .service .bl-preview {
         height: auto;
     }
-    .service .item-dots {
-        padding: 10px 0;
-    }
+
     .event-page {
         overflow-y: visible;
     }
@@ -4083,41 +3899,15 @@ position: absolute;
     }
     .arrow-left {
         left: 3%;
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
     }
     .arrow-right {
         right: 3%;
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
     }
     /* Нижний переключатель слайдов, конец */
-
-    .team .preview-container {
-        width: 260px;
-    }
-    .team .dop-arrow-left {
-        width: 16px;
-        left: 90px;
-    }
-
-    .team .dop-arrow-right {
-        width: 16px;
-        right: 90px;
-    }
-    .sl-wrapper .sl-teammate:nth-child(2) {
-        margin-right: 10px;
-    }
-    .team .bl-preview {
-        width: 260px;
-        padding: 0 20px;
-    }
-    .team .arrow-left {
-        left: -3%;
-    }
-    .team .arrow-right {
-        right: -3%;
-    }
 }
 
 @media screen and (max-width: 400px) {

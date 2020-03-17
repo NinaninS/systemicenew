@@ -136,12 +136,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
             let height = 0;
 
-            //for (let i = 0; i < activeItemIndexVertical; i++) {
-            //    height += verticalSlides[i].clientHeight;
-           // }
+            for (let i = 0; i < activeItemIndexVertical; i++) {
+                height += verticalSlides[i].clientHeight;
+            }
 
             document.getElementsByClassName('slider-min')[activeItemIndexVertical].classList.add('slide-active')
-            //verticalSliderWrapper.style.marginTop = -height + 'px'
+            verticalSliderWrapper.style.marginTop = -height + 'px'
         }
 
         // Нажатие на отдельный элемент
