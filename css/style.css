@@ -100,7 +100,7 @@ a {
 .video-box {
 
     width: 55%;
-    animation: opacity 0.5s ease-in-out;
+    animation: opacity 0.7s ease-in-out;
 }
 
 .main-description {
@@ -452,8 +452,7 @@ position: absolute;
 .video {
 
     padding: 7.5% 4% 0;
-    height: 75%;
-    overflow-y: scroll;
+    height: 80%;
 }
 
 .video-preview {
@@ -547,8 +546,7 @@ position: absolute;
 
     padding-left: 4%;
     padding-right: 4%;
-    height: 75%;
-    overflow: scroll;
+    height: 80%;
 }
 
 .agency-map {
@@ -623,8 +621,8 @@ position: absolute;
 
 .info-data {
 
-    margin-right: 7%;
-    margin-bottom: 7%;
+    margin-right: 6%;
+    margin-bottom: 6%;
     color: #ff0000;
     text-align: center;
     font-size: 18px;
@@ -791,9 +789,10 @@ position: absolute;
 
 .content-main {
 
-    margin: 0;
+    margin: 0 auto;
     padding: 0 4%;
     height: 90%;
+    max-width: 2100px;
 }
 
 .slider {
@@ -2576,7 +2575,12 @@ position: absolute;
     .contact .contact-info {
         width: 30%;
     }
+
+    .map-bg {
+        background-size: cover;
+    }
 }
+
 @media screen and (max-width: 1480px) {
     .h1 {
         font-size: 3.4em;
@@ -3352,6 +3356,18 @@ position: absolute;
         background-position: center right;
         min-height: 100vh;
         height: 100%;
+    }
+
+    .agency-map {
+        width: 90%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .map-bg {
+        z-index: 0;
     }
 }
 
