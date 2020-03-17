@@ -38,7 +38,6 @@ $(function(){
         if (cur_url == link) {
             $(this).find('a').addClass('menu-active');
         }
-
     });
 
 	$('.bl-other').on('click', function(){
@@ -50,12 +49,10 @@ $(function(){
 
 	// JS страницы Собрать свое мероприятие
 
-
 	if ($("#EventPage").val() == 1) {
 
 		document.getElementsByClassName('btn')[0].style.display = "none";
 		document.getElementsByClassName('event-progress-stripe')[0].style.display = "block";
-
 
 		let slides = document.getElementsByClassName('progress-box'),
 			progressWidth = parseInt(document.getElementsByClassName('event-progress-stripe')[0].clientWidth),
@@ -72,10 +69,7 @@ $(function(){
 				stopProgress = 500;
 				setTimeout(function() {stopProgress = 0}, 500);
 		});
-
 	}
-
-
 });
 
 $(function(){

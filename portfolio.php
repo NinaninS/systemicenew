@@ -42,14 +42,12 @@
 			
 			<?php require_once('files/header.php');?>
 			 
-
-			<div class="bl-preview">
-				
-				<div class="item-dots item-service-dots"></div>
-				
-				<div class="arrow-left"></div>
-				<div class="arrow-right"></div>
-				
+			<div class = "centered-block">
+				<div class="bl-preview">
+					<div class="item-dots item-service-dots"></div>
+					<div class="arrow-left"></div>
+					<div class="arrow-right"></div>
+				</div>
 			</div>
 
 			<div class="content-main">
