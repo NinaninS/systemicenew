@@ -100,7 +100,7 @@ a {
 .video-box {
 
     width: 55%;
-    animation: opacity 0.5s ease-in-out;
+    animation: opacity 0.7s ease-in-out;
 }
 
 .main-description {
@@ -456,8 +456,7 @@ position: absolute;
 .video {
 
     padding: 7.5% 4% 0;
-    height: 75%;
-    overflow-y: scroll;
+    height: 80%;
 }
 
 .video-preview {
@@ -551,8 +550,7 @@ position: absolute;
 
     padding-left: 4%;
     padding-right: 4%;
-    height: 75%;
-    overflow: scroll;
+    height: 80%;
 }
 
 .agency-map {
@@ -610,9 +608,11 @@ position: absolute;
 
 .sity {
 
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .bl-info {
@@ -733,12 +733,6 @@ position: absolute;
     cursor: pointer;
 }
 
-.service .bl-preview {
-    height: 8%;
-    width: auto;
-    display: inline-block;
-}
-
 .service .h1 {
 
     font-size: 46px;
@@ -799,9 +793,10 @@ position: absolute;
 
 .content-main {
 
-    margin: 0;
+    margin: 0 auto;
     padding: 0 4%;
     height: 90%;
+    max-width: 2100px;
 }
 
 .slider {
@@ -962,7 +957,8 @@ position: absolute;
 
 .sotrud-img {
 
-    height: 70%;
+    max-height: 70vh;
+    width: auto;
 }
 
 .right-wth {
@@ -2583,7 +2579,10 @@ position: absolute;
       100%{transform: scale(1);}
 }
 
-
+.team .item-dots {
+    padding: 0;
+    margin: 20px auto;
+}
 
 @media screen and (min-width: 2100px) {
 
@@ -2594,8 +2593,17 @@ position: absolute;
     .contact .contact-info {
         width: 30%;
     }
+
+    .map-bg {
+        background-size: cover;
+    }
 }
 
+@media screen and (max-width: 1480px) {
+    .h1 {
+        font-size: 3.4em;
+    }
+}
 @media screen and (max-width: 1300px) {
     
     .h1-more {
@@ -2882,12 +2890,12 @@ position: absolute;
 
     .bl-l, .bl-r {display: none;}
 
-    .main { margin: 0 auto; width: 90%; }
-
-
-    .team .bl-preview {
-        width: 270px;
+    .main { 
+        position: relative; 
+        margin: 0 auto; 
+        width: 90%; 
     }
+
     .team .preview-container {
         width: 270px;
     }
@@ -2915,20 +2923,404 @@ position: absolute;
     .team .preview-container {
         height: auto;
     }
-}
 
-@media screen and (max-width: 480px) {
+    .mob-menu {
 
-    .wrapper {
-        
-        height: inherit;
-        background-position: right;
-        min-height: 100vh;
+        position: relative;
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
     }
 
-    .bl-l, .bl-r { display: none; }
+    .header { display: none; }
 
-    .main { width: 100%; padding: 0 3%; box-sizing: border-box;}
+    .header-mob {
+
+        display: flex;
+        margin-top: 3%;
+        justify-content: space-between;
+    }
+
+    .mob-menu span {
+        
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        background-color: #fff;
+          -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+        z-index: 10;
+    }
+
+    .service .content-box {
+
+        height: auto;
+    }
+
+    .mob-menu span:nth-child(1), .mob-menu span:nth-child(4), .mob-menu span:nth-child(7) {
+
+        left: 0;
+    }
+
+    .mob-menu span:nth-child(2) {
+
+        left: 13px;
+    }
+
+    .mob-menu span:nth-child(3) {
+
+        right: 0;
+    }
+
+    .mob-menu span:nth-child(4) {
+
+        top: 13px;
+    }
+    .mob-menu span:nth-child(5) {
+
+        top: 13px;
+        left: 13px;
+    }
+    .mob-menu span:nth-child(6) {
+
+        top: 13px;
+        right: 0;
+    }
+    .mob-menu span:nth-child(7) {
+
+        bottom: 0;
+    }
+    .mob-menu span:nth-child(8) {
+
+        bottom: 0;
+        left: 13px;
+    }
+
+    .mob-menu span:nth-child(9) {
+
+        bottom: 0;
+        right: 0;
+    }
+
+    @keyframes span-1 {
+      0% {transform:translate(0);}
+      100%{transform:translate(0) scale(0.8);}}
+
+    @keyframes span-2 {
+      0%{transform:translate(0);}
+      100%{transform:translate(-6px,6px) scale(0.6);}}
+
+    @keyframes span-3 {
+      0%{transform:translate(0);}
+      100%{transform:translate(0) scale(0.8);}}
+
+    @keyframes span-4 {
+      0%{transform:translate(0);}
+      100%{transform:translate(6px,6px) scale(0.6);}}
+    @keyframes span-6 {
+      0%{transform:translate(0);}
+      100%{transform:translate(-6px,-6px) scale(0.6);}}
+    @keyframes span-7 {
+      0%{transform:translate(0);}
+      100%{transform:translate(0) scale(0.8);}}
+    @keyframes span-8 {
+      0%{transform:translate(0);}
+      100%{transform:translate(6px,-6px) scale(0.6);}}
+    @keyframes span-9 {
+      0%{transform:translate(0);}
+      100%{transform:translate(0) scale(0.8);}}
+
+    .mob-menu.open span:nth-child(1) {
+      animation: span-1 0.5s ease-in-out;
+      animation-fill-mode:forwards;
+      background-color: #ff0000;
+
+    }
+    .mob-menu.open  span:nth-child(2) {
+      animation: span-2 0.5s ease-in-out;
+      animation-fill-mode:forwards;
+      background-color: #ff0000;
+    }
+    .mob-menu.open  span:nth-child(3) {
+      animation: span-3 0.5s ease-in-out;
+      animation-fill-mode:forwards;
+      background-color: #ff0000;
+    }
+    .mob-menu.open  span:nth-child(4) {
+      animation: span-4 0.5s ease-in-out;
+      animation-fill-mode:forwards;
+      background-color: #ff0000;
+    }
+    .mob-menu.open  span:nth-child(6) {
+      animation: span-6 0.5s ease-in-out;
+      animation-fill-mode:forwards;
+      background-color: #ff0000;
+    }
+    .mob-menu.open  span:nth-child(7) {
+      animation: span-7 0.5s ease-in-out;      
+      animation-fill-mode:forwards;
+      background-color: #ff0000;
+    }
+    .mob-menu.open  span:nth-child(8) {
+      animation: span-8 0.5s ease-in-out;
+      animation-fill-mode:forwards;
+      background-color: #ff0000;
+    }
+    .mob-menu.open  span:nth-child(9) {
+      animation: span-9 0.5s ease-in-out;
+      animation-fill-mode:forwards;
+      background-color: #ff0000;
+    }
+    .mob-menu.open  span:nth-child(5) {
+      background-color: #ff0000;
+    }
+
+    .open-active {
+        
+        display: flex;
+        position: fixed;
+        width: 94%;
+        top: 65px;
+        left: 3%;
+        right: 3%;
+        padding: 75px 0 40px;
+        bottom: 3%;        
+        flex-direction: column;
+        justify-content: center;
+        -webkit-transition: .5s cubic-bezier(0,1,.5,1);
+        -moz-transition: .5s cubic-bezier(0,1,.5,1);
+        -o-transition: .5s cubic-bezier(0,1,.5,1);
+        transition: .5s cubic-bezier(0,1,.5,1);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        z-index: 9;
+        background-color: rgba(0,0,0,0.9);
+        box-sizing: border-box;
+        overflow-y: scroll;
+    }
+
+    .menu-wrapper .bl-social {
+        
+        margin: 30px auto 0;
+        padding: 22px 40px;
+        max-width: 172px;
+    }
+
+    .menu-wrapper .social-link:first-child {
+        padding-right: 30px;
+        padding-bottom: 0;
+    }
+
+    .menu-wrapper .bl-search {
+
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        padding: 15px 20px;
+        max-width: 120px;
+    }
+
+    .btn-search img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-mob {
+
+        position: relative;
+        z-index: 10;
+    }
+
+    .menu-wrapper {
+
+        box-shadow: 0 0 25px 5px rgba(255,0,0,0.35);
+    }
+
+    .overlay {
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .portfolio, .service, .partner, .contact {
+
+        min-height: 100vh;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .portfolio .slider {
+        flex-direction: column;
+    }
+    .portfolio .sl-card {
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 6%;
+    }
+    .partner .bl-partner{
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 6%;
+        transform: scale(0.8);
+    }
+
+    .portfolio .content-main {
+        height: auto;
+        padding: 0;
+    }
+    .portfolio .footer-mob, .service .footer-mob, .partner .footer-mob, .contact .footer-mob {
+        display: flex;
+        align-items: center;
+    }
+    .bl-pagination {
+        transform: none;
+        margin-bottom: 0;
+    }
+    .bl-copyright {
+        position: absolute;
+        left: 42%;
+    }
+
+    .h2 {
+
+        font-size: 1.4em;
+        padding: 20px 0;
+    }
+
+    .btn {
+
+       animation: none;
+    }
+
+    .video-box, .main-description {
+        width: 100%;
+    }
+
+    .video-container {
+        max-height: 252px;
+        height: 30vh;
+    }
+
+    .contact .content-box {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+
+    .content-box {
+
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .contact-info .h1 {
+
+        font-size: 30px;
+    }
+
+    .contact-info, .contact-map {
+
+        width: 100%;
+    }
+
+
+    .contact-form {
+
+        margin-top: 20px;
+    }
+
+    .p-contact {
+
+        display: inline-block;
+        margin: 10px 15px 0 0;
+    }
+
+    .contact-map {
+
+        margin-top: 30px;
+    }
+
+    #map-block {
+        padding: 14px;
+        min-height: 240px;
+    }
+
+    .contact-info {
+        margin-top: 35px;
+    }
+
+    .copy-coordinat {display: none;}
+
+    .service-block {
+        width: 100%;
+    }
+
+    .service .content-box, .video {
+        margin: 20px 0;
+    }
+    
+    .video, .map {
+        overflow: visible;
+        height: auto;
+    }
+    .h-page .footer-mob {
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper {
+        background-position: center right;
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .agency-map {
+        width: 90%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .map-bg {
+        z-index: 0;
+    }
+
+    .right-wth {
+        width: 100%;
+        position: relative;
+    bottom: 35px;
+    }
+
+    .team .content-box {
+        position: relative;
+        padding: 32px 0 10px;
+    }
+    .sotrud-img {
+
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .team .sl-wrapper-shadow {
+        overflow: hidden;
+        height: 55px;
+    }
+    .team .sl-wrapper {
+        position: absolute;
+        height: 55px;
+        width: auto;
+    }
+    .team .sl-wrapper {
+        justify-content: start;
+    }
 
     .content-box {
 
@@ -3179,7 +3571,7 @@ position: absolute;
         position: absolute;
         left: 42%;
     }
-    
+
     .mob-menu {
 
         position: relative;
@@ -3524,10 +3916,29 @@ position: absolute;
         min-height: 100vh;
         height: 100%;
     }
+
+    .agency-map {
+        width: 90%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .map-bg {
+        z-index: 0;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
 
+    .wrapper {
+        
+        height: inherit;
+        background-position: right;
+        min-height: 100vh;
+    }
     
 
     .bl-l, .bl-r { display: none; }
@@ -4095,6 +4506,13 @@ position: absolute;
     }
     .team .arrow-right {
         right: -3%;
+    }
+        .team .tr-bottom {
+        width: 34px;
+        margin-right: 10px;
+    }
+    .team .tr-bottom:last-child {
+        margin-right: 10px;
     }
 }
 
