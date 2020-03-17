@@ -3320,8 +3320,12 @@ position: absolute;
     }
     .team .sl-wrapper {
         justify-content: start;
+        position: absolute;
+        height: 55px;
+        width: auto;
     }
-
+}
+    @media screen and (max-width: 480px) {
     .content-box {
 
         flex-direction: column;
@@ -3911,11 +3915,6 @@ position: absolute;
         align-items: center;
     }
 
-    .wrapper {
-        background-position: center right;
-        min-height: 100vh;
-        height: 100%;
-    }
 
     .agency-map {
         width: 90%;
@@ -3929,9 +3928,11 @@ position: absolute;
         z-index: 0;
     }
 
-}
-
-@media screen and (max-width: 480px) {
+    .team .sl-wrapper {
+        position: absolute;
+        height: 55px;
+        width: auto;
+    }
 
     .wrapper {
         
@@ -4513,6 +4514,10 @@ position: absolute;
     }
     .team .tr-bottom:last-child {
         margin-right: 10px;
+    }
+    .sl-wrapper {
+        width: 100%;
+        justify-content: start;
     }
 }
 
