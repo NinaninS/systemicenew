@@ -1036,6 +1036,10 @@ position: absolute;
     opacity: 1;
 }
 
+.team .sl-wrapper {
+    width: 100000px;
+}
+
 .team .sl-wrapper-shadow {
 
     position: relative;
@@ -3345,15 +3349,10 @@ position: absolute;
         height: 55px;
     }
     .team .sl-wrapper {
-        position: absolute;
-        height: 55px;
-        width: auto;
-    }
-    .team .sl-wrapper {
         justify-content: start;
         position: absolute;
         height: 55px;
-        width: auto;
+        width: 100000px;
     }
 }
     @media screen and (max-width: 480px) {
@@ -3962,7 +3961,7 @@ position: absolute;
     .team .sl-wrapper {
         position: absolute;
         height: 55px;
-        width: auto;
+        width: 100000px;
     }
 
     .wrapper {
