@@ -2757,13 +2757,16 @@ position: absolute;
 
 @media screen and (max-width: 980px) {
 
+    .news-slider {
+        width: 100%;
+    }
     .bl-article h1 {
         font-size: 32px;
     }
 
     .news-sldr-box {
 
-        max-height: 25vh;
+        max-height: 40vh;
     }
 
     .tel-btn { font-size: 22px; }
@@ -2831,6 +2834,11 @@ position: absolute;
     .contact-form {
         margin-top: 15px;
     }
+
+    .bl-article {
+        overflow: hidden;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -4569,6 +4577,10 @@ position: absolute;
 
     .service-desc {
         width: 100%;
+    }
+
+    .bl-article h1 {
+        font-size: 24px;
     }
 
 }

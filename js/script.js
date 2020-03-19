@@ -40,6 +40,14 @@ $(function(){
         }
     });
 
+    $('.menu-wrapper li').each(function () {
+        var link = $(this).find('a').attr('href');
+ 
+        if (cur_url == link) {
+            $(this).find('a').addClass('menu-active');
+        }
+    });
+
 	$('.bl-other').on('click', function(){
 
 		$('.other-event').toggle();
