@@ -2753,6 +2753,13 @@ position: absolute;
         margin-top: 5px;
         font-size: 0.9em;
     }
+
+    .contact-map {
+        max-height: 360px;
+    }
+    .contact-info .h1 {
+        font-size: 60px;
+    }
 }
 
 @media screen and (max-width: 980px) {

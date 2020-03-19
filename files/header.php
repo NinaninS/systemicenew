@@ -45,7 +45,7 @@
 			</div>
 
 			<ul class="menu-list">
-				<li class="menu-item"><a class=" menu-active" href="/">О компании</a></li>
+				<li class="menu-item"><a href="/">О компании</a></li>
 				<li class="menu-item"><a href="/service.php">Услуги</a></li>
 				<li class="menu-item"><a href="/portfolio.php">Портфолио</a></li>
 				<li class="menu-item"><a href="/team.php">Команда</a></li>
