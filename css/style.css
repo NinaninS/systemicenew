@@ -4349,7 +4349,7 @@ position: absolute;
 
     .event-check .checkbox-label{width: 50%;}
 
-    .menu-list { font-size: 16px; }
+    .menu-list { font-size: 16px; margin-top: 75px;}
 
     .event-page-wrapper {
 
@@ -4373,6 +4373,8 @@ position: absolute;
     }
 
     .news-sldr-box img {
+
+        width: 100vh;
         
     }
 
@@ -4593,5 +4595,9 @@ position: absolute;
 
     .menu-wrapper .bl-social, .menu-wrapper .bl-search {
         padding: 10px 20px;
+    }
+
+    .menu-wrapper .bl-social {
+        margin-bottom: 30px;
     }
 }
