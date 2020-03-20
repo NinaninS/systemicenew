@@ -145,4 +145,30 @@ $(function(){
 			label[i].querySelector('.i-agree').style = "color: white;"
 		});
 	}
+
+
+    $(document).mouseup(function (e){
+
+        var div = $('.login-block');
+
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) {
+        	div.css('display','none');
+			$('.btn-exit').removeClass('active');
+        }
+    });
+
+
+    $(document).mouseup(function (e){
+
+        var div = $('.login-block');
+
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) {
+        	div.css('display','none');
+			$('.btn-exit').removeClass('active');
+        }
+    });
+
+    
 });
