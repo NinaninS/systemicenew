@@ -161,14 +161,14 @@ $(function(){
 
     $(document).mouseup(function (e){
 
-        var div = $('.login-block');
+        var div = $('.other-event');
 
         if (!div.is(e.target) 
             && div.has(e.target).length === 0) {
         	div.css('display','none');
-			$('.btn-exit').removeClass('active');
+			$('.more-portfolio').removeClass('active');
         }
     });
 
-    
+
 });
