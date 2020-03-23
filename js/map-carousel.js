@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function(){
             leftSlides = -itemsSlides[1];   // Для первого слайда
         }
 
-        itemsContainer.style.left = -leftSlides + 'px';  // Сдвигаем контейнер
+        itemsContainer.style.left = -leftSlides*10 + 'px';  // Сдвигаем контейнер
     }
 
     // Функция, которая получает индекс элемента

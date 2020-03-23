@@ -81,15 +81,15 @@
 						<div class="info-left"></div>
 						<div class="info-right"></div>
 						<div class="bl-info-wrapper">
-							<div class="info-data-item">
+							<div class="info-data-item first">
 								<span> >15</span> лет
 								<p>работаем в сфере<br>делового туризма</p>
 							</div>
-							<div class="info-data-item info-active">
+							<div class="info-data-item info-active second">
 								<span>4</span> 
 								<p>представительства<br> в городах России</p>
 							</div>
-							<div class="info-data-item">
+							<div class="info-data-item third">
 								<span>18</span>
 								<p>стран<br> партнеров</p>
 							</div>

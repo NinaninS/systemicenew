@@ -3386,7 +3386,9 @@ position: absolute;
     transition: left .5s;
     box-sizing: border-box;
     width: 100000px;
+    height: 150px;
     align-items: center;
+    justify-content: start;
 }
 
 .info-data-item {
