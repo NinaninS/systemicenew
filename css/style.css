@@ -623,7 +623,7 @@ position: absolute;
     margin: 9% 0 0 0;
 }
 
-.info-data {
+.info-data-item {
 
     margin-right: 7%;
     margin-bottom: 7%;
@@ -632,7 +632,7 @@ position: absolute;
     font-size: 18px;
 }
 
-.info-data p {
+.info-data-item p {
 
     color: #fff;
     font-size: 18px;
@@ -641,7 +641,7 @@ position: absolute;
     padding: 0;
 }
 
-.info-data span {
+.info-data-item span {
 
     font-size: 48px;
     line-height: 0.9;
@@ -2589,6 +2589,11 @@ position: absolute;
     margin: 20px auto;
 }
 
+.bl-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 2100px) {
 
     .contact .content-box {
@@ -3369,6 +3374,113 @@ position: absolute;
         height: 55px;
         width: 100000px;
     }
+    .bl-info {
+    position: relative;
+    height: 150px;
+    margin-top: 40px;
+    display: block;
+}
+.bl-info-wrapper {
+    position: absolute;
+    display: flex;
+    transition: left .5s;
+    box-sizing: border-box;
+    width: 100000px;
+    align-items: center;
+}
+
+.info-data-item {
+    position: relative;
+    display: block;
+    width: 140px;
+    margin: 0 15px 0 0;
+    opacity: .5;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.agency-map .info-active {
+    opacity: 1;
+}
+
+    .agency-map .info-active span {
+
+        font-size: 72px;
+        color: #ff0000;
+    }
+    .info-active p, .info-active { color: #fff; }
+
+    .info-data { position:relative;margin: 0 4%; }
+
+    .info-left {
+        position: absolute;
+        display: block;
+        width: 22px;
+        height: 14px;
+        top: 40%;
+        left: 35%;
+        background-image: url(../images/arrow-left.png);
+        background-repeat: no-repeat;
+    }
+
+    .info-right {
+
+        position: absolute;
+        display: block;
+        width: 22px;
+        height: 14px;
+        top: 40%;
+        right: 15%;
+        background-image: url(../images/arrow-right.png);
+        background-repeat: no-repeat;
+    }
+
+    .map {
+
+        min-height: 80vh;
+        overflow: visible;
+
+    }
+
+    .map-bg {
+
+        left: 0;
+        background-position: left;
+        background-image: url('../images/map-mob.png');
+
+    }
+
+    .sity {
+
+        height: 160%;
+        width: 150%;
+
+    }
+
+    .info-left {
+        position: absolute;
+        display: block;
+        width: 22px;
+        height: 14px;
+        top: 40%;
+        left: 28%;
+        background-image: url(../images/arrow-left.png);
+        background-repeat: no-repeat;
+    }
+
+    .info-right {
+
+        position: absolute;
+        display: block;
+        width: 22px;
+        height: 14px;
+        top: 40%;
+        right: 30%;
+        background-image: url(../images/arrow-right.png);
+        background-repeat: no-repeat;
+    }
+
 }
     @media screen and (max-width: 480px) {
     .content-box {
@@ -3527,38 +3639,12 @@ position: absolute;
         color: #717171;
     }
 
-    .info-active span {
-
-        font-size: 72px;
-        color: #ff0000;
-    }
-    .info-active p, .info-active { color: #fff; }
-
-    .info-data { position:relative;margin: 0 4%; }
-
-    .info-active:after {
-        position: absolute;
-        content: '';
-        display: block;
-        width: 22px;
-        height: 14px;
-        top: 40%;
-        left: -28px;
-        background-image: url(../images/arrow-left.png);
-        background-repeat: no-repeat;
+    .info-left {
+        left: 35%;
     }
 
-    .info-active:before {
-
-        position: absolute;
-        content: '';
-        display: block;
-        width: 22px;
-        height: 14px;
-        top: 40%;
-        right: -28px;
-        background-image: url(../images/arrow-right.png);
-        background-repeat: no-repeat;
+    .info-right {
+        right: 15%;
     }
 
     .service-block {
@@ -4086,40 +4172,7 @@ position: absolute;
         color: #717171;
     }
 
-    .info-active span {
-
-        font-size: 72px;
-        color: #ff0000;
-    }
-    .info-active p, .info-active { color: #fff; }
-
-    .info-data { position:relative;margin: 0 4%; }
-
-    .info-active:after {
-        position: absolute;
-        content: '';
-        display: block;
-        width: 22px;
-        height: 14px;
-        top: 40%;
-        left: -28px;
-        background-image: url(../images/arrow-left.png);
-        background-repeat: no-repeat;
-    }
-
-    .info-active:before {
-
-        position: absolute;
-        content: '';
-        display: block;
-        width: 22px;
-        height: 14px;
-        top: 40%;
-        right: -28px;
-        background-image: url(../images/arrow-right.png);
-        background-repeat: no-repeat;
-    }
-
+    
     .service-block {
 
         width: 100%;

@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/main-carousel.js"></script>
+	<script type="text/javascript" src="js/map-carousel.js"></script>
 </head>
 
 <body>
@@ -77,36 +78,38 @@
 					<div class="line"></div>
 
 					<div class="bl-info">
-						
-						<div class="info-data">
-							<span> >15</span> лет
-							<p>работаем в сфере<br>делового туризма</p>
+						<div class="info-left"></div>
+						<div class="info-right"></div>
+						<div class="bl-info-wrapper">
+							<div class="info-data-item">
+								<span> >15</span> лет
+								<p>работаем в сфере<br>делового туризма</p>
+							</div>
+							<div class="info-data-item info-active">
+								<span>4</span> 
+								<p>представительства<br> в городах России</p>
+							</div>
+							<div class="info-data-item">
+								<span>18</span>
+								<p>стран<br> партнеров</p>
+							</div>
+							<div class="info-data-item">
+								<span>68</span>
+								<p>штатных<br> сотрудников</p>
+							</div>
+							<div class="info-data-item">
+								<span> >500</span>
+								<p>отелей на<br> эксклюзивных<br> условиях</p>
+							</div>
+							<div class="info-data-item">
+								<span> >827</span>
+								<p>реализованных<br> проектов</p>
+							</div>
+							<div class="info-data-item">
+								<span> >367</span>
+								<p>надежных<br> подрядчиков<br> по всему миру</p>
+							</div>
 						</div>
-						<div class="info-data info-active">
-							<span>4</span> 
-							<p>представительства<br> в городах России</p>
-						</div>
-						<div class="info-data">
-							<span>18</span>
-							<p>стран<br> партнеров</p>
-						</div>
-						<div class="info-data">
-							<span>68</span>
-							<p>штатных<br> сотрудников</p>
-						</div>
-						<div class="info-data">
-							<span> >500</span>
-							<p>отелей на<br> эксклюзивных<br> условиях</p>
-						</div>
-						<div class="info-data">
-							<span> >827</span>
-							<p>реализованных<br> проектов</p>
-						</div>
-						<div class="info-data">
-							<span> >367</span>
-							<p>надежных<br> подрядчиков<br> по всему миру</p>
-						</div>
-
 					</div>
 
 				</div>
