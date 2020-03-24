@@ -4,6 +4,7 @@ body {
     margin: 0;
     color: #fff;
     font-family: 'RalewayRegular', sans-serif;
+    background-color: #000;
 }
 
 ul {
@@ -26,12 +27,17 @@ a {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
     overflow: hidden;
+    animation: opacity 0.8s ease-in-out;
+}
+
+.main-page {
+
+    background-image: url('../images/bg.jpg');
 }
 
 .service {
@@ -42,6 +48,39 @@ a {
 .portfolio {
 
     background-image: url('../images/bg-portfolio.jpg');
+}
+
+.map-bg {
+
+    position: absolute;
+    left: 55%;
+    background-image: url(../images/map-bg.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+    top: 10%;
+    animation: opacity 0.5s  ease-in-out;
+}
+
+.contact {
+    background-image: url('../images/bg-contact.jpg');
+}
+
+.news {
+
+    background-image: url('../images/bg-news.jpg');
+}
+
+.team {
+
+    background-image: url('../images/bg-team.jpg');
+}
+
+.partner {
+
+    background-image: url('../images/bg-partner.jpg');
 }
 
 .header {
@@ -558,19 +597,6 @@ position: absolute;
     width: 68%;
 }
 
-.map-bg {
-
-    position: absolute;
-    left: 55%;
-    background-image: url(../images/map-bg.png);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    right: 0;
-    bottom: 0;
-    top: 10%;
-}
-
 .spb {
     display: block;
     position: absolute;
@@ -731,6 +757,7 @@ position: absolute;
     box-sizing: border-box;
     margin-bottom: 6%;
     cursor: pointer;
+    transition:  ease-in-out 0.5s;
 }
 
 .service .h1 {
@@ -770,25 +797,6 @@ position: absolute;
 .service-block:nth-child(3), .service-block:nth-child(4) {
 
     margin-bottom: 3%;
-}
-
-.contact {
-    background-image: url('../images/bg-contact.jpg');
-}
-
-.news {
-
-    background-image: url('../images/bg-news.jpg');
-}
-
-.team {
-
-    background-image: url('../images/bg-team.jpg');
-}
-
-.partner {
-
-    background-image: url('../images/bg-partner.jpg');
 }
 
 .content-main {
@@ -835,8 +843,14 @@ position: absolute;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: linear 0.5s;
     box-shadow: 0 0 10px 1px rgba(255,255,255,0.3);
+    -webkit-transition: opacity ease-in-out .25s;
+    -o-transition: opacity ease-in-out .25s;
+    transition: opacity ease-in-out .25s;
+}
+
+.content-main .bg-color {
+    box-shadow: 0 0 20px 5px rgba(28, 80, 14, 1) !important;
 }
 
 .portfolio .bl-preview {
@@ -845,8 +859,11 @@ position: absolute;
 
 .bg-hover {
 
-    display: none;
-    transition: 0.5s ease-in-out;
+    display: none;   
+    opacity: 0; 
+    -webkit-transition: opacity ease-in-out .4s;
+    -o-transition: opacity ease-in-out .4s;
+    transition: opacity ease-in-out .4s;
 }
 
 .sl-card:hover .bg-hover {
@@ -857,9 +874,11 @@ position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    transition: 0.5s ease-in-out;
-    box-shadow: 0 0 20px 5px rgba(28, 80, 14, 1);
+    opacity: 1;
     background: linear-gradient(to top, rgba(0, 0, 0, .9) 15%, rgba(36, 50, 74, 0) 40%);
+    -webkit-transition: opacity ease-in-out .4s;
+    -o-transition: opacity ease-in-out .4s;
+    transition: opacity ease-in-out .4s;
 }
 
 .bg-hover .event-info {
@@ -869,7 +888,7 @@ position: absolute;
 @keyframes hover {
 
       0%{left: 0px; transform:translate(0);}
-      100%{left:30px; transform:translate(0);}
+      100%{left:5%; transform:translate(0);}
 }
 
 .event-info {
@@ -877,7 +896,7 @@ position: absolute;
     position: absolute;
     display: block;
     bottom: 30px;
-    left: 30px;
+    left: 5%;
 }
 
 .event-name {
@@ -2344,12 +2363,12 @@ position: absolute;
         right: 1px;
         bottom: 1px;
         background-color: rgba(0,0,0,0.5);
-        transition: linear 0.5s;
+        transition:  ease-in-out 0.5s;
     }
 
     .service-block:hover .service-hover {
         display: flex;
-        transition: linear 0.5s;
+        transition:  ease-in-out 0.5s;
         align-items: center;
         justify-content: center;
     }
@@ -2450,7 +2469,7 @@ position: absolute;
 
     .service-block {
         position: relative;
-        animation: rights 0.6s linear;
+        animation: rights 1s linear;
     }
 
     .sl-box-1 {
@@ -2542,7 +2561,7 @@ position: absolute;
 @keyframes rights {
 
       0%{opacity:0;}
-      80%{opacity:0; right: -20px;}
+      80%{opacity:0; right: -2%;}
       100%{opacity:1; right: 0;}
 }
 
@@ -2594,6 +2613,17 @@ position: absolute;
     flex-wrap: wrap;
 }
 
+.style-hover { 
+    border-bottom: 2px solid #e90000;
+}
+
+.menu-item a {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid #e90000;
+}
 @media screen and (min-width: 2100px) {
 
     .contact .content-box {

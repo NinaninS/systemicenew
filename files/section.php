@@ -13,6 +13,9 @@
             <div class="spy-top"></div>
             <div class="spy-right"></div>
             <div class="spy-bottom"></div>
+            <div class="service-hover">
+                <a href="" class="open-btn">Открыть</a>
+            </div>
         </div>
     </div>
     <div class="service-block clearfix">
@@ -30,6 +33,10 @@
         <div class="spy-top"></div>
         <div class="spy-right"></div>
         <div class="spy-bottom"></div>
+
+        <div class="service-hover">
+            <a href="" class="open-btn">Открыть</a>
+        </div>
     </div>
     <div class="service-block clearfix">
         <div class="img-wrapper">
@@ -46,6 +53,10 @@
         <div class="spy-top"></div>
         <div class="spy-right"></div>
         <div class="spy-bottom"></div>
+
+        <div class="service-hover">
+            <a href="" class="open-btn">Открыть</a>
+        </div>
     </div>
     <div class="service-block clearfix">
         <div class="img-wrapper">
@@ -62,5 +73,9 @@
         <div class="spy-top"></div>
         <div class="spy-right"></div>
         <div class="spy-bottom"></div>
+        
+        <div class="service-hover">
+            <a href="" class="open-btn">Открыть</a>
+        </div>
     </div>
 </div>

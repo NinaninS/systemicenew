@@ -109,7 +109,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
+						<div class="sl-card sl-box-2 bg-color" style="background-image: url('../images/conf.jpg')">
 							<div class="bg-hover">
 								<div class="event-info">
 									<span class="event-name">PECO 2019</span>

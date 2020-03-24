@@ -1,5 +1,5 @@
 <div class="slider content-slide hidden-screen">
-    <div class="sl-card sl-box-1"style="background-image: url('../images/conf1.jpg')">
+    <div class="sl-card sl-box-1" style="background-image: url('../images/conf1.jpg')">
         <div class="bg-hover">
             <div class="event-info">
                 <span class="event-name">EVENT 1</span>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <div class="sl-card sl-box-2" style="background-image: url('../images/conf.jpg')">
+    <div class="sl-card sl-box-2 bg-color" style="background-image: url('../images/conf.jpg')">
         <div class="bg-hover">
             <div class="event-info">
                 <span class="event-name">PECO 2019</span>

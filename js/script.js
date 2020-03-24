@@ -1,3 +1,16 @@
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > $(window).height()){
+            window.open('portfolio.php') ;
+        }
+        else{
+        	window.open('index.php');
+        }
+
+    })
+})
+
 $(function(){
 
 	$('.video-preview').on('click', function(){
@@ -54,6 +67,7 @@ $(function(){
 		$('.more-portfolio').toggleClass('active');
 	});
 	
+
 
 	// JS страницы Собрать свое мероприятие
 
