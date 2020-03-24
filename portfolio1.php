@@ -50,15 +50,17 @@
 					<div class="event-page-sl">
 						
 						<div class="slider-block">
+							<a class="arrow-left"></a>
+							<a class="arrow-right"></a>
 							<div class="slides-block">
 								<div class="news-sldr-box content-slide">
-									<img src="images/conf1.jpg">
+									<div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div>
 								</div>
 								<div class="news-sldr-box content-slide">
-									<img src="images/conf1.jpg">
+									<div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div>
 								</div>
 								<div class="news-sldr-box content-slide">
-									<img src="images/conf1.jpg">
+									<div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div>
 								</div>
 							</div>
 							<div class="bl-preview">

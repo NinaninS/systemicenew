@@ -858,8 +858,6 @@ position: absolute;
 }
 
 .bg-hover {
-
-    display: none;   
     opacity: 0; 
     -webkit-transition: opacity ease-in-out .4s;
     -o-transition: opacity ease-in-out .4s;
@@ -868,7 +866,6 @@ position: absolute;
 
 .sl-card:hover .bg-hover {
 
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -876,13 +873,14 @@ position: absolute;
     bottom: 0;
     opacity: 1;
     background: linear-gradient(to top, rgba(0, 0, 0, .9) 15%, rgba(36, 50, 74, 0) 40%);
-    -webkit-transition: opacity ease-in-out .4s;
-    -o-transition: opacity ease-in-out .4s;
-    transition: opacity ease-in-out .4s;
+    -webkit-transition: rights ease-in-out .4s;
+    -o-transition: rights ease-in-out .4s;
 }
 
 .bg-hover .event-info {
-    animation: hover 0.5s ease-in-out;
+    opacity: 1;
+    transform: translate3d(5%,0,0);
+    transition: all ease-in-out .5s;
 }
 
 @keyframes hover {
@@ -896,7 +894,8 @@ position: absolute;
     position: absolute;
     display: block;
     bottom: 30px;
-    left: 5%;
+     -webkit-transition: ease-in-out .5s;
+     transition:ease-in-out .5s;
 }
 
 .event-name {
@@ -918,6 +917,7 @@ position: absolute;
     padding: 0;
     line-height: 1;
     font-size: 18px;
+    font-family: 'RalewayLight', sans-serif;
 }
 
 .portfolio .main {
@@ -993,6 +993,7 @@ position: absolute;
 
     justify-content: center;
     padding-top: 2%;
+    height: 75vh;
 }
 
 .link-svg {
@@ -2220,12 +2221,53 @@ position: absolute;
         width: 65%; 
         max-height: 548px;
         max-width: 970px;
-        height: 52vh;
     }
 
     .inter-event-page {
 
         width: 32%;
+    }
+
+    .event-page-sl .arrow-left {
+        top: 45%;
+
+        left: 3%;
+
+        width: 30px;
+
+        height: 39px;
+        z-index: 2;
+    }
+.event-page-sl .slides-block {
+    height: 50vh;
+        max-height: 450px;
+}
+    .event-page-sl .arrow-right {
+        top: 45%;
+
+        right: 3%;
+
+        width: 30px;
+
+        height: 39px;
+        z-index: 2;
+    }
+
+    .event-page-sl .news-sldr-box {
+        min-width: 100vh;
+    }
+
+    .event-page-sl .slides-block {
+        width: 100%;
+    }
+
+    .slides-img {
+
+        width: 100%;
+        height: 100%;
+        max-height: 450px;
+        background-size: cover;
+        background-position: center;
     }
 
     .event-page .contact-info {
@@ -2234,7 +2276,13 @@ position: absolute;
 
     }
 
-    .inter-event-page .event-info { position: relative; left: 0; bottom: 0; padding-bottom: 16%;}
+    .inter-event-page .event-info { 
+        position: relative; 
+        left: 0; 
+        bottom: 0; 
+        padding-bottom: 12%;
+    }
+
 
     .slider-block {
         display: flex;
@@ -2624,10 +2672,11 @@ position: absolute;
 .menu-item a:hover {
     border-bottom: 2px solid #e90000;
 }
-@media screen and (min-width: 2100px) {
+@media screen and (min-width: 1900px) {
 
-    .contact .content-box {
-        justify-content: space-evenly;
+    .contact .contact-map {
+        width: 68%;
+        min-height: 70vh;
     }
 
     .contact .contact-info {
@@ -2638,6 +2687,14 @@ position: absolute;
         background-size: cover;
     }
 }
+    .contact .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .content-box {
+        margin: auto 0;
+    }
 
 @media screen and (max-width: 1480px) {
     .h1 {
