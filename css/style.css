@@ -348,6 +348,7 @@ a {
     font-family: 'RalewaySemiBold', sans-serif;
     color: #fff;
     padding: 10px 19px;
+    letter-spacing: 0.5px;
     box-shadow: 0 0 22px 5px rgba(233,0,0,0.5);
 }
 
@@ -993,7 +994,7 @@ position: absolute;
 
     justify-content: center;
     padding-top: 2%;
-    height: 75vh;
+    height: 73vh;
 }
 
 .link-svg {
@@ -1232,6 +1233,10 @@ position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.news-box .line {
+    height: 6px;
 }
 
 .bl-article {
@@ -2504,10 +2509,29 @@ position: absolute;
         position: relative;
        animation: rights 1s linear;
     }
+
     .p-subtitle{
 
-        position: relative;
+       position: relative;
        animation: rights 1.3s linear;
+       letter-spacing: 0.5px;
+       margin-bottom: 40px;
+    }
+
+    .news-slider .arrow-left {
+        left: 2%;
+    }
+
+    .news-slider .arrow-right {
+        right: 2%;
+    }
+
+    .news-slider .bl-preview {
+        padding: 0 65px 10px;
+    }
+
+    .news-slider .item-service-dots {
+        padding: 0;
     }
 
     .bl-list {
@@ -2676,7 +2700,7 @@ position: absolute;
 
     .contact .contact-map {
         width: 68%;
-        min-height: 70vh;
+        min-height: 55vh;
     }
 
     .contact .contact-info {
@@ -2686,7 +2710,6 @@ position: absolute;
     .map-bg {
         background-size: cover;
     }
-}
     .contact .main {
         display: flex;
         flex-direction: column;
@@ -2694,8 +2717,29 @@ position: absolute;
 
     .contact .content-box {
         margin: auto 0;
+        padding: 0 4% 0;
+        max-height: 55vh;
     }
 
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-block {
+        max-width: 750px;
+        margin-bottom: 4%;
+    }
+    .partner .content-box {
+            padding: 0 4% 0;
+            align-items: center;
+    }
+
+    .bl-partner {
+        margin-bottom: 0;
+    }
+
+}
 @media screen and (max-width: 1480px) {
     .h1 {
         font-size: 3.4em;

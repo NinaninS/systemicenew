@@ -1,7 +1,7 @@
-
+/*
 $(document).ready(function(){
     $(window).scroll(function(){
-        if($(window).scrollTop() > $(window).height()){
+        if($(window).height()){
             window.open('portfolio.php') ;
         }
         else{
@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     })
 })
-
+*/
 $(function(){
 
 	$('.video-preview').on('click', function(){
