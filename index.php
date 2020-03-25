@@ -22,7 +22,7 @@
 
 <body>
 
-	<div class="wrapper main-page">
+	<div id="waypoint-main" class="wrapper main-page waypoint">
 		
 		<div class="bl-l fl-column">
 

@@ -109,9 +109,12 @@ document.addEventListener("DOMContentLoaded", function(){
             getTop[0].addEventListener('click', function(e){
 
                 if (activeItemIndexVertical >= verticalSlides.length - 1) {
+
+                    $('.arrow-top').css('border-color','#d8d8d8');
                     return false
                 }
 
+                $('.arrow-top').css('border-color','#ff0000');
                 activeItemIndexVertical++;
                 verticalSliderAction()
             });
@@ -121,8 +124,12 @@ document.addEventListener("DOMContentLoaded", function(){
             getBottom[0].addEventListener('click', function(e){
 
                 if (activeItemIndexVertical <= 0) {
+                    
+                    $('.arrow-bottom').css('border-color','#d8d8d8');
                     return false
                 }
+
+                $('.arrow-bottom').css('border-color','#ff0000');
                 activeItemIndexVertical--;
                 verticalSliderAction()
             });
