@@ -42,21 +42,23 @@
 						<div class="line"></div>
 						<p class="p-subtitle">Подзаголовок: <b>Может быть тут указывать автора</b></p>
 						<div class="news-slider">
-							<a class="arrow-left"></a>
-							<a class="arrow-right"></a>
-							<!--<img class="sl-search" src="../images/search.png">-->
-							<div class="news-slides">
-								<div class="news-sldr-box content-slide">
-									<img src="images/nws.png">
-								</div>
-								<div class="news-sldr-box content-slide">
-									<img src="images/nws.png">
-								</div>
-								<div class="news-sldr-box content-slide">
-									<img src="images/nws.png">
-								</div>
-								<div class="news-sldr-box content-slide">
-									<img src="images/nws.png">
+							<div class="container-sl">
+								<a class="arrow-left"></a>
+								<a class="arrow-right"></a>
+								<img class="sl-search" src="../images/search.png">
+								<div class="news-slides">
+									<div class="news-sldr-box content-slide">
+										<img src="images/nws.png">
+									</div>
+									<div class="news-sldr-box content-slide">
+										<img src="images/nws.png">
+									</div>
+									<div class="news-sldr-box content-slide">
+										<img src="images/nws.png">
+									</div>
+									<div class="news-sldr-box content-slide">
+										<img src="images/nws.png">
+									</div>
 								</div>
 							</div>
 							<div class="bl-preview">
