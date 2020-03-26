@@ -1,34 +1,4 @@
 
-document.onwheel = function(event) {
-
-	if (event.deltaY > 0) {
-
-	var speed = event.deltaY;
-		speed = Math.abs(speed);
-		if (speed<50) {
-			window.open('../service.php');
-		} else {
-
-			console.log('veryfasstload')
-		}
-
-	}
-
-	else {
-
-	var speed = event.deltaY;
-		speed = Math.abs(speed);
-		if (speed<50) {
-			window.open('../contact.php');
-		} else {
-
-			console.log('veryfasstload')
-		}
-
-	}
-
-}
-
 $(function(){
 
 	$('.video-preview').on('click', function(){

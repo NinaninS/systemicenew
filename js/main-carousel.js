@@ -34,6 +34,29 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 
+    //прокрутка
+    document.onwheel = function(event) {
+
+        if (event.deltaY > 0) {
+
+            var speed = event.deltaY;
+            speed = Math.abs(speed);
+            if (speed<3) {
+                 changeActiveElement();
+            }
+        }
+
+        else {
+
+            var speed = event.deltaY;
+                speed = Math.abs(speed);
+                if (speed<3) {
+                     changeActiveElement();
+                } 
+            }
+    }
+    //конец
+
     function changeActiveElement() {
         for (let i = 0; i < content.length; i++) {
             

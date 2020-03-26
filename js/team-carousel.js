@@ -89,6 +89,40 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 
+    //прокрутка
+  
+    document.onwheel = function(event) {
+
+    if (event.deltaY > 0) {
+
+        var speed = event.deltaY;
+        speed = Math.abs(speed);
+        if (speed<3) {
+            if (activeItemIndex == 0) return false;
+            itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
+            dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
+            activeItemIndex--;                              //Прибавляем активный элемент
+            defineActiveItem(items, itemDots, activeItemIndex);
+        }
+
+    }
+
+    else {
+
+        var speed = event.deltaY;
+            speed = Math.abs(speed);
+            if (speed<3) {
+                if (activeItemIndex > lastItem) return false;
+                itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
+                dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
+                activeItemIndex++;                              //Прибавляем активный элемент
+                defineActiveItem(items, itemDots, activeItemIndex);
+            } 
+
+        }
+    }
+    //конец
+
     // Нажатие на менеджера
 
     for (let i = 0; i < items.length; i++){

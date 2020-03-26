@@ -193,7 +193,7 @@ a {
 }
 
 .menu-item {
-
+    position: relative;
     margin-bottom: 17px;
     line-height: 1.6;
 }
@@ -488,9 +488,16 @@ position: absolute;
     margin: auto;
 }
 
-.menu-active {
-    display: inline-block;
-  border-bottom: 2px solid #e90000;
+.menu-active:before {
+    position: absolute;
+    bottom: -5px;
+    content: " ";
+    height: 0;
+    width: 100%;
+    box-shadow: 0 0 5px 1px rgb(255, 0, 0);
+    border-bottom: 2px solid #e90000;
+    border-radius: 3px;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .video {
@@ -1412,7 +1419,7 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
 
         position: relative;
         display: flex;
-        margin: 45px auto;
+        margin: 45px 2%;
         box-sizing: border-box;
         height: calc(100% - 90px);
         overflow: auto;
@@ -2710,13 +2717,25 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
     border-bottom: 2px solid #e90000;
 }
 
+
+
 .menu-item a {
+    position: relative;
     transition: opacity 0.5s ease-in-out;
 }
 
-.menu-item a:hover {
+.menu-item:hover a:before {
+    position: absolute;
+    bottom: -5px;
+    content: " ";
+    height: 0;
+    width: 100%;
+    box-shadow: 0 0 5px 1px rgb(255, 0, 0);
     border-bottom: 2px solid #e90000;
+    border-radius: 3px;
+    transition: opacity 0.5s ease-in-out;
 }
+
 @media screen and (min-width: 1900px) {
 
     .contact .contact-map {

@@ -68,6 +68,44 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     });
 
+    //прокрутка
+  
+    document.onwheel = function(event) {
+
+    if (event.deltaY > 0) {
+
+        var speed = event.deltaY;
+        speed = Math.abs(speed);
+        if (speed<1) {
+             activeItemIndex--;
+            activeItemIndex < 0 ? activeItemIndex = slides.length - 1 : ''
+            defineActiveSlide(slides, itemDots);
+            for (let i = 0; i < itemDots.length; i++) {
+                itemDots[i].classList.remove('tr-active');
+            }
+            itemDots[activeItemIndex].classList.add('tr-active');
+        }
+
+    }
+
+    else {
+
+        var speed = event.deltaY;
+            speed = Math.abs(speed);
+            if (speed<1) {
+                activeItemIndex++;
+            activeItemIndex >= slides.length ? activeItemIndex = 0 : ''
+            defineActiveSlide(slides, itemDots);
+            for (let i = 0; i < itemDots.length; i++) {
+                itemDots[i].classList.remove('tr-active');
+            }
+            itemDots[activeItemIndex].classList.add('tr-active');
+            } 
+
+        }
+    }
+    //конец
+
         // Нажатие на красную точку
         for (let i = 0; i < itemDots.length; i++) {
             itemDots[i].addEventListener('click', function(e){
@@ -124,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function(){
             getBottom[0].addEventListener('click', function(e){
 
                 if (activeItemIndexVertical <= 0) {
-                    
+
                     $('.arrow-bottom').css('border-color','#d8d8d8');
                     return false
                 }
