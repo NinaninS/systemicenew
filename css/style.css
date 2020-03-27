@@ -1487,8 +1487,8 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
     .sl-img {
 
         width: 32%;
-        min-width: 80px;
-        min-height: 44px;
+        min-width: 70px;
+        min-height: 45px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1513,6 +1513,34 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
         border-left: 1px solid #ff0000;
         transform: rotate(135deg);
         top: 7px;
+        cursor: pointer;
+    }
+
+    .team .arrow-left {
+
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #ff0000;
+        border-left: 1px solid #ff0000;
+        transform: rotate(45deg);
+        background-image: none;
+        top: 30%;
+        cursor: pointer;
+    }
+
+    .team .arrow-right {
+
+        position: absolute;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border-bottom: 1px solid #ff0000;
+        border-left: 1px solid #ff0000;
+        transform: rotate(-135deg);
+        background-image: none;
+        top: 30%;
         cursor: pointer;
     }
     .arrow-bottom {
@@ -1749,6 +1777,7 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
 
         width: 685px;
         height: 530px;
+       animation: opacity 1.6s ease-in-out;
     }
 
     .event-box .event-header {
