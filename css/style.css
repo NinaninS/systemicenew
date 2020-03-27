@@ -139,7 +139,7 @@ a {
 .video-box {
 
     width: 55%;
-    animation: opacity 0.7s ease-in-out;
+    animation: opacity 1s ease-in-out;
 }
 
 .main-description {
@@ -492,6 +492,7 @@ position: absolute;
     position: absolute;
     bottom: -5px;
     content: " ";
+    opacity: 1 !important;
     height: 0;
     width: 100%;
     box-shadow: 0 0 5px 1px rgb(255, 0, 0);
@@ -863,28 +864,41 @@ position: absolute;
 
 .portfolio .bl-preview {
     height: auto;
+    padding-bottom: 0 !important;
 }
 
 .bg-hover {
-    opacity: 0; 
-    -webkit-transition: opacity ease-in-out .4s;
-    -o-transition: opacity ease-in-out .4s;
-    transition: opacity ease-in-out .4s;
-}
-
-.sl-card:hover .bg-hover {
-
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 1;
-    background: linear-gradient(to top, rgba(0, 0, 0, .9) 15%, rgba(36, 50, 74, 0) 40%);
-    -webkit-transition: rights ease-in-out .4s;
-    -o-transition: rights ease-in-out .4s;
+    opacity: 0; 
+    -webkit-transition: ease-in-out .8s;
+    -o-transition: ease-in-out .8s;
+    transition: ease-in-out .8s;
 }
 
+.sl-card:hover .bg-hover {
+
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, .9) 15%, rgba(36, 50, 74, 0) 40%);
+    -webkit-transition: opacity ease-in-out .8s;
+    -o-transition: opacity ease-in-out .8s;
+}
+
+.event-info {
+
+    position: absolute;
+    opacity: 0;
+    display: block;
+    bottom: 30px;
+     -webkit-transition: ease-in-out .5s;
+     transition:ease-in-out .5s;
+}
+.inter-event-page .event-info {
+    opacity: 1;
+}
 .bg-hover .event-info {
     opacity: 1;
     transform: translate3d(5%,0,0);
@@ -897,14 +911,6 @@ position: absolute;
       100%{left:5%; transform:translate(0);}
 }
 
-.event-info {
-
-    position: absolute;
-    display: block;
-    bottom: 30px;
-     -webkit-transition: ease-in-out .5s;
-     transition:ease-in-out .5s;
-}
 
 .event-name {
     
@@ -1097,6 +1103,7 @@ position: absolute;
     padding: 20px 30px;
     box-sizing: border-box;
     height: 120px;
+    animation: opacity 2s ease-in-out;
 }
 
 .h-page .sl-teammate {
@@ -1646,7 +1653,7 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
         margin-bottom: 18px;
     }
 
-    .line { height: 6px;}
+    .line { height: 5px;}
 
     .contact-form p {
 
@@ -2520,7 +2527,7 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
 
     .bl-partner {
 
-       animation: opacity 1.2s linear;
+       animation: top-bottom 1.6s linear;
     }
 
     .news-slider {
@@ -2574,19 +2581,22 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
 
     .sl-box-1 {
 
-        animation: rights 0.8s linear;
+        animation: top-bottom 1s linear;
     }
 
     .sl-box-2 {
         
-        animation: rights 1.2s linear;
+        animation: top-bottom 1s linear;
     }
 
-    .map-bg, .contact-map {
+    .map-bg {
 
         animation: rights 1.2s linear;
     }
-    
+    .contact-map {
+
+        animation: rights 1.5s linear;
+    }
     .preview-container {
         animation: opacity 1.6s ease-in-out;
     }
@@ -2623,7 +2633,8 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
 
     .team .h1-more {
         position: relative;
-        animation: rights 0.8s linear;
+        margin: 15px 0;
+        animation: rights 1.2s linear;
     }
 
     .h3 {
@@ -2637,7 +2648,7 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
 
     .sotrud-img {
         position: relative;
-        animation: opacity 1s linear;
+        animation: opacity 1.4s linear;
     }
 
     .slides-block {
@@ -2663,6 +2674,13 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
       0%{opacity:0;}
       80%{opacity:0; right: -2%;}
       100%{opacity:1; right: 0;}
+}
+
+@keyframes top-bottom {
+
+      0%{opacity:0;}
+      50%{opacity:0; top: -2%;}
+      100%{opacity:1; top: 0;}
 }
 
 @keyframes lefts {
@@ -2724,15 +2742,22 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
     transition: opacity 0.5s ease-in-out;
 }
 
-.menu-item:hover a:before {
+.menu-item a:before {
     position: absolute;
     bottom: -5px;
     content: " ";
     height: 0;
+    opacity: 0;
     width: 100%;
     box-shadow: 0 0 5px 1px rgb(255, 0, 0);
     border-bottom: 2px solid #e90000;
     border-radius: 3px;
+    transition: opacity 0.5s ease-in-out;
+}
+.menu-item:hover a:before {
+    content: " ";
+    height: 0;
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -2785,8 +2810,14 @@ box-shadow: 0 0 10px 2px rgba(233,0,0,0.6);
         margin-bottom: 0;
     }
 
+    .event-page-sl {
+        max-width: none;
+    }
+
 }
+
 @media screen and (max-width: 1480px) {
+
     .h1 {
         font-size: 3.4em;
     }
