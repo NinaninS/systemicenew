@@ -90,60 +90,61 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     //прокрутка
-  
-    document.onwheel = function(event) {
+    if ($(window).width() > 630) {
+        document.onwheel = function(event) {
 
-    if (event.deltaY > 0) {
+        if (event.deltaY > 0) {
 
-        var speed = event.deltaY;
-        speed = Math.abs(speed);
-        if (speed<3) {
-            if (activeItemIndex == 0) return false;
-            itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
-            dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
-            activeItemIndex--;                              //Прибавляем активный элемент
-            defineActiveItem(items, itemDots, activeItemIndex);
-        }
-
-    }
-
-    else {
-
-        var speed = event.deltaY;
+            var speed = event.deltaY;
             speed = Math.abs(speed);
             if (speed<3) {
-                if (activeItemIndex > lastItem) return false;
-                itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
-                dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
-                activeItemIndex++;                              //Прибавляем активный элемент
+                if (activeItemIndex == 0) return false;
+                itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
+                dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
+                activeItemIndex--;                              //Прибавляем активный элемент
                 defineActiveItem(items, itemDots, activeItemIndex);
-            } 
+            }
 
         }
-    }
-    //конец
 
-    // Нажатие на менеджера
+        else {
 
-    for (let i = 0; i < items.length; i++){
-        
-        // Нажатие на портрет
-        items[i].addEventListener('click', function(e){
+            var speed = event.deltaY;
+                speed = Math.abs(speed);
+                if (speed<3) {
+                    if (activeItemIndex > lastItem) return false;
+                    itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
+                    dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
+                    activeItemIndex++;                              //Прибавляем активный элемент
+                    defineActiveItem(items, itemDots, activeItemIndex);
+                } 
 
-            let index = getArrayIndex(items, e);
-                activeItemIndex = index;
-                defineActiveItem(items, itemDots, index);
-                moveOnClick(index);
-        });
+            }
+        }
+        //конец
 
-        // Нажатие на красную точку
-        itemDots[i].addEventListener('click', function(e){
+        // Нажатие на менеджера
 
-            let index = getArrayIndex(itemDots, e);
-                activeItemIndex = index;
-                defineActiveItem(items, itemDots, index);
-                moveOnClick(index);
-        });
+        for (let i = 0; i < items.length; i++){
+            
+            // Нажатие на портрет
+            items[i].addEventListener('click', function(e){
+
+                let index = getArrayIndex(items, e);
+                    activeItemIndex = index;
+                    defineActiveItem(items, itemDots, index);
+                    moveOnClick(index);
+            });
+
+            // Нажатие на красную точку
+            itemDots[i].addEventListener('click', function(e){
+
+                let index = getArrayIndex(itemDots, e);
+                    activeItemIndex = index;
+                    defineActiveItem(items, itemDots, index);
+                    moveOnClick(index);
+            });
+        }
     }
 
     function moveOnClick(index) {
