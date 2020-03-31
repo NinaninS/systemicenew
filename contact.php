@@ -16,6 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="js/map.js" defer></script>
 	<script src="js/plugins/clipboard.js-master/dist/clipboard.js"></script>
+	<script type="text/javascript" src="plugins/lightcase-2.5.0/src/js/lightcase.js"></script>
+	<link rel="stylesheet" href="plugins/lightcase-2.5.0/src/css/lightcase.css">
 	<script src="js/script.js"></script>
 	<script type="text/javascript" src="js/content-carousel.js"></script>
 </head>

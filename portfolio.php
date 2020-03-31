@@ -14,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/fontstyle.css">
     <link href="https://use.fontawesome.com/bccb4e85ab.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="plugins/lightcase-2.5.0/src/js/lightcase.js"></script>
+	<link rel="stylesheet" href="plugins/lightcase-2.5.0/src/css/lightcase.css">
 	<script type="text/javascript" src="../js/script.js"></script>
 	<script type="text/javascript" src="../js/content-carousel.js"></script>
 </head>

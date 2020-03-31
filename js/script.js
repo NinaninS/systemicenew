@@ -1,6 +1,41 @@
 
 $(function(){
 
+	
+	var windWidth = $(window).width();
+
+
+    if (windWidth > 992) {
+
+        $('.lightcase-pic').lightcase({
+
+            maxWidth: 1000,
+            maxHeight: 1000,
+            swipe: true
+        });     
+    }
+
+    else if (windWidth < 992 && windWidth > 480) {
+
+        $('.lightcase-pic').lightcase({
+
+            maxWidth: '80%',
+            maxHeight: '80%',
+            swipe: true
+        });
+    }
+
+    else {
+
+        $('.lightcase-pic').lightcase({
+
+            maxWidth: 300,
+            maxHeight: 300,
+            swipe: true
+        });     
+    }
+
+
 	$('.video-preview').on('click', function(){
 
 		$('.video').css('display','flex');
@@ -54,7 +89,6 @@ $(function(){
 		$('.other-event').toggle();
 		$('.more-portfolio').toggleClass('active');
 	});
-	
 
 
 	// JS страницы Собрать свое мероприятие
