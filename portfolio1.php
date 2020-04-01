@@ -22,7 +22,7 @@
 
 <body>
 
-	<div class="wrapper portfolio">
+	<div class="wrapper portfolio_in">
 		
 		<div class="bl-l fl-column">
 
