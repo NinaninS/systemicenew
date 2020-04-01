@@ -176,9 +176,9 @@
 
 				<?php
 
-					include('/files/event-dop.php');
-					include('/files/event-dop.php');
-					include('/files/event-dop.php');
+					include('files/event-dop.php');
+					include('files/event-dop.php');
+					include('files/event-dop.php');
 				?>
 
 				<a href="" class="get-order">Хочу просто оставить заявку</a>

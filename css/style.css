@@ -2618,7 +2618,7 @@ position: absolute;
 
     .service-block {
         position: relative;
-        animation: rights 1s linear;
+        animation: rights 1.4s linear;
     }
 
     .sl-box-1 {
@@ -2660,17 +2660,17 @@ position: absolute;
 
     .contact-info .h1 {
         position: relative;
-        animation: lefts 1s ease-in-out;
+        animation: lefts-slow 1s ease-in-out;
     }
 
     .p-contact {
         position: relative;
-        animation: lefts 1.2s ease-in-out;
+        animation: lefts-slow 1.4s ease-in-out;
     }
     
     .contact-form {
         position: relative;
-        animation: lefts 1.4s ease-in-out;
+        animation: lefts-slow  1.6s ease-in-out;
     }
 
     .team .h1-more {
@@ -2730,6 +2730,11 @@ position: absolute;
       0%{opacity:0;}
       80%{opacity:0; left: -20px;}
       100%{opacity:1; left: 0;}
+}
+@keyframes lefts-slow {
+
+      0%{opacity:0;}
+      100%{opacity:1;}
 }
 
 @keyframes lefts-mig {
@@ -3793,6 +3798,10 @@ position: absolute;
 
     .bl-article {
         overflow: visible;
+    }
+
+    .inter-event-page .event-name {
+        margin: 10px 0 5px 0;
     }
 
 }
