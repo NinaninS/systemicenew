@@ -54,15 +54,16 @@
 						<div class="slider-block">
 							<a class="arrow-left"></a>
 							<a class="arrow-right"></a>
+							<img class="sl-search" src="../images/search.png">
 							<div class="slides-block">
 								<div class="news-sldr-box content-slide">
-									<div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div>
+									<a href="../images/conf1.jpg" class="lightcase-pic"  data-rel="lightcase:myPortfolioCollection"><div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div></a>
 								</div>
 								<div class="news-sldr-box content-slide">
-									<div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div>
+									<a href="../images/conf1.jpg" class="lightcase-pic"  data-rel="lightcase:myPortfolioCollection"><div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div></a>
 								</div>
 								<div class="news-sldr-box content-slide">
-									<div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div>
+									<a href="../images/conf1.jpg" class="lightcase-pic"  data-rel="lightcase:myPortfolioCollection"><div class="slides-img" style="background-image: url('../images/conf1.jpg')"></div></a>
 								</div>
 							</div>
 							<div class="bl-preview">
