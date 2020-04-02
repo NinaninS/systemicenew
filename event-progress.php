@@ -80,9 +80,11 @@
 							<span class="event-step">Шаг №4</span>
 						</div>
 					</div>
+					
 					<div class="loader-line">
 						<div class="active-loader"></div>
 					</div>
+
 					<div class="event-checked step-1">
 							<label class="checkbox-label">
 								<input class="input-checkbox" type="checkbox" name="hotel" checked>

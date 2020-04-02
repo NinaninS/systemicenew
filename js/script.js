@@ -95,12 +95,15 @@ $(function(){
 
 	if ($("#EventPage").val() == 1) {
 
+
 		document.getElementsByClassName('btn')[0].style.display = "none";
 		document.getElementsByClassName('event-progress-stripe')[0].style.display = "block";
 
 		let slides = document.getElementsByClassName('progress-box'),
 			progressWidth = parseInt(document.getElementsByClassName('event-progress-stripe')[0].clientWidth),
+			progressWidthLine = parseInt(document.getElementsByClassName('loader-line')[0].clientWidth),
 			slideWidth = Math.ceil(progressWidth / slides.length);
+			slideWidthLine = Math.ceil(progressWidthLine / slides.length);
 
 		let stopProgress = 0;
 
@@ -109,7 +112,11 @@ $(function(){
 
 			let widthBefore = parseInt(document.getElementsByClassName('event-progress')[0].clientWidth);
 
+			let widthBeforeLine = parseInt(document.getElementsByClassName('active-loader')[0].clientWidth);
+
 				document.getElementsByClassName('event-progress')[0].style.width = widthBefore + slideWidth + 'px';
+
+				document.getElementsByClassName('active-loader')[0].style.width = widthBeforeLine + slideWidthLine + 'px';
 				stopProgress = 500;
 				setTimeout(function() {stopProgress = 0}, 500);
 		});

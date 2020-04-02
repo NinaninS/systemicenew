@@ -19,16 +19,22 @@ document.addEventListener("DOMContentLoaded", function(){
         if (dotsContainer) dotsContainer.innerHTML = dots;
 
     let itemDots = document.getElementsByClassName('tr-bottom');
+    
+    let itemTitels = document.getElementsByClassName('event-title'); //заголовок страницы конструктор мероприятий
 
     if (getPrev[0]) {
         getPrev[0].addEventListener('click', function(e){
             activeItemIndex--;
             activeItemIndex < 0 ? activeItemIndex = slides.length - 1 : ''
-            defineActiveSlide(slides, itemDots);
+            defineActiveSlide(slides, itemDots, itemTitels);
             for (let i = 0; i < itemDots.length; i++) {
                 itemDots[i].classList.remove('tr-active');
             }
+            for (let i = 0; i < itemTitels.length; i++) {
+                itemTitels[i].classList.remove('active');
+            }
             itemDots[activeItemIndex].classList.add('tr-active');
+            itemTitels[activeItemIndex].classList.add('active');
         });
     }
 
@@ -36,11 +42,15 @@ document.addEventListener("DOMContentLoaded", function(){
         getNext[0].addEventListener('click', function(e){
             activeItemIndex++;
             activeItemIndex >= slides.length ? activeItemIndex = 0 : ''
-            defineActiveSlide(slides, itemDots);
+            defineActiveSlide(slides, itemDots, itemTitels);
             for (let i = 0; i < itemDots.length; i++) {
                 itemDots[i].classList.remove('tr-active');
             }
+            for (let i = 0; i < itemTitels.length; i++) {
+                itemTitels[i].classList.remove('active');
+            }
             itemDots[activeItemIndex].classList.add('tr-active');
+            itemTitels[activeItemIndex].classList.add('active');
         });
     }
 
@@ -50,21 +60,29 @@ document.addEventListener("DOMContentLoaded", function(){
         if (event.code == 'ArrowLeft') {
             activeItemIndex--;
             activeItemIndex < 0 ? activeItemIndex = slides.length - 1 : ''
-            defineActiveSlide(slides, itemDots);
+            defineActiveSlide(slides, itemDots, itemTitels);
             for (let i = 0; i < itemDots.length; i++) {
                 itemDots[i].classList.remove('tr-active');
             }
+            for (let i = 0; i < itemTitels.length; i++) {
+                itemTitels[i].classList.remove('active');
+            }
             itemDots[activeItemIndex].classList.add('tr-active');
+            itemTitels[activeItemIndex].classList.add('active');
         }
 
         if (event.code == 'ArrowRight') {
             activeItemIndex++;
             activeItemIndex >= slides.length ? activeItemIndex = 0 : ''
-            defineActiveSlide(slides, itemDots);
+            defineActiveSlide(slides, itemDots, itemTitels);
             for (let i = 0; i < itemDots.length; i++) {
                 itemDots[i].classList.remove('tr-active');
             }
+            for (let i = 0; i < itemTitels.length; i++) {
+                itemTitels[i].classList.remove('active');
+            }
             itemDots[activeItemIndex].classList.add('tr-active');
+            itemTitels[activeItemIndex].classList.add('active');
         }
     });
 
