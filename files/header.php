@@ -6,7 +6,7 @@
 
 			<a class="btn event-progress-stripe" href="">
 				
-				<div class = "event-progress"></div>
+				<div class = "event-progress bta-hover"></div>
 				<div class = "common-progress-text">Общий прогресс сборки мероприятия</div>
 			</a>
 

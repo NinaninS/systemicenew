@@ -108,6 +108,7 @@ $(function(){
 		let stopProgress = 0;
 
 		document.getElementsByClassName('arrow-right')[0].addEventListener('click', function(){
+			
 			if (stopProgress != 0) return false;
 
 			let widthBefore = parseInt(document.getElementsByClassName('event-progress')[0].clientWidth);
