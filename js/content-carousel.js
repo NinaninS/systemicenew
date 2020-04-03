@@ -22,19 +22,25 @@ document.addEventListener("DOMContentLoaded", function(){
     
     let itemTitels = document.getElementsByClassName('event-title'); //заголовок страницы конструктор мероприятий
 
+    let itemHeader = document.getElementsByClassName('step'); //заголовок страницы конструктор мероприятий
+
     if (getPrev[0]) {
         getPrev[0].addEventListener('click', function(e){
             activeItemIndex--;
             activeItemIndex < 0 ? activeItemIndex = slides.length - 1 : ''
-            defineActiveSlide(slides, itemDots, itemTitels);
+            defineActiveSlide(slides, itemDots, itemTitels, itemHeader);
             for (let i = 0; i < itemDots.length; i++) {
                 itemDots[i].classList.remove('tr-active');
             }
             for (let i = 0; i < itemTitels.length; i++) {
                 itemTitels[i].classList.remove('active');
             }
+            for (let i = 0; i < itemHeader.length; i++) {
+                itemHeader[i].classList.remove('next-step');
+            }
             itemDots[activeItemIndex].classList.add('tr-active');
             itemTitels[activeItemIndex].classList.add('active');
+            itemHeader[activeItemIndex].classList.add('next-step');
         });
     }
 
@@ -49,8 +55,12 @@ document.addEventListener("DOMContentLoaded", function(){
             for (let i = 0; i < itemTitels.length; i++) {
                 itemTitels[i].classList.remove('active');
             }
+            for (let i = 0; i < itemHeader.length; i++) {
+                itemHeader[i].classList.remove('next-step');
+            }
             itemDots[activeItemIndex].classList.add('tr-active');
             itemTitels[activeItemIndex].classList.add('active');
+            itemHeader[activeItemIndex].classList.add('next-step');
         });
     }
 

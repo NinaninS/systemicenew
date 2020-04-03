@@ -667,6 +667,15 @@ position: absolute;
     font-size: 18px;
 }
 
+.info-data-item:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .info-data-item p {
 
     color: #fff;
@@ -1847,6 +1856,7 @@ position: absolute;
         width: 100%;
         border-radius: 1px;
         background-color: #d8d8d8;
+        overflow: hidden;
 
     }
 
@@ -1856,7 +1866,10 @@ position: absolute;
         left: 0;
         height: 1px;
         width: 25%;
+        border-radius: 1px;
         background-color: #ff0000;
+        transition: width .5s;
+        max-width: 687px;
     }
 
     .event-checked {
@@ -2217,7 +2230,9 @@ position: absolute;
         background-size: contain;
     }
 
-    .step-2, .step-3, .step-4 {display: none;}
+    .step-1, .step-2, .step-3, .step-4 {display: none;}
+
+    .next-step { display: flex; }
 
     .login-block {
 
@@ -3837,6 +3852,10 @@ position: absolute;
 
     .inter-event-page .event-name {
         margin: 10px 0 5px 0;
+    }
+
+    .agency-map .h1 {
+        margin-top: 30px;
     }
 
 }

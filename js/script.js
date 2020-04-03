@@ -99,16 +99,16 @@ $(function(){
 		document.getElementsByClassName('btn')[0].style.display = "none";
 		document.getElementsByClassName('event-progress-stripe')[0].style.display = "block";
 
-		let slides = document.getElementsByClassName('progress-box'),
+		let slides = document.getElementsByClassName('event-checked'),
 			progressWidth = parseInt(document.getElementsByClassName('event-progress-stripe')[0].clientWidth),
-			progressWidthLine = parseInt(document.getElementsByClassName('loader-line')[0].clientWidth),
+			progressWidthLine = parseInt(document.getElementsByClassName('loader-line')[0].clientWidth),//линия загрузки
 			slideWidth = Math.ceil(progressWidth / slides.length);
 			slideWidthLine = Math.ceil(progressWidthLine / slides.length);
 
 		let stopProgress = 0;
 
 		document.getElementsByClassName('arrow-right')[0].addEventListener('click', function(){
-			
+
 			if (stopProgress != 0) return false;
 
 			let widthBefore = parseInt(document.getElementsByClassName('event-progress')[0].clientWidth);
@@ -117,7 +117,7 @@ $(function(){
 
 				document.getElementsByClassName('event-progress')[0].style.width = widthBefore + slideWidth + 'px';
 
-				document.getElementsByClassName('active-loader')[0].style.width = widthBeforeLine + slideWidthLine + 'px';
+				document.getElementsByClassName('active-loader')[0].style.width = widthBeforeLine + slideWidthLine + 'px';//линия загрузки
 				stopProgress = 500;
 				setTimeout(function() {stopProgress = 0}, 500);
 		});
