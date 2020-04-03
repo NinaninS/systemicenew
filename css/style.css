@@ -3321,7 +3321,10 @@ position: absolute;
         font-size: 18px;
     }
 
-    .event-arrow-left, .event-arrow-right {display: none;}
+    .event-arrow-left, .event-arrow-right {
+        display: block;
+        top: 4%;
+    }
 
     .progress-box {
         width: max-content;
@@ -3904,7 +3907,7 @@ position: absolute;
 }
 
 @media screen and (max-width: 480px) {
-    
+
     .content-box {
 
         flex-direction: column;
