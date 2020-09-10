@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
                 var speed = event.deltaY;
                 speed = Math.abs(speed);
-                if (speed<3) {
+                if (speed<30) {
                      changeActiveElement();
                 }
             }
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
                 var speed = event.deltaY;
                     speed = Math.abs(speed);
-                    if (speed<3) {
+                    if (speed<30) {
                          changeActiveElement();
                     } 
                 }

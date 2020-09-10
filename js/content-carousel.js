@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
                 var speed = event.deltaY;
                 speed = Math.abs(speed);
-                if (speed<1) {
+                if (speed<10) {
                      activeItemIndex--;
                     activeItemIndex < 0 ? activeItemIndex = slides.length - 1 : ''
                     defineActiveSlide(slides, itemDots);
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
                 var speed = event.deltaY;
                     speed = Math.abs(speed);
-                    if (speed<1) {
+                    if (speed<10) {
                         activeItemIndex++;
                     activeItemIndex >= slides.length ? activeItemIndex = 0 : ''
                     defineActiveSlide(slides, itemDots);

@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             var speed = event.deltaY;
             speed = Math.abs(speed);
-            if (speed<3) {
+            if (speed<30) {
                 if (activeItemIndex == 0) return false;
                 itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
                 dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             var speed = event.deltaY;
                 speed = Math.abs(speed);
-                if (speed<3) {
+                if (speed<30) {
                     if (activeItemIndex > lastItem) return false;
                     itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
                     dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
