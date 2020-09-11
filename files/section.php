@@ -1,4 +1,4 @@
-<div class="content-box content-slide hidden-screen">
+<div class="content-box content-slide mouse-scrolling-item hidden-screen">
     <div class="service-block clearfix">
         <div class="img-wrapper">
             <div class="service-img" style="background-image: url('../images/kt.jpg');"></div>

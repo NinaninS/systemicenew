@@ -99,9 +99,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //прокрутка
     if ($(window).width() > 630) {
         document.onwheel = function(event) {
-
             if (event.deltaY > 0) {
-
                 var speed = event.deltaY;
                 speed = Math.abs(speed);
                 if (speed<10) {
@@ -113,11 +111,8 @@ document.addEventListener("DOMContentLoaded", function(){
                     }
                     itemDots[activeItemIndex].classList.add('tr-active');
                 }
-
             }
-
             else {
-
                 var speed = event.deltaY;
                     speed = Math.abs(speed);
                     if (speed<10) {
@@ -160,7 +155,6 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
 
-
     // Вертикальная карусель
 
     let getTop = document.getElementsByClassName('arrow-top'),                  // Влево
@@ -170,12 +164,10 @@ document.addEventListener("DOMContentLoaded", function(){
         verticalSliderWrapper = document.querySelector('.news-slider-wrapper'), // Прокручиваемая часть Слайдера
         activeItemIndexVertical = 0;                                            // Номер активного элемента
 
-
         if (getTop[0]) {
             getTop[0].addEventListener('click', function(e){
 
                 if (activeItemIndexVertical >= verticalSlides.length - 1) {
-
                     $('.arrow-top').css('border-color','#d8d8d8');
                     return false
                 }
@@ -190,7 +182,6 @@ document.addEventListener("DOMContentLoaded", function(){
             getBottom[0].addEventListener('click', function(e){
 
                 if (activeItemIndexVertical <= 0) {
-
                     $('.arrow-bottom').css('border-color','#d8d8d8');
                     return false
                 }

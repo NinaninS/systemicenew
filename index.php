@@ -8,7 +8,6 @@
 	<meta content="systemice" name="keywords">
 	<meta content="" name="description">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-	<script type="text/javascript" src="js/vue.js"></script>
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
 	<script src="plugins/imakewebthings-waypoints/lib/noframework.waypoints.min.js"></script>

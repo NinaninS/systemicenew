@@ -8,7 +8,6 @@
 	<meta content="systemice" name="keywords">
 	<meta content="" name="description">
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
-	<script type="text/javascript" src="../js/vue.js"></script>
 	<script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
 	<script src="js/plugins/jquery.inputmask.bundle.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/fontstyle.css">
@@ -19,30 +18,22 @@
 	<script type="text/javascript" src="../js/script.js"></script>
 	<script type="text/javascript" src="../js/content-carousel.js"></script>
 </head>
-
 <body>
 	<div class="wrapper service">
-		
 		<div class="bl-l fl-column">
-
 			<div>
 				<a href="../"><img src="../images/logo.png"></a>
 			</div>
-
 			<div class="bl-menu-title">
 				<span class="company-name">УСЛУГИ</span>
 			</div>
-
 			<div class="bl-pagination">
 				<span class="active-page">02 </span>
 				<span class="bl-page"> / 07</span>
 			</div>
 		</div>
-
-		<div class="main">
-			
+		<div class="main mouse-scrolling-section">
 			<?php require_once('files/header.php');?>
-
 			<div class="content-box content-slide">
 				<div class="service-block clearfix">
 					<div class="img-wrapper">
@@ -121,8 +112,6 @@
 					</div>
 				</div>
 			</div>
-
-
 			<?php 
 				require('files/section.php');
 				require('files/section.php');
@@ -136,7 +125,6 @@
 					<div class="arrow-right"></div>
 				</div>
 			</div>
-
 			<div class="footer-mob">
 				
 				<div class="bl-pagination">
@@ -145,16 +133,11 @@
 				</div>
 
 				<div class="bl-copyright">
-					Ⓒ2014 - 2020
+					Ⓒ2014 - <?=date('Y');?>
 				</div>
 			</div>
-
 		</div>
-
 		<?php require_once('files/bl-right.php');?>
-
 	</div>
-	
-
 </body>
 </html>
