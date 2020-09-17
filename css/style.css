@@ -786,7 +786,6 @@ position: absolute;
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    overflow: hidden;
 }
 .sl-box-1 {
     width: 66%;
