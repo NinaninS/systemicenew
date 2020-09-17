@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function(){
         activeItemIndex = 1,                                                  // Активный подсвеченный менеджер в карусели
         lastItem = items.length - 2,                                          // Номер последнего элемента, после которого карусель не смещается
         itemsSlides = [],                                                     // Массив, в котором хранятся элементы и их ширина для дальнейшего смещения
-        itemsDots = [];                                                       // Массив, в котором хранятся точки и их ширина для дальнейшего смещения
-
+        itemsDots = [],                                                      // Массив, в котором хранятся точки и их ширина для дальнейшего смещения
+        animationAction = 0
 
         for (let i = 0; i < items.length; i++) {
             // Добавление точек
@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     if (itemsContainer) itemsContainer.style.left = 0;  // Установка изначальной позиции    
     if (dotsContainer) dotsContainer.style.left = 0;  // Установка изначальной позиции  
-
 
     // Следующий менеджер в карусели
 
@@ -78,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function(){
             activeItemIndex--;                              //Прибавляем активный элемент
             defineActiveItem(items, itemDots, activeItemIndex);
         }
-
         if (event.code == 'ArrowRight') {
 
             if (activeItemIndex > lastItem) return false;
@@ -90,43 +88,60 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
     //прокрутка
-    if ($(window).width() > 630) {
-        document.onwheel = function(event) {
 
-        if (event.deltaY > 0) {
+    if ($(window).width() > 850) {
 
-            var speed = event.deltaY;
-            speed = Math.abs(speed);
-            if (speed<30) {
+        // Не Mozilla
+        window.addEventListener('mousewheel', function(e){
+
+            if (animationAction > 0) return false
+            animationStatus()
+
+            if (wheelAction(e) > 0) {
+
                 if (activeItemIndex == 0) return false;
                 itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
                 dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
                 activeItemIndex--;                              //Прибавляем активный элемент
                 defineActiveItem(items, itemDots, activeItemIndex);
             }
-
-        }
-
-        else {
-
-            var speed = event.deltaY;
-                speed = Math.abs(speed);
-                if (speed<30) {
-                    if (activeItemIndex > lastItem) return false;
-                    itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
-                    dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
-                    activeItemIndex++;                              //Прибавляем активный элемент
-                    defineActiveItem(items, itemDots, activeItemIndex);
-                } 
-
+            else {
+                if (activeItemIndex > lastItem) return false;
+                itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
+                dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
+                activeItemIndex++;                              //Прибавляем активный элемент
+                defineActiveItem(items, itemDots, activeItemIndex);
             }
-        }
+        })
+        // Mozilla
+        
+        window.addEventListener('DOMMouseScroll', function(e){
+
+            if (animationAction > 0) return false
+            animationStatus()
+
+            if (wheelAction(e) > 0) {
+
+                if (activeItemIndex == 0) return false;
+                itemsContainer.style.left = parseInt(itemsContainer.style.left) + itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
+                dotsContainer.style.left = parseInt(dotsContainer.style.left) + itemsDots[activeItemIndex] + 'px';  // Сдвигаем контейнер с точками
+                activeItemIndex--;                              //Прибавляем активный элемент
+                defineActiveItem(items, itemDots, activeItemIndex);
+            }
+            else {
+                if (activeItemIndex > lastItem) return false;
+                itemsContainer.style.left = parseInt(itemsContainer.style.left) - itemsSlides[activeItemIndex] + 'px';  // Сдвигаем контейнер
+                dotsContainer.style.left = parseInt(dotsContainer.style.left) - itemsDots[activeItemIndex] + 'px';      // Сдвигаем контейнер с точками
+                activeItemIndex++;                              //Прибавляем активный элемент
+                defineActiveItem(items, itemDots, activeItemIndex);
+            }
+        })
+    }
         //конец
 
         // Нажатие на менеджера
 
         for (let i = 0; i < items.length; i++){
-            
             // Нажатие на портрет
             items[i].addEventListener('click', function(e){
 
@@ -135,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     defineActiveItem(items, itemDots, index);
                     moveOnClick(index);
             });
-
             // Нажатие на красную точку
             itemDots[i].addEventListener('click', function(e){
 
@@ -143,8 +157,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     activeItemIndex = index;
                     defineActiveItem(items, itemDots, index);
                     moveOnClick(index);
-            });
-        }
+        });
     }
 
     function moveOnClick(index) {
@@ -183,5 +196,27 @@ document.addEventListener("DOMContentLoaded", function(){
         slides[index].classList.add('slide-user-active');
         document.getElementsByClassName('main-sotrud-img')[0].src = '../images/sotrud' + slides[index].src.slice(slides[index].src.lastIndexOf('/') + 1);
         dots[index].classList.add('tr-active');
+    }
+
+    // Функция для вычисления направления скролла мышью, если вверх то возвращает 1, если вниз то -1
+
+    function wheelAction (e) {
+        let delta;
+        event = e || window.event;
+        if (event.wheelDelta) {
+            delta = event.wheelDelta / 120;
+            if (window.opera) delta = -delta;
+        }
+        else if (event.detail) {
+            delta = -event.detail / 3;
+        }
+        return delta
+    }
+
+    function animationStatus(){
+        animationAction++
+        setTimeout(() => {
+            animationAction = 0
+        }, 500)
     }
 });

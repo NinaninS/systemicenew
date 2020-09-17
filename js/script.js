@@ -1,5 +1,51 @@
 $(function(){
 
+	// Размеры некоторых элементов
+
+	// Размер блока Услуг на планшете
+	if (document.getElementById('scrolling-box') && document.getElementById('scrolling-box').querySelectorAll('.service-block').length > 0) {
+		if (window.screen.width < 850 && window.screen.width > 630) {
+			let width = 0;
+			for (let i = 0; i < document.getElementById('scrolling-box').querySelectorAll('.service-block').length; i++){
+				width += parseInt(document.getElementById('scrolling-box').querySelectorAll('.service-block')[i].clientWidth)
+				width += parseInt(getComputedStyle(document.getElementById('scrolling-box').querySelectorAll('.service-block')[i])["margin-right"])
+			}
+			width += parseInt(document.getElementById('scrolling-box').querySelector('.service-block').clientWidth)
+			width += parseInt(getComputedStyle(document.getElementById('scrolling-box').querySelector('.service-block'))["margin-right"])
+			document.getElementById('scrolling-box').style.width = width / 2 + 'px'
+		}
+	}
+
+	// Размер блока Портфолио на планшете
+	if (document.getElementById('portfolio-slider') && document.getElementById('portfolio-slider').querySelectorAll('.sl-card').length > 0) {
+		if (window.screen.width < 850 && window.screen.width > 630) {
+			let width = 0;
+			for (let i = 0; i < document.getElementById('portfolio-slider').querySelectorAll('.sl-card').length; i++){
+				width += parseInt(document.getElementById('portfolio-slider').querySelectorAll('.sl-card')[i].clientWidth)
+				width += parseInt(getComputedStyle(document.getElementById('portfolio-slider').querySelectorAll('.sl-card')[i])["margin-right"])
+			}
+			width += parseInt(document.getElementById('portfolio-slider').querySelector('.sl-card').clientWidth)
+			width += parseInt(getComputedStyle(document.getElementById('portfolio-slider').querySelector('.sl-card'))["margin-right"])
+			document.getElementById('portfolio-slider').style.width = width / 2 + 'px'
+		}
+	}
+
+	// Размер блока Портфолио на планшете
+	if (document.getElementById('partners-slider') && document.getElementById('partners-slider').querySelectorAll('.sl-card').length > 0) {
+		if (window.screen.width < 850 && window.screen.width > 630) {
+			let width = 0;
+			for (let i = 0; i < document.getElementById('partners-slider').querySelectorAll('.sl-card').length; i++){
+				width += parseInt(document.getElementById('partners-slider').querySelectorAll('.sl-card')[i].clientWidth)
+				width += parseInt(getComputedStyle(document.getElementById('partners-slider').querySelectorAll('.sl-card')[i])["margin-right"])
+			}
+			width += parseInt(document.getElementById('partners-slider').querySelector('.sl-card').clientWidth)
+			width += parseInt(getComputedStyle(document.getElementById('partners-slider').querySelector('.sl-card'))["margin-right"])
+			document.getElementById('partners-slider').style.width = width / 2 + 'px'
+		}
+	}
+
+	// Размеры некоторых элементов, конец
+
 	var windWidth = $(window).width();
 
     if (windWidth > 992) {
@@ -184,7 +230,6 @@ $(function(){
         }
     });
 
-
     $(document).mouseup(function (e){
 
         var div = $('.other-event');
@@ -195,145 +240,4 @@ $(function(){
 			$('.more-portfolio').removeClass('active');
         }
     });
-
-
-
-
-
- /* Делаю заново плагин для прокрутки секций. Потом перенести и удалить */
-
-	// Общий блок, в котором содержатся элементы, к которым применяется анимация
-
-	const animationBlock = document.querySelector('.scrolling-box')
-	const animationNavigation = document.querySelector('.item-dots')
-
-	console.log(document.querySelector('.scrolling-box').scrollHeight)
-
-	// Определить высоту блоков и вместить их по высоте в контейнер (пока не делать)
-
-	//console.log(document.querySelector('.scrolling-wrapper').scrollHeight)
-
-	// Сколько всего блоков на странице, которые будут анимироваться и появляться
-
-	let slides = document.querySelectorAll('.service-block'),
-		dots = '',
-		activeItems = [],         // Массив, в котором хранятся индексы видимых слайдов
-		dotsContainer = document.querySelector('.item-dots');
-
-
-	// Определить количество страниц и скрыть лишние слайды
-
-	for (let i = 0; i < 4; i++) {
-		slides[i].classList.add('scrolling-item')
-		activeItems.push(i)
-	}
-
-	// Добавление точек страниц
-	// Если Элементов мало то удалить навигацию, если более 4 то вывести количество страниц
-
-	if (slides.length < 4) {
-		document.querySelector('.bl-preview').remove()
-	}
-	else {
-		for (let i = 0; i < Math.ceil(slides.length / 4); i++) {
-			i == 0 ? dots += '<div class="tr-bottom tr-active"></div>' : dots += '<div class="tr-bottom"></div>';
-		}
-		if (dotsContainer) dotsContainer.innerHTML = dots;
-	}
-
-	// Функция, которая меняет видимые слайды в зависимости от свайпов, кликов, скроллов и прочих изменений
-
-	function changePageSlides(direction) {
-
-		let slides = animationBlock.querySelectorAll('.service-block')
-
-		// Скрыть все элементы
-
-		for (let i = 0; i < slides.length; i++) {
-			slides[i].classList.remove('scrolling-item')
-		}
-
-		// Определить куда листать
-
-		// Если пролистывается вправо или влево (или вверх или вниз в случае со скроллингом)
-		// Карусель берет все элементы на экране (в данном случае 4) и показывает другие 4
-		// Индексы видимых элементов хранятся в массиве activeItems
-
-		if (direction == 'right') {
-			for (let i = 0; i < activeItems.length; i++) {
-				let a = activeItems[i]
-					a += activeItems.length
-					if (a == slides.length) a = 0
-					if (a > slides.length) a -= slides.length
-					slides[a].classList.add('scrolling-item')
-				activeItems[i] = a
-			}
-		}
-		else if (direction == 'left') {
-			for (let i = activeItems.length - 1; i >= 0; i--) {
-				let a = activeItems[i]
-					a -= activeItems.length
-					if (a < 0) a = slides.length + a
-					slides[a].classList.add('scrolling-item')
-
-				activeItems[i] = a
-			}
-		}
-		else {
-			return false
-		}
-	}
-
-	function changeNavigationActiveItem(array) {
-
-		activeItems[0] / slides.length
-	}
-
-
-	document.querySelector('.arrow-right').addEventListener('click', function(e){
-
-		
-
-		changePageSlides('right')
-	})
-
-	document.querySelector('.arrow-left').addEventListener('click', function(e){
-
-		changePageSlides('left')
-	})
-
-	// Промотка секций при скроллинге мышью
-
-	// Не Mozilla
-	window.addEventListener('mousewheel', function(e){
-		console.log(wheelAction(e))
-	})
-	// Mozilla
-	window.addEventListener('DOMMouseScroll', function(e){
-		console.log(wheelAction(e))
-	})
-
-	wheelAction()
-
-	// Функция для вычисления направления скролла мышью, если вверх то возвращает 1, если вниз то -1
-
-	function wheelAction (e) {
-		let delta;
-		event = e || window.event;
-		if (event.wheelDelta) {
-			delta = event.wheelDelta / 120;
-			if (window.opera) delta = -delta;
-		}
-		else if (event.detail) {
-			delta = -event.detail / 3;
-		}
-		return delta
-	}
-
-
-
-	/* Делаю заново плагин для прокрутки секций, конец */
-
-
-
 });

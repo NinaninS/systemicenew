@@ -12,50 +12,58 @@ document.addEventListener("DOMContentLoaded", function(){
         dot = document.getElementsByClassName('tr-bottom');
 
     for (let i = 0; i < nextPageLink.length; i++) {
-
         nextPageLink[i].addEventListener('click', function(){
-
             changeActiveElement();
         });
     }
 
     for (let i = 0; i < prevPageLink.length; i++) {
-
         prevPageLink[i].addEventListener('click', function(){
-
             changeActiveElement();
         });
     }
 
     document.addEventListener('keydown', function(event) {
         if (event.code == 'ArrowLeft' || event.code == 'ArrowRight') {
-
             changeActiveElement();
         }
     });
 
     //прокрутка
     if ($(window).width() > 630) {
-        document.onwheel = function(event) {
 
-            if (event.deltaY > 0) {
+        // Промотка секций при скроллинге мышью
 
-                var speed = event.deltaY;
-                speed = Math.abs(speed);
-                if (speed<30) {
-                     changeActiveElement();
-                }
+        // Не Mozilla
+        window.addEventListener('mousewheel', function(e){
+            changeActiveElement();
+            
+
+            console.log(wheelAction(e))
+        })
+
+        // Mozilla
+        window.addEventListener('DOMMouseScroll', function(e){
+            changeActiveElement();
+
+            console.log(wheelAction(e))
+        })
+
+        // Функция для вычисления направления скролла мышью, если вверх то возвращает 1, если вниз то -1
+
+        function wheelAction (e) {
+            let delta;
+            event = e || window.event;
+            if (event.wheelDelta) {
+                delta = event.wheelDelta / 120;
+                if (window.opera) delta = -delta;
             }
-
-            else {
-
-                var speed = event.deltaY;
-                    speed = Math.abs(speed);
-                    if (speed<30) {
-                         changeActiveElement();
-                    } 
-                }
+            else if (event.detail) {
+                delta = -event.detail / 3;
+            }
+            return delta
         }
+
     }
     //конец
 

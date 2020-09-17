@@ -126,7 +126,7 @@
 				</div>
 
 				<div class="bl-copyright">
-					Ⓒ2014 - 2020
+					Ⓒ2014 - <?=date('Y');?>
 				</div>
 			</div>
 

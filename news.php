@@ -199,7 +199,7 @@
 					<span class="bl-page"> / 07</span>
 				</div>
 				<div class="bl-copyright">
-					Ⓒ2014 - 2020
+					Ⓒ2014 - <?=date('Y');?>
 				</div>
 			</div>
 		</div>
