@@ -854,7 +854,9 @@ position: absolute;
 
     opacity: 1;
     -webkit-transition: opacity ease-in-out .8s;
+    -moz-transition: opacity ease-in-out .8s;
     -o-transition: opacity ease-in-out .8s;
+    transition: opacity ease-in-out .8s;
 }
 
 .event-info {
