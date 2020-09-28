@@ -37,16 +37,11 @@ document.addEventListener("DOMContentLoaded", function(){
         // Не Mozilla
         window.addEventListener('mousewheel', function(e){
             changeActiveElement();
-            
-
-            console.log(wheelAction(e))
         })
 
         // Mozilla
         window.addEventListener('DOMMouseScroll', function(e){
             changeActiveElement();
-
-            console.log(wheelAction(e))
         })
 
         // Функция для вычисления направления скролла мышью, если вверх то возвращает 1, если вниз то -1

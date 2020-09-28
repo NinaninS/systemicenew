@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function(){
         // Карусель берет все элементы на экране (в данном случае 4) и показывает другие 4
         // Индексы видимых элементов хранятся в массиве activeItems
 
-        if (direction == 'right') {
+        if (direction == 'left') {
             let show = 5
             // На последней странице
             if (activePage == pages - 1) {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 }
             }
         }
-        else if (direction == 'left') {
+        else if (direction == 'right') {
             // На первой странице
             if (activePage == 0) {
                 activePage = pages - 1
