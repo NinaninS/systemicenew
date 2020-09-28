@@ -847,13 +847,12 @@ position: absolute;
     -webkit-transition: ease-in-out .8s;
     -o-transition: ease-in-out .8s;
     transition: ease-in-out .8s;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0) 15%, rgba(36, 50, 74, 0) 40%)
+    background: linear-gradient(to top, rgba(0, 0, 0, .9) 15%, rgba(36, 50, 74, 0) 40%)
 }
 
 .sl-card:hover .bg-hover {
 
     opacity: 1;
-    background: linear-gradient(to top, rgba(0, 0, 0, .9) 15%, rgba(36, 50, 74, 0) 40%);
     -webkit-transition: opacity ease-in-out .8s;
     -o-transition: opacity ease-in-out .8s;
 }
